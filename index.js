@@ -49,8 +49,8 @@ client.on("message", async message => {
   // First, this must be at the top level of your code, **NOT** in any event!
 const talkedRecently = new Set();
   
-  if (talkedRecently.has(msg.author.id)) {
-            msg.channel.send("Wait 1 minute before getting typing this again. - " + msg.author);
+  if (talkedRecently.has(message.author.id)) {
+            message.channel.send("Wait 1 minute before getting typing this again. - " + message.author);
     } else {
 
            // the user can type the command ... your command code goes here :)
@@ -80,19 +80,19 @@ const talkedRecently = new Set();
 
 
     message.channel.send(Membed)
-    .then(msg => {
-      msg.delete(10000)
+    .then(message => {
+      message.delete(10000)
     })
 
     message.author.send(Gembed)
-    .then(msg => {
-      msg.delete(10000)
+    .then(message => {
+      message.delete(10000)
     })
 
     client.fetchUser('391376464064282627').then((user) => {
       user.send(dEmbed)
-      .then(msg => {
-        msg.delete(10000)
+      .then(message => {
+        message.delete(10000)
       })
     });
 
@@ -101,10 +101,10 @@ const talkedRecently = new Set();
 
   }
         // Adds the user to the set so that they can't talk for a minute
-        talkedRecently.add(msg.author.id);
+        talkedRecently.add(message.author.id);
         setTimeout(() => {
           // Removes the user from the set after a minute
-          talkedRecently.delete(msg.author.id);
+          talkedRecently.delete(message.author.id);
         }, 60000);
     }
   });
