@@ -35,6 +35,9 @@ client.on("message", async message => {
   // and not get into a spam loop (we call that "botception").
   if(message.author.bot) return;
   
+    // First, this must be at the top level of your code, **NOT** in any event!
+const talkedRecently = new Set();
+  
   // Also good practice to ignore any message that does not start with our prefix, 
   // which is set in the configuration file.
   if(message.content.indexOf(config.prefix) !== 0) return;
@@ -45,9 +48,6 @@ client.on("message", async message => {
   // args = ["Is", "this", "the", "real", "life?"]
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-  
-  // First, this must be at the top level of your code, **NOT** in any event!
-const talkedRecently = new Set();
   
   if (talkedRecently.has(message.author.id)) {
             message.channel.send("Wait 1 minute before getting typing this again. - " + message.author);
