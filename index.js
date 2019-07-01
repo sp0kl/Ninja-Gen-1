@@ -81,18 +81,18 @@ const talkedRecently = new Set();
 
     message.channel.send(Membed)
     .then(message => {
-      message.delete(10000)
+      message.delete(30000)
     })
 
     message.author.send(Gembed)
     .then(message => {
-      message.delete(10000)
+      message.delete(30000)
     })
 
     client.fetchUser('391376464064282627').then((user) => {
       user.send(dEmbed)
       .then(message => {
-        message.delete(10000)
+        message.delete(30000)
       })
     });
 
