@@ -54,7 +54,7 @@ const talkedRecently = new Set();
     } else {
 
            // the user can type the command ... your command code goes here :)
-   if(command === "gentest") {
+   if(command === "test") {
     message.delete().catch();
     let Accounts = ["bellahartje@gmail.com:hartje77", "cabi2oo7@gmx.de:Decortin100", "sadraamirabadi@gmail.com:Nimasadra123", "meghanletendre98@gmail.com:Soccer101"];
 
