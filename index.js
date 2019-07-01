@@ -54,7 +54,7 @@ const talkedRecently = new Set();
     } else {
 
            // the user can type the command ... your command code goes here :)
-   if(command === "test") {
+   if(command === "netflix") {
     message.delete().catch();
     let Accounts = ["bellahartje@gmail.com:hartje77", "cabi2oo7@gmx.de:Decortin100", "sadraamirabadi@gmail.com:Nimasadra123", "meghanletendre98@gmail.com:Soccer101"];
 
@@ -95,6 +95,92 @@ const talkedRecently = new Set();
         message.delete(30000)
       })
     });
+     
+  if(command === "roblox") {
+    message.delete().catch();
+    let Accounts = ["bellahartje@gmail.com:hartje77", "cabi2oo7@gmx.de:Decortin100", "sadraamirabadi@gmail.com:Nimasadra123", "meghanletendre98@gmail.com:Soccer101"];
+
+    let result = Math.floor((Math.random() * Accounts.length));
+
+    let dEmbed = new Discord.RichEmbed()
+    .setColor(0x00AE86)
+    .setTitle("User has generated a account")
+    .setDescription(`${message.author.tag} has generated a account the account info is ${Accounts[result]}`);
+
+
+
+
+    let Gembed = new Discord.RichEmbed()
+    .setColor(0x00AE86)
+    .setTitle("Generated account")
+    .setDescription(Accounts[result]);
+
+    let Membed = new Discord.RichEmbed()
+    .setColor(0x00AE86)
+    .setTitle("Account generated")
+    .setDescription("Account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+
+
+    message.channel.send(Membed)
+    .then(message => {
+      message.delete(30000)
+    })
+
+    message.author.send(Gembed)
+    .then(message => {
+      message.delete(30000)
+    })
+
+    client.fetchUser('444609097233465347').then((user) => {
+      user.send(dEmbed)
+      .then(message => {
+        message.delete(30000)
+      })
+    });
+    
+       if(command === "minecraft") {
+    message.delete().catch();
+    let Accounts = ["bellahartje@gmail.com:hartje77", "cabi2oo7@gmx.de:Decortin100", "sadraamirabadi@gmail.com:Nimasadra123", "meghanletendre98@gmail.com:Soccer101"];
+
+    let result = Math.floor((Math.random() * Accounts.length));
+
+    let dEmbed = new Discord.RichEmbed()
+    .setColor(0x00AE86)
+    .setTitle("User has generated a account")
+    .setDescription(`${message.author.tag} has generated a account the account info is ${Accounts[result]}`);
+
+
+
+
+    let Gembed = new Discord.RichEmbed()
+    .setColor(0x00AE86)
+    .setTitle("Generated account")
+    .setDescription(Accounts[result]);
+
+    let Membed = new Discord.RichEmbed()
+    .setColor(0x00AE86)
+    .setTitle("Account generated")
+    .setDescription("Account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+
+
+    message.channel.send(Membed)
+    .then(message => {
+      message.delete(30000)
+    })
+
+    message.author.send(Gembed)
+    .then(message => {
+      message.delete(30000)
+    })
+
+    client.fetchUser('444609097233465347').then((user) => {
+      user.send(dEmbed)
+      .then(message => {
+        message.delete(30000)
+      })
+    });
+
+
 
 
 
