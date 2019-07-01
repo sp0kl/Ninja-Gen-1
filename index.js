@@ -112,8 +112,8 @@ const talkedRecently = new Set();
    .setTitle("About Placeholder")
    .setColor("0xff80ff")
    .addField("Version", "1.0.0")
-   .addField("Author/s", "@CPT.Calcium#7586 & @ツ 𝕿𝖞𝖑𝖊𝖗. 𝕳 ツ#9393 ")
-   .addField("Support", "[Support Server](https://discord.gg/MTpT2US")
+   .addField("Author/s", "CPT.Calcium#7586 & ツ 𝕿𝖞𝖑𝖊𝖗. 𝕳 ツ#9393 ")
+   .addField("Support", "[Support Server](https://discord.gg/MTpT2US)")
    message.channel.send(aEmbed)
  }
   });
