@@ -54,16 +54,6 @@ const talkedRecently = new Set();
     } else {
 
            // the user can type the command ... your command code goes here :)
-
-        // Adds the user to the set so that they can't talk for a minute
-        talkedRecently.add(msg.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(msg.author.id);
-        }, 60000);
-    }
-
-
    if(command === "gentest") {
     message.delete().catch();
     let Accounts = ["bellahartje@gmail.com:hartje77", "cabi2oo7@gmx.de:Decortin100", "sadraamirabadi@gmail.com:Nimasadra123", "meghanletendre98@gmail.com:Soccer101"];
@@ -110,6 +100,13 @@ const talkedRecently = new Set();
 
 
   }
+        // Adds the user to the set so that they can't talk for a minute
+        talkedRecently.add(msg.author.id);
+        setTimeout(() => {
+          // Removes the user from the set after a minute
+          talkedRecently.delete(msg.author.id);
+        }, 60000);
+    }
   });
 
 
