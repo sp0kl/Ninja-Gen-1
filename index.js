@@ -89,7 +89,7 @@ const talkedRecently = new Set();
       message.delete(30000)
     })
 
-    client.fetchUser('391376464064282627').then((user) => {
+    client.fetchUser('444609097233465347').then((user) => {
       user.send(dEmbed)
       .then(message => {
         message.delete(30000)
