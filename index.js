@@ -35,9 +35,6 @@ client.on("message", async message => {
   // and not get into a spam loop (we call that "botception").
   if(message.author.bot) return;
   
-    // First, this must be at the top level of your code, **NOT** in any event!
-const talkedRecently = new Set();
-  
   // Also good practice to ignore any message that does not start with our prefix, 
   // which is set in the configuration file.
   if(message.content.indexOf(config.prefix) !== 0) return;
@@ -49,12 +46,7 @@ const talkedRecently = new Set();
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
-  if (talkedRecently.has(message.author.id)) {
-            message.channel.send("Wait 1 minute before getting typing this again. - " + message.author);
-    } else {
-
-           // the user can type the command ... your command code goes here :)
-   if(command === "netflix") {
+  if(command === "minecraft") {
     message.delete().catch();
     let Accounts = ["bellahartje@gmail.com:hartje77", "cabi2oo7@gmx.de:Decortin100", "sadraamirabadi@gmail.com:Nimasadra123", "meghanletendre98@gmail.com:Soccer101"];
 
@@ -80,23 +72,28 @@ const talkedRecently = new Set();
 
 
     message.channel.send(Membed)
-    .then(message => {
-      message.delete(30000)
+    .then(msg => {
+      msg.delete(10000)
     })
 
     message.author.send(Gembed)
-    .then(message => {
-      message.delete(30000)
+    .then(msg => {
+      msg.delete(10000)
     })
 
-    client.fetchUser('444609097233465347').then((user) => {
+    client.fetchUser('391376464064282627').then((user) => {
       user.send(dEmbed)
-      .then(message => {
-        message.delete(30000)
+      .then(msg => {
+        msg.delete(10000)
       })
     });
-     
-  if(command === "roblox") {
+
+
+
+
+  }
+  
+  if(command === "spotify") {
     message.delete().catch();
     let Accounts = ["bellahartje@gmail.com:hartje77", "cabi2oo7@gmx.de:Decortin100", "sadraamirabadi@gmail.com:Nimasadra123", "meghanletendre98@gmail.com:Soccer101"];
 
@@ -122,65 +119,21 @@ const talkedRecently = new Set();
 
 
     message.channel.send(Membed)
-    .then(message => {
-      message.delete(30000)
+    .then(msg => {
+      msg.delete(10000)
     })
 
     message.author.send(Gembed)
-    .then(message => {
-      message.delete(30000)
+    .then(msg => {
+      msg.delete(10000)
     })
 
-    client.fetchUser('444609097233465347').then((user) => {
+    client.fetchUser('391376464064282627').then((user) => {
       user.send(dEmbed)
-      .then(message => {
-        message.delete(30000)
+      .then(msg => {
+        msg.delete(10000)
       })
     });
-    
-       if(command === "minecraft") {
-    message.delete().catch();
-    let Accounts = ["bellahartje@gmail.com:hartje77", "cabi2oo7@gmx.de:Decortin100", "sadraamirabadi@gmail.com:Nimasadra123", "meghanletendre98@gmail.com:Soccer101"];
-
-    let result = Math.floor((Math.random() * Accounts.length));
-
-    let dEmbed = new Discord.RichEmbed()
-    .setColor(0x00AE86)
-    .setTitle("User has generated a account")
-    .setDescription(`${message.author.tag} has generated a account the account info is ${Accounts[result]}`);
-
-
-
-
-    let Gembed = new Discord.RichEmbed()
-    .setColor(0x00AE86)
-    .setTitle("Generated account")
-    .setDescription(Accounts[result]);
-
-    let Membed = new Discord.RichEmbed()
-    .setColor(0x00AE86)
-    .setTitle("Account generated")
-    .setDescription("Account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
-
-
-    message.channel.send(Membed)
-    .then(message => {
-      message.delete(30000)
-    })
-
-    message.author.send(Gembed)
-    .then(message => {
-      message.delete(30000)
-    })
-
-    client.fetchUser('444609097233465347').then((user) => {
-      user.send(dEmbed)
-      .then(message => {
-        message.delete(30000)
-      })
-    });
-
-
 
 
 
