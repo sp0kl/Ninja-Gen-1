@@ -58,14 +58,14 @@ client.on("message", async message => {
   
   if(command === "minecraft") {
     message.delete().catch();
-    let Accounts = ["bellahartje@gmail.com:hartje77", "cabi2oo7@gmx.de:Decortin100", "sadraamirabadi@gmail.com:Nimasadra123", "meghanletendre98@gmail.com:Soccer101"];
+    let Accounts = ["COMING SOON"];
 
     let result = Math.floor((Math.random() * Accounts.length));
 
     let dEmbed = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setTitle("User has generated a account")
-    .setDescription(`${message.author.tag} has generated a account the account info is ${Accounts[result]}`);
+    .setDescription(`${message.author.tag} has generated a Minecraft account the account info is ${Accounts[result]}`);
 
 
 
@@ -78,7 +78,7 @@ client.on("message", async message => {
     let Membed = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setTitle("Account generated")
-    .setDescription("Account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+    .setDescription("Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
 
     message.channel.send(Membed)
@@ -112,7 +112,7 @@ client.on("message", async message => {
     let dEmbed = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setTitle("User has generated a account")
-    .setDescription(`${message.author.tag} has generated a account the account info is ${Accounts[result]}`);
+    .setDescription(`${message.author.tag} has generated a Spotify account the account info is ${Accounts[result]}`);
 
 
 
@@ -125,7 +125,7 @@ client.on("message", async message => {
     let Membed = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setTitle("Account generated")
-    .setDescription("Account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+    .setDescription("Your Spotify account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
 
     message.channel.send(Membed)
@@ -159,7 +159,7 @@ client.on("message", async message => {
     let dEmbed = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setTitle("User has generated a account")
-    .setDescription(`${message.author.tag} has generated a account the account info is ${Accounts[result]}`);
+    .setDescription(`${message.author.tag} has generated a Dominos account the account info is ${Accounts[result]}`);
 
 
 
@@ -172,7 +172,7 @@ client.on("message", async message => {
     let Membed = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setTitle("Account generated")
-    .setDescription("Account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+    .setDescription("Your Dominos account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
 
     message.channel.send(Membed)
@@ -199,14 +199,14 @@ client.on("message", async message => {
   
    if(command === "netflix") {
     message.delete().catch();
-    let Accounts = ["bellahartje@gmail.com:hartje77", "cabi2oo7@gmx.de:Decortin100", "sadraamirabadi@gmail.com:Nimasadra123", "meghanletendre98@gmail.com:Soccer101"];
+    let Accounts = ["COMING SOON"];
 
     let result = Math.floor((Math.random() * Accounts.length));
 
     let dEmbed = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setTitle("User has generated a account")
-    .setDescription(`${message.author.tag} has generated a account the account info is ${Accounts[result]}`);
+    .setDescription(`${message.author.tag} has generated a Netflix account the account info is ${Accounts[result]}`);
 
 
 
@@ -219,7 +219,7 @@ client.on("message", async message => {
     let Membed = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setTitle("Account generated")
-    .setDescription("Account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+    .setDescription("Your Netflix account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
 
     message.channel.send(Membed)
