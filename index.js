@@ -59,6 +59,15 @@ client.on("message", async message => {
    message.channel.send(hEmbed)
  }
   
+  if(command === "invite") {
+  message.delete().catch();	 
+   let hEmbed = new Discord.RichEmbed()
+   .setTitle("Ninja Gen Invite")
+   .setColor("0xff80ff")
+   .addField("You Can Invite Me Here", "[Invite Link](https://discordapp.com/api/oauth2/authorize?client_id=544049582959755264&permissions=2146958839&scope=bot)")
+   message.channel.send(hEmbed)
+ }
+  
   if(command === "minecraft") {
     message.delete().catch();
     let Accounts = ["COMING SOON"];
