@@ -51,6 +51,7 @@ client.on("message", async message => {
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Ninja Gen Commands")
    .setColor("0xff80ff")
+   .addField("Ninja Gen Prefix", "My Prefix Is: ``gen``")
    .addField("gen spotify", "Generates a Spotify account")
    .addField("gen dominos", "Generates a Dominos Account")
    message.channel.send(hEmbed)
@@ -77,7 +78,7 @@ client.on("message", async message => {
 
     let Membed = new Discord.RichEmbed()
     .setColor(0x00AE86)
-    .setTitle("Account generated")
+    .setTitle("Minecraft Account generated")
     .setDescription("Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
 
@@ -124,7 +125,7 @@ client.on("message", async message => {
 
     let Membed = new Discord.RichEmbed()
     .setColor(0x00AE86)
-    .setTitle("Account generated")
+    .setTitle("Spotify Account generated")
     .setDescription("Your Spotify account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
 
@@ -171,7 +172,7 @@ client.on("message", async message => {
 
     let Membed = new Discord.RichEmbed()
     .setColor(0x00AE86)
-    .setTitle("Account generated")
+    .setTitle("Dominos Account generated")
     .setDescription("Your Dominos account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
 
@@ -218,7 +219,7 @@ client.on("message", async message => {
 
     let Membed = new Discord.RichEmbed()
     .setColor(0x00AE86)
-    .setTitle("Account generated")
+    .setTitle("Netflix Account generated")
     .setDescription("Your Netflix account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
 
