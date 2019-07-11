@@ -51,6 +51,7 @@ client.on("message", async message => {
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Ninja Gen Commands")
    .setColor("0xff80ff")
+   .addField("Ninja Gen Prefix", "My prefix is ``gen``")
    .addField("gen spotify", "Generates a Spotify account")
    .addField("gen dominos", "Generates a Dominos Account")
    message.channel.send(hEmbed)
@@ -58,7 +59,7 @@ client.on("message", async message => {
   
   if(command === "minecraft") {
     message.delete().catch();
-    let Accounts = ["bellahartje@gmail.com:hartje77", "cabi2oo7@gmx.de:Decortin100", "sadraamirabadi@gmail.com:Nimasadra123", "meghanletendre98@gmail.com:Soccer101"];
+    let Accounts = ["OUT OF STOCK"];
 
     let result = Math.floor((Math.random() * Accounts.length));
 
@@ -199,7 +200,7 @@ client.on("message", async message => {
   
    if(command === "netflix") {
     message.delete().catch();
-    let Accounts = ["bellahartje@gmail.com:hartje77", "cabi2oo7@gmx.de:Decortin100", "sadraamirabadi@gmail.com:Nimasadra123", "meghanletendre98@gmail.com:Soccer101"];
+    let Accounts = ["OUT OF STOCK"];
 
     let result = Math.floor((Math.random() * Accounts.length));
 
