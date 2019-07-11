@@ -140,6 +140,53 @@ client.on("message", async message => {
 
   }
   
+    if(command === "dominos") {
+    message.delete().catch();
+    let Accounts = ["monkeysarsweet@aol.com:monkeys777,carter4design@gmail.com:free2bme,naoeli_mar@live.com:Korver26,ahroblak@gmail.com:Ginevra23,gui.golden@hotmail.com:1992Guiguigui,crystalttnguyen@icloud.com:Trang123,2016tabdur@gmail.com:Mybrothers3,sydhintz32@gmail.com:Shooter32,zach.sanchez24@gmail.com:flames0019,mgamess14@gmail.com:RockyMtn2002,damarislechuga@icloud.com:Damaris61649,caleb7299@gmail.com:Caleb7299,ahroblak@gmail.com:Ginevra23,Sahajsingh1998@gmail.com:Equinox64,JonathanNtale@hotmail.com:Microcom1,pcelatka2@gmail.com:Ovechkin8,hansenjason88@gmail.com:Roxydog88,leecharmy08@gmail.com:FutureMarine1,b.z.harbe@hotmail.com:Aa123aa123,raquelbaghdjian@yahoo.com:Shantig7,sydpayne11@gmail.com:Sp30966,560lister@gmail.com:Hunterjake238,fromdc2texas@gmail.com:Uiopvc,lalwanisarah@gmail.com:Sl2010957,paulomsaroda7@gmail.com:Paulom07,teemu.hakoniemi@hotmail.fi:Termosh132,"];
+
+    let result = Math.floor((Math.random() * Accounts.length));
+
+    let dEmbed = new Discord.RichEmbed()
+    .setColor(0x00AE86)
+    .setTitle("User has generated a account")
+    .setDescription(`${message.author.tag} has generated a account the account info is ${Accounts[result]}`);
+
+
+
+
+    let Gembed = new Discord.RichEmbed()
+    .setColor(0x00AE86)
+    .setTitle("Generated account")
+    .setDescription(Accounts[result]);
+
+    let Membed = new Discord.RichEmbed()
+    .setColor(0x00AE86)
+    .setTitle("Account generated")
+    .setDescription("Account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+
+
+    message.channel.send(Membed)
+    .then(msg => {
+      msg.delete(50000)
+    })
+
+    message.author.send(Gembed)
+    .then(msg => {
+      msg.delete(50000)
+    })
+
+    client.fetchUser('391376464064282627').then((user) => {
+      user.send(dEmbed)
+      .then(msg => {
+        msg.delete(50000)
+      })
+    });
+
+
+
+
+  }
+  
    if(command === "netflix") {
     message.delete().catch();
     let Accounts = ["bellahartje@gmail.com:hartje77", "cabi2oo7@gmx.de:Decortin100", "sadraamirabadi@gmail.com:Nimasadra123", "meghanletendre98@gmail.com:Soccer101"];
@@ -186,6 +233,7 @@ client.on("message", async message => {
 
 
   }
+  
     });
 
 
