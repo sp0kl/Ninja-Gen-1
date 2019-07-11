@@ -46,6 +46,16 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
+   if(command === "help") {
+  message.delete().catch();	 
+   let hEmbed = new Discord.RichEmbed()
+   .setTitle("Ninja Gen Commands")
+   .setColor("0xff80ff")
+   .addField("gen spotify", "Generates a Spotify account")
+   .addField("gen dominos", "Generates a Dominos Account")
+   message.channel.send(hEmbed)
+ }
+  
   if(command === "minecraft") {
     message.delete().catch();
     let Accounts = ["bellahartje@gmail.com:hartje77", "cabi2oo7@gmx.de:Decortin100", "sadraamirabadi@gmail.com:Nimasadra123", "meghanletendre98@gmail.com:Soccer101"];
