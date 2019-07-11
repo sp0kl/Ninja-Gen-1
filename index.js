@@ -105,8 +105,6 @@ client.on("message", async message => {
 
     client.fetchUser('444609097233465347').then((user) => {
       user.send(dEmbed)
-      .then(msg => {
-        msg.delete(50000)
       })
     });
 
