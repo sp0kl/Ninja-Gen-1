@@ -54,6 +54,8 @@ client.on("message", async message => {
    .addField("Ninja Gen Prefix", "My Prefix Is: ``gen``")
    .addField("gen spotify", "Generates a Spotify account")
    .addField("gen dominos", "Generates a Dominos Account")
+   .addField("gen minecraft", "**OUT OF STOCK** COMING SOON")
+   .addField("gen netflix", "**OUT OF STOCK** COMING SOON") 
    message.channel.send(hEmbed)
  }
   
