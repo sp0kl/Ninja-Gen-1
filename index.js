@@ -12,19 +12,19 @@ const snekfetch = require('snekfetch');
 
 client.on("ready",  async () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
-  client.user.setActivity(`Bot Help: "gen help"`);
+  client.user.setActivity(`gen help`);
 });
 
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
-  client.user.setActivity(`Bot Help: "gen help"`);
+  client.user.setActivity(`gen help`);
 });
 
 client.on("guildDelete", guild => {
   // this event triggers when the bot is removed from a guild.
   console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
-  client.user.setActivity(`Bot Help: "gen help"`);
+  client.user.setActivity(`gen help`);
 });
 
 
@@ -49,7 +49,7 @@ client.on("message", async message => {
    if(command === "help") {
   message.delete().catch();	 
    let hEmbed = new Discord.RichEmbed()
-   .setTitle("Ninja Gen Help :pushpin: ")
+   .setTitle("Ninja Gen Help :page_with_curl:")
    .setColor("0xff80ff")
    .addField("Ninja Gen Prefix", "My Prefix Is: ``gen``")
    .addField("gen spotify", "Generates a Spotify account")
