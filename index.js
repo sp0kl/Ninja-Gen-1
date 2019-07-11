@@ -73,7 +73,7 @@ client.on("message", async message => {
 
     let Gembed = new Discord.RichEmbed()
     .setColor(0x00AE86)
-    .setTitle("Generated account")
+    .setTitle("Your Minecraft account")
     .setDescription(Accounts[result]);
 
     let Membed = new Discord.RichEmbed()
@@ -120,7 +120,7 @@ client.on("message", async message => {
 
     let Gembed = new Discord.RichEmbed()
     .setColor(0x00AE86)
-    .setTitle("Generated account")
+    .setTitle("Your Spotify account")
     .setDescription(Accounts[result]);
 
     let Membed = new Discord.RichEmbed()
@@ -167,7 +167,7 @@ client.on("message", async message => {
 
     let Gembed = new Discord.RichEmbed()
     .setColor(0x00AE86)
-    .setTitle("Generated account")
+    .setTitle("Your Dominos account")
     .setDescription(Accounts[result]);
 
     let Membed = new Discord.RichEmbed()
@@ -214,7 +214,7 @@ client.on("message", async message => {
 
     let Gembed = new Discord.RichEmbed()
     .setColor(0x00AE86)
-    .setTitle("Generated account")
+    .setTitle("Your Netflix account")
     .setDescription(Accounts[result]);
 
     let Membed = new Discord.RichEmbed()
