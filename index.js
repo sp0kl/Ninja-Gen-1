@@ -52,10 +52,20 @@ client.on("message", async message => {
    .setTitle("Ninja Gen Help :page_with_curl:")
    .setColor("0xff80ff")
    .addField("Ninja Gen Prefix", "My Prefix Is: ``gen``")
-   .addField("gen spotify", "Generates a Spotify account")
-   .addField("gen dominos", "Generates a Dominos Account")
-   .addField("gen minecraft", "**OUT OF STOCK** COMING SOON")
-   .addField("gen netflix", "**OUT OF STOCK** COMING SOON") 
+   .addField("gen categories", "Shows all account categories and stock")
+   .addField("gen invite", "Generates a invite link")
+   message.channel.send(hEmbed)
+ }
+  
+   if(command === "categories") {
+  message.delete().catch();	 
+   let hEmbed = new Discord.RichEmbed()
+   .setTitle("Ninja Gen Help :page_with_curl:")
+   .setColor("0xff80ff")
+   .addField("Minecraft", "**0** Accounts available")
+   .addField("Spotify", "**4** Accounts available")
+   .addField("Dominos", "**20** Accounts available")
+   .addField("Netflix", "**0** Accounts available")
    message.channel.send(hEmbed)
  }
   
