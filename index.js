@@ -66,7 +66,7 @@ client.on("message", async message => {
    .setDescription("Here you can see a list of accounts i offer and how many are currently in stock")
    .setColor("0xff80ff")
    .addField("Minecraft", "**0** Accounts available")
-   .addField("Spotify", "**4** Accounts available")
+   .addField("Spotify", "**19** Accounts available")
    .addField("Dominos", "**20** Accounts available")
    .addField("Netflix", "**0** Accounts available")
    .addField("CrunchyRoll", "**0** Accounts available")
