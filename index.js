@@ -73,7 +73,7 @@ client.on("message", async message => {
    .addField("Fortnite", "**0** Accounts available")
    .addField("NordVPN", "**0** Accounts available")
    .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
-   .setThumbnail(`${message.user.avatarURL}`)
+   .setThumbnail(`${message.author.avatarURL}`)
    message.channel.send(hEmbed)
  }
   
