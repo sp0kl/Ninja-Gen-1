@@ -67,11 +67,13 @@ client.on("message", async message => {
    .addField("Spotify", "**4** Accounts available")
    .addField("Dominos", "**20** Accounts available")
    .addField("Netflix", "**0** Accounts available")
-   .addField("CrunchyRoll", "**0** Accounts available, ``Command Disabled``")
-   .addField("Uplay", "**0** Accounts available, ``Command Disabled``")
-   .addField("Origin", "**0** Accounts available, ``Command Disabled``")
-   .addField("Fortnite", "**0** Accounts available, ``Command Disabled``")
-   .addField("NordVPN", "**0** Accounts available, ``Command Disabled``")          
+   .addField("CrunchyRoll", "**0** Accounts available")
+   .addField("Uplay", "**0** Accounts available")
+   .addField("Origin", "**0** Accounts available")
+   .addField("Fortnite", "**0** Accounts available")
+   .addField("NordVPN", "**0** Accounts available")
+   .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+   .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
    message.channel.send(hEmbed)
  }
   
