@@ -61,12 +61,17 @@ client.on("message", async message => {
   message.delete().catch();	 
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Account Categories")
-   .setDescription("Here you can see a list of accounts i offer and how many are in stock")
+   .setDescription("Here you can see a list of accounts i offer and how many are currently in stock")
    .setColor("0xff80ff")
    .addField("Minecraft", "**0** Accounts available")
    .addField("Spotify", "**4** Accounts available")
    .addField("Dominos", "**20** Accounts available")
    .addField("Netflix", "**0** Accounts available")
+   .addField("CrunchyRoll", "**0** Accounts available, ``Command Disabled``)
+   .addField("Uplay", "**0** Accounts available, ``Command Disabled``")
+   .addField("Origin", "**0** Accounts available, ``Command Disabled``")
+   .addField("Fortnite", "**0** Accounts available, ``Command Disabled``")
+   .addField("NordVPN", "**0** Accounts available, ``Command Disabled``")          
    message.channel.send(hEmbed)
  }
   
