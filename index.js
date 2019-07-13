@@ -54,6 +54,8 @@ client.on("message", async message => {
    .addField("Ninja Gen Prefix", "My Prefix Is: ``gen``")
    .addField("gen categories", "Shows all account categories and stock")
    .addField("gen invite", "Generates a invite link")
+   .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+   .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
    message.channel.send(hEmbed)
  }
   
@@ -84,6 +86,8 @@ client.on("message", async message => {
    .setDescription("Interested in inviting me to your server? Use the link below")
    .setColor("0xff80ff")
    .addField("You Can Invite Me Here", "[Ninja Gen Invite Link](https://discordapp.com/api/oauth2/authorize?client_id=544049582959755264&permissions=2146958839&scope=bot)")
+    .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+   .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
    message.channel.send(hEmbed)
  }
   
