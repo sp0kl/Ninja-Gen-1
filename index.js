@@ -310,14 +310,11 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
   if(command === "bugreport") {
   message.delete().catch();
   if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen bugreport @Ninja Gen#1378 {What you want to report}``, Example: ``gen bugreport @Ninja Gen#1378 Spotify accounts not working``");
-  let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-     if(!rUser) return message.channel.send("Couldn't find the mentioned user");
      let reason = args.join(" ").slice(22);
 
      let bugEmbed = new Discord.RichEmbed()
      .setDescription("Reports")
      .setColor("53380")
-     .addField("Reported User", `${rUser} with ID ${rUser.id }`)
      .addField("Reported by", `${message.author} with ID ${message.author.id}`)
      .addField("Channel", message.channel)
      .addField("Time", message.createdAt)
