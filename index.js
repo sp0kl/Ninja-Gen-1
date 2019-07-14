@@ -11,6 +11,7 @@ const snekfetch = require('snekfetch');
 
 client.on("ready",  async () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
+  client.user.setGame(`Bot Prefix: gen`, `https://www.twitch.tv/monstercat`);
   client.user.setGame(`gen help in ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
 });
 
