@@ -50,7 +50,7 @@ client.on("message", async message => {
   message.delete().catch();	 
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Ninja Gen Help :page_with_curl:")
-   .setColor("0xff80ff")
+   .setColor("#49e6b1")
    .addField("Ninja Gen Prefix", "My Prefix Is: ``gen``")
    .addField("gen categories", "Shows all account categories and stock")
    .addField("gen invite", "Generates a invite link")
@@ -64,7 +64,7 @@ client.on("message", async message => {
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Account Categories")
    .setDescription("Here you can see a list of accounts i offer and how many are currently in stock")
-   .setColor("0xff80ff")
+   .setColor("#49e6b1")
    .addField("Minecraft", "**0** Accounts available")
    .addField("Spotify", "**19** Accounts available")
    .addField("Dominos", "**20** Accounts available")
@@ -84,7 +84,7 @@ client.on("message", async message => {
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Ninja Gen Invite")
    .setDescription("Interested in inviting me to your server? Use the link below")
-   .setColor("0xff80ff")
+   .setColor("#49e6b1")
    .addField("You Can Invite Me Here", "[Ninja Gen Invite Link](https://discordapp.com/api/oauth2/authorize?client_id=544049582959755264&permissions=2146958839&scope=bot)")
     .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
@@ -98,7 +98,7 @@ client.on("message", async message => {
     let result = Math.floor((Math.random() * Accounts.length));
 
     let dEmbed = new Discord.RichEmbed()
-    .setColor(0x00AE86)
+    .setColor(#49e6b1)
     .setTitle("User has generated a account")
     .setDescription(`${message.author.tag} has generated a Minecraft account the account info is ${Accounts[result]}`);
 
@@ -106,12 +106,12 @@ client.on("message", async message => {
 
 
     let Gembed = new Discord.RichEmbed()
-    .setColor(0x00AE86)
+    .setColor(#49e6b1)
     .setTitle("Your Minecraft account")
     .setDescription(Accounts[result]);
 
     let Membed = new Discord.RichEmbed()
-    .setColor(0x00AE86)
+    .setColor(#49e6b1)
     .setTitle("Minecraft Account generated")
     .setDescription("Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
@@ -142,7 +142,7 @@ client.on("message", async message => {
     let result = Math.floor((Math.random() * Accounts.length));
 
     let dEmbed = new Discord.RichEmbed()
-    .setColor(0x00AE86)
+    .setColor(#49e6b1)
     .setTitle("User has generated a account")
     .setDescription(`${message.author.tag} has generated a Spotify account the account info is ${Accounts[result]}`);
 
@@ -150,12 +150,12 @@ client.on("message", async message => {
 
 
     let Gembed = new Discord.RichEmbed()
-    .setColor(0x00AE86)
+    .setColor(#49e6b1)
     .setTitle("Your Spotify account")
     .setDescription(Accounts[result]);
 
     let Membed = new Discord.RichEmbed()
-    .setColor(0x00AE86)
+    .setColor(#49e6b1)
     .setTitle("Spotify Account generated")
     .setDescription("Your Spotify account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
@@ -186,7 +186,7 @@ client.on("message", async message => {
     let result = Math.floor((Math.random() * Accounts.length));
 
     let dEmbed = new Discord.RichEmbed()
-    .setColor(0x00AE86)
+    .setColor(#49e6b1)
     .setTitle("User has generated a account")
     .setDescription(`${message.author.tag} has generated a Dominos account the account info is ${Accounts[result]}`);
 
@@ -194,12 +194,12 @@ client.on("message", async message => {
 
 
     let Gembed = new Discord.RichEmbed()
-    .setColor(0x00AE86)
+    .setColor(#49e6b1)
     .setTitle("Your Dominos account")
     .setDescription(Accounts[result]);
 
     let Membed = new Discord.RichEmbed()
-    .setColor(0x00AE86)
+    .setColor(#49e6b1)
     .setTitle("Dominos Account generated")
     .setDescription("Your Dominos account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
@@ -230,7 +230,7 @@ client.on("message", async message => {
     let result = Math.floor((Math.random() * Accounts.length));
 
     let dEmbed = new Discord.RichEmbed()
-    .setColor(0x00AE86)
+    .setColor(#49e6b1)
     .setTitle("User has generated a account")
     .setDescription(`${message.author.tag} has generated a Netflix account the account info is ${Accounts[result]}`);
 
@@ -238,12 +238,12 @@ client.on("message", async message => {
 
 
     let Gembed = new Discord.RichEmbed()
-    .setColor(0x00AE86)
+    .setColor(#49e6b1)
     .setTitle("Your Netflix account")
     .setDescription(Accounts[result]);
 
     let Membed = new Discord.RichEmbed()
-    .setColor(0x00AE86)
+    .setColor(#49e6b1)
     .setTitle("Netflix Account generated")
     .setDescription("Your Netflix account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
@@ -266,6 +266,94 @@ client.on("message", async message => {
 
 
   }
+  
+   if(command === "serverinfo") {
+      message.delete().catch();
+    let sicon = message.guild.iconURL;
+    let serverembed = new Discord.RichEmbed()
+    .setAuthor(`${message.guild.name} - Informations`, message.guild.iconURL)
+    .setDescription("Server Information")
+    .setColor("#49e6b1")
+    .setThumbnail(sicon)
+    .addField("Server Owner", message.guild.owner, true)
+    .addField("Server Name", message.guild.name, true)
+    .addField('Server region', message.guild.region, true)
+    .addField("Created On", message.guild.createdAt, true)
+    .addField("You Joined", message.member.joinedAt, true)
+    .addField('Channel count', message.guild.channels.size, true)
+    .addField('Total member count', message.guild.memberCount)
+    .addField('Verification level', message.guild.verificationLevel, true)
+    .setFooter('Guild created at:')
+    .setTimestamp(message.guild.createdAt);
+
+    message.channel.send(serverembed);
+    }
+  
+    if(command === "suggest") {
+    const sayMessage = args.join(" ");
+    message.delete().catch();
+if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen suggest {What you want to suggest}``, Example: ``gen suggest Add fortniote accounts`` ");
+
+
+    let sEmbed = new Discord.RichEmbed()
+    .setTitle("Suggestion")
+    .setColor("#49e6b1")
+    .addField("User", message.author)
+    .addField("UserID", `${message.author.id}`)
+    .addField("Server", `${message.channel.guild}`)
+    .addField("Suggested", `${sayMessage}`)
+
+
+
+client.guilds.find("id","586817026522218507").channels.find("name","suggestions").send(sEmbed);
+message.reply("Suggestion has been sent");
+console.log(`<@${message.author.id}> has used the suggest command in ${message.channel.guild} channel ${message.channel}`)
+  }
+  
+  if(command === "bugreport") {
+  message.delete().catch();
+  if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen bugreport @Ninja Gen#1378 {What you want to report}``, Example: ``gen bugreport @Ninja Gen#1378 Spotify accounts not working``");
+  let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+     if(!rUser) return message.channel.send("Couldn't find the mentioned user");
+     let reason = args.join(" ").slice(22);
+
+     let reportEmbed = new Discord.RichEmbed()
+     .setDescription("Reports")
+     .setColor("#49e6b1")
+     .addField("Reported User", `${rUser} with ID ${rUser.id }`)
+     .addField("Reported by", `${message.author} with ID ${message.author.id}`)
+     .addField("Channel", message.channel)
+     .addField("Time", message.createdAt)
+     .addField("Reason", reason)
+
+     let reportChannel = message.guild.channels.find("name", "reports");
+     if(!reportChannel) return message.channel.send(`<@${message.author.id}> Couldn't find the reports channel`);
+
+     message.delete().catch(O_o=>{});
+     reportChannel.send(reportEmbed);
+  } 
+  
+  if(command === "about") {
+   message.delete().catch();
+   let aEmbed = new Discord.RichEmbed()
+   .setTitle("About Ninja Bot")
+   .setColor("#49e6b1")
+   .addField("Version", "Beta v1.00")
+   .addField("Author", "ツ 𝕿𝖞𝖑𝖊𝖗. 𝕳 ツ#9393")
+   .addField("Ninja Bot Support", "[Support Server](https://discord.gg/BkGDvwa)")
+   message.channel.send(aEmbed)
+ }
+ 
+if(command === "serverlist") {
+  message.delete().catch();
+  var list = client.guilds.array().sort();
+  let botembed = new Discord.RichEmbed()
+  .setTitle(list)
+  .setColor("#49e6b1")
+  message.channel.send(botembed);
+
+}
+
   
     });
 
