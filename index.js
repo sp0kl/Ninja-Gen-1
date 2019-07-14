@@ -55,7 +55,7 @@ client.on("message", async message => {
    .setColor("53380")
    .setDescription(`<@${message.author.id}>` + " My general command usage can be found below")
    .addField("About The Bot", "``gen about`` - Shows you some info about me and my team")
-   .addField('Ninja Gen Commands", "``gen commands`` - Shows a list of Generator/Account commands")
+   .addField("Generator Commands", "``gen commands`` - Shows a list of Account Generator commands")
    .addField("Generator Categories", "``gen catergories`` - Shows all account categories and stock")
    .addField("Invite The Bot", "``gen invite`` - Generates a invite link")
    .addField("Report A Bug", "``gen bugreport {Reason}`` - Sends a message to the support server so the devs know about the bug you reported")
