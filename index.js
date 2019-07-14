@@ -311,7 +311,7 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
   message.delete().catch();
   if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen bugreport @Ninja Gen#1378 {What you want to report}``, Example: ``gen bugreport @Ninja Gen#1378 Spotify accounts not working`` **MAKE SURE YOU MENTION THE BOT**");
       let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-     if(!rUser) return message.channel.send(":shrug: You forgot to mention me, please make sure you @mention me");
+     if(!rUser) return message.channel.send("<@${message.author.id}> You forgot to mention me :shrug: please make sure you @mention me");
     let reason = args.join(" ").slice(22);
 
      let bugEmbed = new Discord.RichEmbed()
@@ -325,6 +325,7 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
 
      let reportChannel = client.guilds.find("id","586817026522218507").channels.find("name","bug-reports").send(bugEmbed);
+    message.reply("<@${message.author.id}> Your bug report has been sent and our Devs will investigate it ASAP");
      if(!reportChannel) return message.channel.send(`<@${message.author.id}> Couldn't find the reports channel`);
 
      message.delete().catch(O_o=>{});
