@@ -145,6 +145,8 @@ client.on("message", async message => {
     .setDescription(`<@${message.author.id}>` + " Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
     
     message.channel.send(Membed)
+      .then(msg => {
+      msg.delete(80000)
     })
     message.author.send(Gembed)
     .then(msg => {
@@ -185,6 +187,8 @@ client.on("message", async message => {
 
 
     message.channel.send(Membed)
+    .then(msg => {
+      msg.delete(80000)
     })
 
     message.author.send(Gembed)
@@ -227,6 +231,8 @@ client.on("message", async message => {
 
 
     message.channel.send(Membed)
+      .then(msg => {
+      msg.delete(80000)
     })
 
     message.author.send(Gembed)
@@ -269,6 +275,8 @@ client.on("message", async message => {
 
 
     message.channel.send(Membed)
+      .then(msg => {
+      msg.delete(80000)
     })
 
     message.author.send(Gembed)
@@ -311,6 +319,184 @@ client.on("message", async message => {
 
 
     message.channel.send(Membed)
+      .then(msg => {
+      msg.delete(80000)
+    })
+
+    message.author.send(Gembed)
+    .then(msg => {
+      msg.delete(80000)
+    })
+
+    client.fetchUser('444609097233465347').then((user) => {
+      user.send(dEmbed)
+    });
+
+
+
+
+  }
+  
+   if(command === "crunchyroll") {
+    message.delete().catch();
+    let Accounts = ["COMING SOON"];
+
+    let result = Math.floor((Math.random() * Accounts.length));
+
+    let dEmbed = new Discord.RichEmbed()
+    .setColor(53380)
+    .setTitle("User has generated a account")
+    .setDescription(`${message.author.tag} has generated a  CrunchyRoll account the account info is ${Accounts[result]}`);
+
+
+
+
+    let Gembed = new Discord.RichEmbed()
+    .setColor(53380)
+    .setTitle("Your CrunchyRoll account")
+    .setDescription(Accounts[result]);
+
+    let Membed = new Discord.RichEmbed()
+    .setColor(53380)
+    .setTitle("Netflix Account generated")
+    .setDescription(`<@${message.author.id}>` + " Your CrunchyRoll account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+
+
+    message.channel.send(Membed)
+      .then(msg => {
+      msg.delete(80000)
+    })
+
+    message.author.send(Gembed)
+    .then(msg => {
+      msg.delete(80000)
+    })
+
+    client.fetchUser('444609097233465347').then((user) => {
+      user.send(dEmbed)
+    });
+
+
+
+
+  }
+  
+   if(command === "uplay") {
+    message.delete().catch();
+    let Accounts = ["COMING SOON"];
+
+    let result = Math.floor((Math.random() * Accounts.length));
+
+    let dEmbed = new Discord.RichEmbed()
+    .setColor(53380)
+    .setTitle("User has generated a account")
+    .setDescription(`${message.author.tag} has generated a Uplay account the account info is ${Accounts[result]}`);
+
+
+
+
+    let Gembed = new Discord.RichEmbed()
+    .setColor(53380)
+    .setTitle("Your Netflix account")
+    .setDescription(Accounts[result]);
+
+    let Membed = new Discord.RichEmbed()
+    .setColor(53380)
+    .setTitle("Uplay Account generated")
+    .setDescription(`<@${message.author.id}>` + " Your Uplay account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+
+
+    message.channel.send(Membed)
+      .then(msg => {
+      msg.delete(80000)
+    })
+
+    message.author.send(Gembed)
+    .then(msg => {
+      msg.delete(80000)
+    })
+
+    client.fetchUser('444609097233465347').then((user) => {
+      user.send(dEmbed)
+    });
+
+
+
+
+  }
+  
+   if(command === "Origin") {
+    message.delete().catch();
+    let Accounts = ["COMING SOON"];
+
+    let result = Math.floor((Math.random() * Accounts.length));
+
+    let dEmbed = new Discord.RichEmbed()
+    .setColor(53380)
+    .setTitle("User has generated a account")
+    .setDescription(`${message.author.tag} has generated a Origin account the account info is ${Accounts[result]}`);
+
+
+
+
+    let Gembed = new Discord.RichEmbed()
+    .setColor(53380)
+    .setTitle("Your Netflix account")
+    .setDescription(Accounts[result]);
+
+    let Membed = new Discord.RichEmbed()
+    .setColor(53380)
+    .setTitle("Origin Account generated")
+    .setDescription(`<@${message.author.id}>` + " Your Origin account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+
+
+    message.channel.send(Membed)
+      .then(msg => {
+      msg.delete(80000)
+    })
+
+    message.author.send(Gembed)
+    .then(msg => {
+      msg.delete(80000)
+    })
+
+    client.fetchUser('444609097233465347').then((user) => {
+      user.send(dEmbed)
+    });
+
+
+
+
+  }
+  
+   if(command === "fortnite) {
+    message.delete().catch();
+    let Accounts = ["COMING SOON"];
+
+    let result = Math.floor((Math.random() * Accounts.length));
+
+    let dEmbed = new Discord.RichEmbed()
+    .setColor(53380)
+    .setTitle("User has generated a account")
+    .setDescription(`${message.author.tag} has generated a Fortnite account the account info is ${Accounts[result]}`);
+
+
+
+
+    let Gembed = new Discord.RichEmbed()
+    .setColor(53380)
+    .setTitle("Your Netflix account")
+    .setDescription(Accounts[result]);
+
+    let Membed = new Discord.RichEmbed()
+    .setColor(53380)
+    .setTitle("Fortnite Account generated")
+    .setDescription(`<@${message.author.id}>` + " Your Fortnite account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+
+
+    message.channel.send(Membed)
+      .then(msg => {
+      msg.delete(80000)
     })
 
     message.author.send(Gembed)
