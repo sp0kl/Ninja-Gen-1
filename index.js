@@ -327,7 +327,7 @@ if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen bugreport {
 
 
 
- let reportChannel = client.guilds.find("id", "586817026522218507").channels.find("name","bug-reports).send(bugEmbed);
+ let reportChannel = client.guilds.find("id", "586817026522218507").channels.find("name","bug-reports").send(bugEmbed);
      if(!reportChannel) return message.channel.send(`<@${message.author.id}> Couldn't find the reports channel`);
   
 console.log(`<@${message.author.id}> has used the bug reports command in the server ${message.channel.guild} channel ${message.channel}`)
