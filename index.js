@@ -82,7 +82,7 @@ client.on("message", async message => {
   message.delete().catch();	 
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Ninja Gen Invite")
-   .setDescription(message.author.tag + " Interested in inviting me to your server? Use the link below")
+   .setDescription(`<@${message.author.id}>` + " Interested in inviting me to your server? Use the link below")
    .setColor("53380")
    .addField("You Can Invite Me Here", "[Ninja Gen Invite Link](https://discordapp.com/api/oauth2/authorize?client_id=544049582959755264&permissions=2146958839&scope=bot)")
     .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
@@ -112,7 +112,7 @@ client.on("message", async message => {
     let Membed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("Minecraft Account generated")
-    .setDescription(message.author.tag + " Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+    .setDescription(`<@${message.author.id}>` + " Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
     message.channel.send(Membed)
     .then(msg => {
       msg.delete(50000)
@@ -152,7 +152,7 @@ client.on("message", async message => {
     let Membed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("Spotify Account generated")
-    .setDescription(message.author.tag + " Your Spotify account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+    .setDescription(`<@${message.author.id}>` + " Your Spotify account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
 
     message.channel.send(Membed)
@@ -196,7 +196,7 @@ client.on("message", async message => {
     let Membed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("Dominos Account generated")
-    .setDescription(message.author.tag + "Your Dominos account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+    .setDescription(`<@${message.author.id}>` + "Your Dominos account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
 
     message.channel.send(Membed)
@@ -240,7 +240,7 @@ client.on("message", async message => {
     let Membed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("Netflix Account generated")
-    .setDescription(message.author.tag + " Your Netflix account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+    .setDescription(`<@${message.author.id}>` + " Your Netflix account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
 
     message.channel.send(Membed)
@@ -308,10 +308,11 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
   }
   
   if(command === "bugreport") {
+  let bot = client.users.get('544049582959755264');
   message.delete().catch();
   if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen bugreport @Ninja Gen#1378 {What you want to report}``, Example: ``gen bugreport @Ninja Gen#1378 Spotify accounts not working`` **MAKE SURE YOU MENTION THE BOT**");
       let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-     if(!rUser) return message.channel.send(`<@${message.author.id}> You forgot to mention me :shrug: please make sure you @mention me`);
+     if(!rUser) return message.channel.send(`<@${message.author.id}> You forgot to mention me :shrug: please make sure you mention me ``Example:`` <@${bot.id}>`);
      let reason = args.join(" ").slice(22);
      message.reply("Your bug report has been sent and our Devs will investigate it ASAP");
 
@@ -326,7 +327,7 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
 
      let reportChannel = client.guilds.find("id","586817026522218507").channels.find("name","bug-reports").send(bugEmbed);
-     if(!reportChannel) return message.channel.send(`<@${message.author.id}> Couldn't find the reports channel`);
+     if(!reportChannel) return message.channel.send(`<@${message.author.id}> Couldn't find the bug reports channel`);
 
      message.delete().catch(O_o=>{});
      reportChannel.send(bugEmbed);
