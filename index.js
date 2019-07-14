@@ -358,7 +358,7 @@ client.on("message", async message => {
 
     let Membed = new Discord.RichEmbed()
     .setColor(53380)
-    .setTitle("Netflix Account generated")
+    .setTitle("CrunchyRoll Account generated")
     .setDescription(`<@${message.author.id}>` + " Your CrunchyRoll account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
 
@@ -397,7 +397,7 @@ client.on("message", async message => {
 
     let Gembed = new Discord.RichEmbed()
     .setColor(53380)
-    .setTitle("Your Netflix account")
+    .setTitle("Your Uplay account")
     .setDescription(Accounts[result]);
 
     let Membed = new Discord.RichEmbed()
@@ -425,7 +425,7 @@ client.on("message", async message => {
 
   }
   
-   if(command === "Origin") {
+   if(command === "origin") {
     message.delete().catch();
     let Accounts = ["COMING SOON"];
 
@@ -441,7 +441,7 @@ client.on("message", async message => {
 
     let Gembed = new Discord.RichEmbed()
     .setColor(53380)
-    .setTitle("Your Netflix account")
+    .setTitle("Your Origin account")
     .setDescription(Accounts[result]);
 
     let Membed = new Discord.RichEmbed()
@@ -469,7 +469,7 @@ client.on("message", async message => {
 
   }
   
-   if(command === "fortnite) {
+   if(command === "fortnite") {
     message.delete().catch();
     let Accounts = ["COMING SOON"];
 
@@ -485,7 +485,7 @@ client.on("message", async message => {
 
     let Gembed = new Discord.RichEmbed()
     .setColor(53380)
-    .setTitle("Your Netflix account")
+    .setTitle("Your Fortnite account")
     .setDescription(Accounts[result]);
 
     let Membed = new Discord.RichEmbed()
