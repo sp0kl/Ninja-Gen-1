@@ -287,11 +287,11 @@ client.on("message", async message => {
     if(command === "suggest") {
     const sayMessage = args.join(" ");
     message.delete().catch();
-if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen suggest {What you want to suggest}``, Example: ``gen suggest Add fortniote accounts`` ");
+if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen suggest {What you want to suggest}``, Example: ``gen suggest Add fortnite accounts`` ");
 
 
     let sEmbed = new Discord.RichEmbed()
-    .setTitle("Suggestion")
+    .setTitle("Ninja Gen Suggestions")
     .setColor("53380")
     .addField("User", message.author)
     .addField("UserID", `${message.author.id}`)
@@ -299,40 +299,37 @@ if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen suggest {Wh
     .addField("Suggested", `${sayMessage}`)
     .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
-
+    }
 
 
 client.guilds.find("id","586817026522218507").channels.find("name","suggestions").send(sEmbed);
-message.reply("Suggestion has been sent");
+message.reply(`<@${message.author.id}> Your suggestion has been sent`);
 console.log(`<@${message.author.id}> has used the suggest command in ${message.channel.guild} channel ${message.channel}`)
   }
-  
-  if(command === "bugreport") {
-  let bot = client.users.get('544049582959755264');
-  message.delete().catch();
-  if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen bugreport @Ninja Gen#1378 {What you want to report}``, Example: ``gen bugreport @Ninja Gen#1378 Spotify accounts not working`` **MAKE SURE YOU MENTION THE BOT**");
-      let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-     if(!rUser) return message.channel.send(`<@${message.author.id}> You forgot to mention me :shrug: please make sure you mention me **Example:** <@${bot.id}>`);
-     let reason = args.join(" ").slice(22);
-     message.reply("Your bug report has been sent and our Devs will investigate it ASAP");
+          
+if(command === "bugreport") {
+    const sayMessage = args.join(" ");
+    message.delete().catch();
+if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen bugreport {What you want to report}``, Example: ``gen bugreport Netflix accounts not working`` ");
 
-     let bugEmbed = new Discord.RichEmbed()
+
+  let bugEmbed = new Discord.RichEmbed()
      .setDescription("Ninja Gen Bug Reports")
      .setColor("53380")
      .addField("Reported by", `${message.author} with ID ${message.author.id}`)
-     .addField("Server", message.guild.name)
-     .addField("Channel", message.channel)
-     .addField("Time", message.createdAt)
-     .addField("Reason", reason)
+     .addField("Server Name", message.guild.name)
+     .addField("Channel Name", message.channel)
+     .addField("Time Of Report", message.createdAt)
+     .addField("Reason For Report", reason)
      .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
 
-     let reportChannel = client.guilds.find("id","586817026522218507").channels.find("name","bug-reports").send(bugEmbed);
-     if(!reportChannel) return message.channel.send(`<@${message.author.id}> Couldn't find the bug reports channel`);
 
-     message.delete().catch(O_o=>{});
-     reportChannel.send(bugEmbed);
-  } 
+
+client.guilds.find("id","586817026522218507").channels.find("name","bug-reports").send(bugEmbed);
+message.reply(`<@${message.author.id}> Your bug report hes been sent`);
+console.log(`<@${message.author.id}> has used the bug reports command in the server ${message.channel.guild} channel ${message.channel}`)
+  }
   
   if(command === "about") {
    let owner = client.users.get('444609097233465347');
