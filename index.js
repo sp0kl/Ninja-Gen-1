@@ -62,7 +62,7 @@ client.on("message", async message => {
   message.delete().catch();
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Account Categories")
-   .setDescription(message.author.mention + " Here you can see a list of accounts i offer and how many are currently in stock")
+   .setDescription(message.author.tag + " Here you can see a list of accounts i offer and how many are currently in stock")
    .setColor("53380")
    .addField("Minecraft", "**0** Accounts available")
    .addField("Spotify", "**19** Accounts available")
@@ -82,7 +82,7 @@ client.on("message", async message => {
   message.delete().catch();	 
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Ninja Gen Invite")
-   .setDescription("<@${message.author.id}> Interested in inviting me to your server? Use the link below")
+   .setDescription(message.author.tag + " Interested in inviting me to your server? Use the link below")
    .setColor("53380")
    .addField("You Can Invite Me Here", "[Ninja Gen Invite Link](https://discordapp.com/api/oauth2/authorize?client_id=544049582959755264&permissions=2146958839&scope=bot)")
     .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
@@ -112,7 +112,7 @@ client.on("message", async message => {
     let Membed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("Minecraft Account generated")
-    .setDescription("<@${message.author.id}> Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+    .setDescription(message.author.tag + " Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
     message.channel.send(Membed)
     .then(msg => {
@@ -352,7 +352,7 @@ if(command === "serverlist") {
   message.delete().catch();
   var list = client.guilds.array().sort();
   let botembed = new Discord.RichEmbed()
-  .setTitle(list)
+  .setTitle("Server List")
   .setColor("53380")
   message.channel.send(botembed);
 
