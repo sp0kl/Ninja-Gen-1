@@ -62,7 +62,7 @@ client.on("message", async message => {
   message.delete().catch();
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Account Categories")
-   .setDescription(<@message.author.id> + " Here you can see a list of accounts i offer and how many are currently in stock")
+   .setDescription(message.author.mention + " Here you can see a list of accounts i offer and how many are currently in stock")
    .setColor("53380")
    .addField("Minecraft", "**0** Accounts available")
    .addField("Spotify", "**19** Accounts available")
@@ -340,7 +340,7 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
    .setTitle("About Ninja Gen")
    .setColor("53380")
    .addField("Version", "Beta v1.00")
-   .addField("Author", "@${message.author.id}")
+   .addField("Author", "bot.owner.tag")
    .addField("Ninja Gen Support", "[Support Server](https://discord.gg/RBSm9zK)")
      .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
