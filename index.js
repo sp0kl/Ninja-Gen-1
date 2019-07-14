@@ -113,9 +113,7 @@ client.on("message", async message => {
     .setColor(53380)
     .setTitle("Minecraft Account generated")
     .setDescription(message.author.tag + " Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
-    message.channel.send(Membed).then(sentMessage => {
-      let emoji = message.guild.emojis.find('name', "white_check_mark");
-      message.react(emoji);
+    message.channel.send(Membed)
     .then(msg => {
       msg.delete(50000)
     })
@@ -316,7 +314,7 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
      if(!rUser) return message.channel.send("Couldn't find the mentioned user");
      let reason = args.join(" ").slice(22);
 
-     let reportEmbed = new Discord.RichEmbed()
+     let bugEmbed = new Discord.RichEmbed()
      .setDescription("Reports")
      .setColor("53380")
      .addField("Reported User", `${rUser} with ID ${rUser.id }`)
@@ -327,11 +325,11 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
      .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
 
-     let reportChannel = message.guild.channels.find("name", "reports");
+     let reportChannel = client.guilds.find("id","586817026522218507").channels.find("name","bug-reports").send(bugEmbed);
      if(!reportChannel) return message.channel.send(`<@${message.author.id}> Couldn't find the reports channel`);
 
      message.delete().catch(O_o=>{});
-     reportChannel.send(reportEmbed);
+     reportChannel.send(bugEmbed);
   } 
   
   if(command === "about") {
