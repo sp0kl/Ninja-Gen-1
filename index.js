@@ -71,7 +71,7 @@ client.on("message", async message => {
   message.delete().catch();
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Account Categories")
-   .setDescription(`<@${message.author.id}>` + " Here you can see a list of accounts i offer and how many are currently in stock")
+   .setDescription(`<@${message.author.id}>` + " Here you can see a list of accounts i offer and how many are currently in stock **Please note:** Some accounts may not work, you can always join our support server or DM us to let us know so we can remove them :thumbsup:")
    .setColor("53380")
    .addField("Minecraft", "**0** Accounts available")
    .addField("Spotify", "**19** Accounts available")
