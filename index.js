@@ -144,12 +144,10 @@ client.on("message", async message => {
     .setTitle("Minecraft Account generated")
     .setDescription(`<@${message.author.id}>` + " Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
     message.channel.send(Membed)
-    .then(msg => {
-      msg.delete(50000)
     })
     message.author.send(Gembed)
     .then(msg => {
-      msg.delete(50000)
+      msg.delete(80000)
     })
 
     client.fetchUser('444609097233465347').then((user) => {
@@ -186,13 +184,11 @@ client.on("message", async message => {
 
 
     message.channel.send(Membed)
-    .then(msg => {
-      msg.delete(50000)
     })
 
     message.author.send(Gembed)
     .then(msg => {
-      msg.delete(50000)
+      msg.delete(80000)
     })
 
     client.fetchUser('444609097233465347').then((user) => {
@@ -230,13 +226,11 @@ client.on("message", async message => {
 
 
     message.channel.send(Membed)
-    .then(msg => {
-      msg.delete(50000)
     })
 
     message.author.send(Gembed)
     .then(msg => {
-      msg.delete(50000)
+      msg.delete(80000)
     })
 
     client.fetchUser('444609097233465347').then((user) => {
@@ -274,13 +268,10 @@ client.on("message", async message => {
 
 
     message.channel.send(Membed)
-    .then(msg => {
-      msg.delete(50000)
-    })
 
     message.author.send(Gembed)
     .then(msg => {
-      msg.delete(50000)
+      msg.delete(80000)
     })
 
     client.fetchUser('444609097233465347').then((user) => {
@@ -301,7 +292,7 @@ client.on("message", async message => {
     let dEmbed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("User has generated a account")
-    .setDescription(`${message.author.tag} has generated a Dominos account the account info is ${Accounts[result]}`);
+    .setDescription(`${message.author.tag} has generated a NordVPN account the account info is ${Accounts[result]}`);
 
 
 
@@ -318,13 +309,11 @@ client.on("message", async message => {
 
 
     message.channel.send(Membed)
-    .then(msg => {
-      msg.delete(50000)
     })
 
     message.author.send(Gembed)
     .then(msg => {
-      msg.delete(50000)
+      msg.delete(80000)
     })
 
     client.fetchUser('444609097233465347').then((user) => {
