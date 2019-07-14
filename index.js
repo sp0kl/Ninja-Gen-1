@@ -341,7 +341,7 @@ console.log(`<@${message.author.id}> has used the bug reports command in the ser
    .setColor("53380")
    .addField("Version", "Beta v1.00")
    .addField("Ownwer/Author", `<@${owner.id}>`)
-   .addField("Coders/Developers", `<@${owner.id} **&** <@${dev.id}>`)
+   .addField("Coders/Developers", `<@${owner.id}> **&** <@${dev.id}>`)
    .addField("Ninja Gen Support", "[Support Server](https://discord.gg/RBSm9zK)")
      .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
