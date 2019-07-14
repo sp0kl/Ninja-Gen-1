@@ -154,7 +154,7 @@ client.on("message", async message => {
     let Membed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("Spotify Account generated")
-    .setDescription("<@${message.author.id}> Your Spotify account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+    .setDescription("${message.author.tag} Your Spotify account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
 
     message.channel.send(Membed)
@@ -198,7 +198,7 @@ client.on("message", async message => {
     let Membed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("Dominos Account generated")
-    .setDescription("<@${message.author.id}> Your Dominos account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+    .setDescription("${message.author.tag} Your Dominos account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
 
     message.channel.send(Membed)
