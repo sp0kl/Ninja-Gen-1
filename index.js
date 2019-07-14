@@ -53,8 +53,9 @@ client.on("message", async message => {
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Ninja Gen Help")
    .setColor("53380")
-   .setDescription(`<@${message.author.id}>` + " Here is a list of my commands and usage")
+   .setDescription(`<@${message.author.id}>` + " My general command usage can be found below")
    .addField("About The Bot", "``gen about`` - Shows you some info about me and my team")
+   .addField('Ninja Gen Commands", "``gen commands`` - Shows a list of Generator/Account commands")
    .addField("Generator Categories", "``gen catergories`` - Shows all account categories and stock")
    .addField("Invite The Bot", "``gen invite`` - Generates a invite link")
    .addField("Report A Bug", "``gen bugreport {Reason}`` - Sends a message to the support server so the devs know about the bug you reported")
@@ -62,6 +63,26 @@ client.on("message", async message => {
    .addField("Developer Reminder", "``gen reminder`` - Sends a reminder to the support server **DEVELOPERS & BOT OWNER ONLY**")
    .addField("List Of Servers", "``gen serverlist`` - Shows a list of servers i am in")
    .addField("Current Server Info", "``gen serverinfo`` - Shows information for the current server")
+   .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+   .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
+   message.channel.send(hEmbed)
+ }
+  
+   if(command === "commands") {
+  message.delete().catch();	 
+   let hEmbed = new Discord.RichEmbed()
+   .setTitle("Ninja Gen Help")
+   .setColor("53380")
+   .setDescription(`<@${message.author.id}>` + " Here is a list of my Generator commands and usage")
+   .addField("Minecraft Accounts", "``gen minecraft`` - Generates a Minecraft account and sends it to your DMs [**currently out of stock**]")
+   .addField('Spotify Accounts", "``gen spotify`` - Generates a Spotify account and sends it to your DMs")
+   .addField("Dominos Accounts", "``gen dominos`` - Generates a Dominos account and sends it to your DMs")
+   .addField("NordVPN Accounts", "``gen nordvpn`` - Generates a NordVPN account and sends it to your DMs")
+   .addField("Netflix Accounts", "``gen netflix`` - Generates a Netflix account and sends it to your DMs [**currently out of stock**]")
+   .addField("CrunchyRoll Accounts", "``gen crunchyroll`` - Generates a CrunchyRoll account and sends it to your DMs [**currently out of stock**]")
+   .addField("Uplay Accounts", "``gen uplay`` - Generates a Uplay account and sends it to your DMs [**currently out of stock**]")
+   .addField("Origin Accounts", "``gen origin`` - Generates a Origin account and sends it to your DMs [**currently out of stock**]")
+   .addField("Fortnite Accounts", "``gen fortnite`` - Generates a Fortnite account and sends it to your DMs [**currently out of stock**]")
    .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
    message.channel.send(hEmbed)
@@ -81,7 +102,7 @@ client.on("message", async message => {
    .addField("Uplay", "**0** Accounts available")
    .addField("Origin", "**0** Accounts available")
    .addField("Fortnite", "**0** Accounts available")
-   .addField("NordVPN", "**0** Accounts available")
+   .addField("NordVPN", "**28** Accounts available")
    .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    .setThumbnail(`${message.author.avatarURL}`)
    message.channel.send(hEmbed)
@@ -250,6 +271,50 @@ client.on("message", async message => {
     .setColor(53380)
     .setTitle("Netflix Account generated")
     .setDescription(`<@${message.author.id}>` + " Your Netflix account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+
+
+    message.channel.send(Membed)
+    .then(msg => {
+      msg.delete(50000)
+    })
+
+    message.author.send(Gembed)
+    .then(msg => {
+      msg.delete(50000)
+    })
+
+    client.fetchUser('444609097233465347').then((user) => {
+      user.send(dEmbed)
+    });
+
+
+
+
+  }
+  
+   if(command === "nordvpn") {
+    message.delete().catch();
+    let Accounts = ["fish9001@bigpond.com:9001fish", "mattznoj@gmail.com:happyDays16", "s.gianni@gmail.com:7intelsat", "damsbooster@hotmail.com:Wxcvbn789", "sawel.williams@yahoo.co.uk:Fudge2004", "ameliahayson@hotmail.com:sumomo123", "ellissafincken@hotmail.com:Liliana1", "said.karim@live.se:9001104273sk", "robkennedy3@gmail.com:Rob100500", "maximilian.humer@businesscard.at:starbucks1", "klausmj@gmail.com:Qn75njnc", "kearnskeagan@gmail.com:Minecraftpe1", "mark.v.irwin@gmail.com:maggie7181", "mediumgamemaster@gmail.com:ibrahim2003", "auzgray@gmail.com:jimmy120", "georgehiser@gmail.com:Niknak909", "moealawie@hotmail.com:123lol1793", "elijah_perez@yahoo.com:Onegai173", "taake1807@gmail.com:taker33950", "dylan.zeppa@gmail.com:blacksheep3", "hunter_commando@hotmail.com:evaunit1", "kiddykatkill42@gmail.com:Asuka002", "rubolvera@hotmail.com:za101880", "missmoneypenny66@hotmail.com:0508rabbit88", "fady.farouk.rasmy@gmail.com:fady3607", "m.olsson@hotmail.se:mikjlk243", "jakniunas.d@gmail.com:qwer1234", "neilwhite58@gmail.com:lutonmajor",];
+
+    let result = Math.floor((Math.random() * Accounts.length));
+
+    let dEmbed = new Discord.RichEmbed()
+    .setColor(53380)
+    .setTitle("User has generated a account")
+    .setDescription(`${message.author.tag} has generated a Dominos account the account info is ${Accounts[result]}`);
+
+
+
+
+    let Gembed = new Discord.RichEmbed()
+    .setColor(53380)
+    .setTitle("Your NordVPN account")
+    .setDescription(Accounts[result]);
+
+    let Membed = new Discord.RichEmbed()
+    .setColor(53380)
+    .setTitle("NordVPN Account generated")
+    .setDescription(`<@${message.author.id}>` + "Your NordVPN account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
 
     message.channel.send(Membed)
