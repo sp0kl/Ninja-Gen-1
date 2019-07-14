@@ -79,7 +79,7 @@ client.on("message", async message => {
    .addField("Dominos Accounts", "``gen dominos`` - Generates a Dominos account and sends it to your DMs")
    .addField("NordVPN Accounts", "``gen nordvpn`` - Generates a NordVPN account and sends it to your DMs")
    .addField("Netflix Accounts", "``gen netflix`` - Generates a Netflix account and sends it to your DMs [**currently out of stock**]")
-   .addField("CrunchyRoll Accounts", "``gen crunchyroll`` - Generates a CrunchyRoll account and sends it to your DMs [**currently out of stock**]")
+   .addField("CrunchyRoll Accounts", "``gen crunchyroll`` - Generates a CrunchyRoll account and sends it to your DMs")
    .addField("Uplay Accounts", "``gen uplay`` - Generates a Uplay account and sends it to your DMs [**currently out of stock**]")
    .addField("Origin Accounts", "``gen origin`` - Generates a Origin account and sends it to your DMs [**currently out of stock**]")
    .addField("Fortnite Accounts", "``gen fortnite`` - Generates a Fortnite account and sends it to your DMs [**currently out of stock**]")
