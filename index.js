@@ -114,7 +114,6 @@ client.on("message", async message => {
     .setTitle("Minecraft Account generated")
     .setDescription("Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
-
     message.channel.send(Membed)
     .then(msg => {
       msg.delete(50000)
@@ -144,7 +143,6 @@ client.on("message", async message => {
     .setColor(53380)
     .setTitle("User has generated a account")
     .setDescription(`${message.author.tag} has generated a Spotify account the account info is ${Accounts[result]}`);
-
 
 
 
@@ -301,6 +299,8 @@ if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen suggest {Wh
     .addField("UserID", `${message.author.id}`)
     .addField("Server", `${message.channel.guild}`)
     .addField("Suggested", `${sayMessage}`)
+    .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
 
 
 
@@ -324,6 +324,8 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
      .addField("Channel", message.channel)
      .addField("Time", message.createdAt)
      .addField("Reason", reason)
+     .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
 
      let reportChannel = message.guild.channels.find("name", "reports");
      if(!reportChannel) return message.channel.send(`<@${message.author.id}> Couldn't find the reports channel`);
@@ -339,7 +341,9 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
    .setColor("53380")
    .addField("Version", "Beta v1.00")
    .addField("Author", "ツ 𝕿𝖞𝖑𝖊𝖗. 𝕳 ツ#9393")
-   .addField("Ninja Bot Support", "[Support Server](https://discord.gg/BkGDvwa)")
+   .addField("Ninja Gen Support", "[Support Server](https://discord.gg/RBSm9zK)")
+     .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
    message.channel.send(aEmbed)
  }
  
