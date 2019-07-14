@@ -320,6 +320,7 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
      .setDescription("Reports")
      .setColor("53380")
      .addField("Reported by", `${message.author} with ID ${message.author.id}`)
+     .addField("Server", message.guild.name
      .addField("Channel", message.channel)
      .addField("Time", message.createdAt)
      .addField("Reason", reason)
