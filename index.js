@@ -299,7 +299,7 @@ if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen suggest {Wh
     .addField("Suggested", `${sayMessage}`)
     .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
-    }
+
 
 
 client.guilds.find("id","586817026522218507").channels.find("name","suggestions").send(sEmbed);
