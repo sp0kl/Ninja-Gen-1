@@ -54,8 +54,10 @@ client.on("message", async message => {
    .setTitle("Ninja Gen Help :page_with_curl:")
    .setColor("53380")
    .addField("Ninja Gen Prefix", "My Prefix Is: ``gen``")
-   .addField("gen categories", "Shows all account categories and stock")
-   .addField("gen invite", "Generates a invite link")
+   .addField("Generator Categories", "``gen catergories`` Shows all account categories and stock")
+   .addField("Invite The Bot", "Generates a invite link")
+   .addField("Report A Bug", "``gen bugreport {Reason}`` Sends a message to the support server so the devs know about the bug you reported")
+   .addField("Account/Stock Request", "``gen request {YourRequest} Sends a message to the support server so the devs know what you requested")
    .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
    message.channel.send(hEmbed)
@@ -287,10 +289,10 @@ client.on("message", async message => {
     message.channel.send(serverembed);
     }
   
-    if(command === "suggest") {
+    if(command === "request") {
     const sayMessage = args.join(" ");
     message.delete().catch();
-if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen suggest {What you want to suggest}``, Example: ``gen suggest Add fortnite accounts`` ");
+if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen request {What you want to request}``, Example: ``gen request Add more fortnite accounts`` ");
 
 
     let sEmbed = new Discord.RichEmbed()
