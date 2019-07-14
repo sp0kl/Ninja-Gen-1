@@ -145,7 +145,7 @@ client.on("message", async message => {
     .setDescription(`<@${message.author.id}>` + " Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
     
     message.channel.send(Membed)
-    }
+    })
     message.author.send(Gembed)
     .then(msg => {
       msg.delete(80000)
@@ -185,7 +185,7 @@ client.on("message", async message => {
 
 
     message.channel.send(Membed)
-    }
+    })
 
     message.author.send(Gembed)
     .then(msg => {
@@ -227,7 +227,7 @@ client.on("message", async message => {
 
 
     message.channel.send(Membed)
-    }
+    })
 
     message.author.send(Gembed)
     .then(msg => {
@@ -269,7 +269,7 @@ client.on("message", async message => {
 
 
     message.channel.send(Membed)
-    }
+    })
 
     message.author.send(Gembed)
     .then(msg => {
@@ -311,7 +311,7 @@ client.on("message", async message => {
 
 
     message.channel.send(Membed)
-    }
+    })
 
     message.author.send(Gembed)
     .then(msg => {
