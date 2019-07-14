@@ -113,8 +113,8 @@ client.on("message", async message => {
     .setColor(53380)
     .setTitle("Minecraft Account generated")
     .setDescription(message.author.tag + " Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
-     message.react("✅");
     message.channel.send(Membed)
+       message.react("✅");
     .then(msg => {
       msg.delete(50000)
     })
