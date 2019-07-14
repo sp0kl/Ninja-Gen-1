@@ -353,6 +353,7 @@ if(command === "serverlist") {
   var list = client.guilds.array().sort();
   let botembed = new Discord.RichEmbed()
   .setTitle("Server List")
+  .setDescription(list)
   .setColor("53380")
   message.channel.send(botembed);
 
