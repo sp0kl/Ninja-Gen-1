@@ -310,9 +310,9 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
 if(command === "bugreport") {
     const sayMessage = args.join(" ");
     message.delete().catch();
-   let reason = args.join(" ").slice(22);
 if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen bugreport {What you want to report}``, Example: ``gen bugreport Netflix accounts not working`` ");
-
+    let reason = args.join(" ").slice(22);
+  
 
   let bugEmbed = new Discord.RichEmbed()
      .setDescription("Ninja Gen Bug Reports")
