@@ -113,7 +113,9 @@ client.on("message", async message => {
     .setColor(53380)
     .setTitle("Minecraft Account generated")
     .setDescription(message.author.tag + " Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
-    message.channel.send(Membed).then(fetchMessageID).then(":white_check_mark:")
+    message.channel.send(Membed).then(sentMessage => {
+      let emoji = message.guild.emojis.find('name', "white_check_mark");
+      message.react(emoji);
     .then(msg => {
       msg.delete(50000)
     })
