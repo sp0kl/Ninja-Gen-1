@@ -317,7 +317,7 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
      message.reply("Your bug report has been sent and our Devs will investigate it ASAP");
 
      let bugEmbed = new Discord.RichEmbed()
-     .setDescription("Reports")
+     .setDescription("Ninja Gen Bug Reports")
      .setColor("53380")
      .addField("Reported by", `${message.author} with ID ${message.author.id}`)
      .addField("Server", message.guild.name)
