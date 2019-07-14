@@ -340,7 +340,7 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
    .setTitle("About Ninja Gen")
    .setColor("53380")
    .addField("Version", "Beta v1.00")
-   .addField("Author", "bot.owner.tag")
+   .addField("Author", bot.owner.tag)
    .addField("Ninja Gen Support", "[Support Server](https://discord.gg/RBSm9zK)")
      .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
