@@ -369,7 +369,9 @@ if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen reminder {W
      if(!reminderChannel) return message.channel.send(`<@${message.author.id}> Couldn't find the required channel`);
   
 console.log(`<@${message.author.id}> has used the bug reports command in the server ${message.channel.guild} channel ${message.channel}`)
-  }
+  
+      })
+ }  
   
   if(command === "about") {
    let owner = client.users.get('444609097233465347');
