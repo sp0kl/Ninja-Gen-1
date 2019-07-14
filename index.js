@@ -335,7 +335,7 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
   } 
   
   if(command === "about") {
-   let owner = bot.users.get('444609097233465347');
+   let owner = client.users.get('444609097233465347');
    message.delete().catch();
    let aEmbed = new Discord.RichEmbed()
    .setTitle("About Ninja Gen")
