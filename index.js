@@ -335,12 +335,13 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
   } 
   
   if(command === "about") {
+   let owner = bot.users.get('444609097233465347');
    message.delete().catch();
    let aEmbed = new Discord.RichEmbed()
    .setTitle("About Ninja Gen")
    .setColor("53380")
    .addField("Version", "Beta v1.00")
-   .addField("Author", bot.owner.tag)
+   .addField("Author", owner.username)
    .addField("Ninja Gen Support", "[Support Server](https://discord.gg/RBSm9zK)")
      .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
