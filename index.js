@@ -60,7 +60,6 @@ client.on("message", async message => {
   
    if(command === "categories") {
   message.delete().catch();
-   const ID = client.users.get("name", `${message.author.Name}`).id;
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Account Categories")
    .setDescription("${message.author} Here you can see a list of accounts i offer and how many are currently in stock")
