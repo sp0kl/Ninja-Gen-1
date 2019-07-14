@@ -63,7 +63,7 @@ client.on("message", async message => {
    const ID = client.users.get("name", `${message.author.Name}`).id;
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Account Categories")
-   .setDescription(`${ID} Here you can see a list of accounts i offer and how many are currently in stock`)
+   .setDescription("${message.author} Here you can see a list of accounts i offer and how many are currently in stock")
    .setColor("53380")
    .addField("Minecraft", "**0** Accounts available")
    .addField("Spotify", "**19** Accounts available")
