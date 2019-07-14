@@ -62,7 +62,7 @@ client.on("message", async message => {
   message.delete().catch();	 
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Account Categories")
-   .setDescription("Here you can see a list of accounts i offer and how many are currently in stock")
+   .setDescription("<@${message.author.id}> Here you can see a list of accounts i offer and how many are currently in stock")
    .setColor("53380")
    .addField("Minecraft", "**0** Accounts available")
    .addField("Spotify", "**19** Accounts available")
@@ -82,7 +82,7 @@ client.on("message", async message => {
   message.delete().catch();	 
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Ninja Gen Invite")
-   .setDescription("Interested in inviting me to your server? Use the link below")
+   .setDescription("<@${message.author.id}> Interested in inviting me to your server? Use the link below")
    .setColor("53380")
    .addField("You Can Invite Me Here", "[Ninja Gen Invite Link](https://discordapp.com/api/oauth2/authorize?client_id=544049582959755264&permissions=2146958839&scope=bot)")
     .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
@@ -112,7 +112,7 @@ client.on("message", async message => {
     let Membed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("Minecraft Account generated")
-    .setDescription("Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+    .setDescription("<@${message.author.id}> Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
     message.channel.send(Membed)
     .then(msg => {
@@ -154,7 +154,7 @@ client.on("message", async message => {
     let Membed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("Spotify Account generated")
-    .setDescription("Your Spotify account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+    .setDescription("<@${message.author.id}> Your Spotify account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
 
     message.channel.send(Membed)
@@ -198,7 +198,7 @@ client.on("message", async message => {
     let Membed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("Dominos Account generated")
-    .setDescription("Your Dominos account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+    .setDescription("<@${message.author.id}> Your Dominos account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
 
     message.channel.send(Membed)
@@ -242,7 +242,7 @@ client.on("message", async message => {
     let Membed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("Netflix Account generated")
-    .setDescription("Your Netflix account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+    .setDescription("<@${message.author.id}> Your Netflix account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
 
 
     message.channel.send(Membed)
@@ -337,7 +337,7 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
   if(command === "about") {
    message.delete().catch();
    let aEmbed = new Discord.RichEmbed()
-   .setTitle("About Ninja Bot")
+   .setTitle("About Ninja Gen")
    .setColor("53380")
    .addField("Version", "Beta v1.00")
    .addField("Author", "ツ 𝕿𝖞𝖑𝖊𝖗. 𝕳 ツ#9393")
