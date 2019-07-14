@@ -53,10 +53,14 @@ client.on("message", async message => {
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Ninja Gen Help")
    .setColor("53380")
-   .addField("Generator Categories", "``gen catergories`` Shows all account categories and stock")
-   .addField("Invite The Bot", "Generates a invite link")
-   .addField("Report A Bug", "``gen bugreport {Reason}`` Sends a message to the support server so the devs know about the bug you reported")
-   .addField("Account/Stock Request", "``gen request {YourRequest}`` Sends a message to the support server so the devs know what you requested")
+   .addFIeld("About The Bot", "``gen about`` - Shows you some info about me and my team")
+   .addField("Generator Categories", "``gen catergories`` - Shows all account categories and stock")
+   .addField("Invite The Bot", "``gen invite`` - Generates a invite link")
+   .addField("Report A Bug", "``gen bugreport {Reason}`` - Sends a message to the support server so the devs know about the bug you reported")
+   .addField("Account/Stock Request", "``gen request {YourRequest}`` - Sends a message to the support server so the devs know what you requested")
+   .addField("Developer Reminder", "``gen reminder`` - Sends a reminder to the support server **DEVELOPERS & BOT OWNER ONLY**")
+   .addField("List Of Servers", "``gen serverlist`` - Shows a list of servers i am in")
+   .addField("Current Server Info", "``gen serverinfo`` - Shows information for the current server")
    .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
    message.channel.send(hEmbed)
@@ -306,8 +310,10 @@ if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen request {Wh
 
 
 
-client.guilds.find("id","586817026522218507").channels.find("name","requests").send(sEmbed);
-message.reply(`Your request has been sent`);
+let requestChannel = client.guilds.find("id", "586817026522218507").channels.find("name","account-requests").send(sEmbed);
+  message.reply(`Your bug report has been sent`);
+     if(!requestChannel) return message.channel.send(`<@${message.author.id}> Couldn't find the required channel, please message the devs ASAP as this may be a mistake or error`);
+      
 console.log(`<@${message.author.id}> has used the suggest command in ${message.channel.guild} channel ${message.channel}`)
   }
           
@@ -333,6 +339,34 @@ if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen bugreport {
  let reportChannel = client.guilds.find("id", "586817026522218507").channels.find("name","bug-reports").send(bugEmbed);
   message.reply(`Your bug report has been sent`);
      if(!reportChannel) return message.channel.send(`<@${message.author.id}> Couldn't find the reports channel`);
+  
+console.log(`<@${message.author.id}> has used the bug reports command in the server ${message.channel.guild} channel ${message.channel}`)
+  }
+  
+  if(command === "reminder") {
+    const sayMessage = args.join(" ");
+    message.delete().catch();
+if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen reminder {What you want to remember}``, Example: ``gen reminder Update bot config`` ");
+   
+    if(message.author.id !== config.ownerID) return message.channel.send("You cannot use this command it is **BOT OWNER AND DEVELOPER** only!")
+      snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
+
+  let devEmbed = new Discord.RichEmbed()
+     .setDescription("Ninja Gen Reminders")
+     .setColor("53380")
+     .addField("Requested by", `${message.author} with ID ${message.author.id}`)
+     .addField("Server Name", message.guild.name)
+     .addField("Channel Name", message.channel)
+     .addField("Time Of Report", message.createdAt)
+     .addField("Reminder Message", `${sayMessage}`)
+     .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
+
+
+
+ let reminderChannel = client.guilds.find("id", "586817026522218507").channels.find("name","dev-reminders").send(devEmbed);
+  message.reply(`Your bug report has been sent`);
+     if(!reminderChannel) return message.channel.send(`<@${message.author.id}> Couldn't find the required channel`);
   
 console.log(`<@${message.author.id}> has used the bug reports command in the server ${message.channel.guild} channel ${message.channel}`)
   }
