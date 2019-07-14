@@ -98,7 +98,7 @@ client.on("message", async message => {
    .addField("Spotify", "**19** Accounts available")
    .addField("Dominos", "**20** Accounts available")
    .addField("Netflix", "**0** Accounts available")
-   .addField("CrunchyRoll", "**0** Accounts available")
+   .addField("CrunchyRoll", "**13** Accounts available")
    .addField("Uplay", "**0** Accounts available")
    .addField("Origin", "**0** Accounts available")
    .addField("Fortnite", "**0** Accounts available")
@@ -339,7 +339,7 @@ client.on("message", async message => {
   
    if(command === "crunchyroll") {
     message.delete().catch();
-    let Accounts = ["COMING SOON"];
+    let Accounts = ["carla@dalbiancoadvocacia.com.br:dudu1206", "codyjkent@gmail.com:rocklee", "ryanoconnell9000@gmail.com:1236457R", "knutsonzach@yahoo.com:knut2000", "eldelmaty7@hotmail.com:fandesonic13", "andrewpapp2000@gmail.com:miska321", "mrmanofawesome1@gmail.com:caboose121", "jason0001cool@yahoo.com:california", "benasmorkunas@gmail.com:benukas123", "danmrrs2@gmail.com:I2d0nt67", "thajoker77@YmAiL.com:Pandemic77", "Danilo.Lazzari94@gmail.com:Tatiana05", "ineedwelfare420@yahoo.com:zigzag2008",];
 
     let result = Math.floor((Math.random() * Accounts.length));
 
