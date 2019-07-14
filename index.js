@@ -340,7 +340,7 @@ console.log(`<@${message.author.id}> has used the bug reports command in the ser
    let aEmbed = new Discord.RichEmbed()
    .setTitle("About Ninja Gen")
    .setColor("53380")
-   .addField("Bot Created", bot.createdAT)
+   .addField("Bot Created", bot.account.createdAT)
    .addField("Current Version", "**BETA** v1.00")
    .addField("Ownwer/Author", `<@${owner.id}>`)
    .addField("Coders/Developers", `<@${owner.id}> **&** <@${dev.id}>`)
