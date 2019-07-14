@@ -295,7 +295,7 @@ if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen request {Wh
 
 
     let sEmbed = new Discord.RichEmbed()
-    .setTitle("Ninja Gen Suggestions")
+    .setTitle("Ninja Gen Account/Stock Requests")
     .setColor("53380")
     .addField("User", message.author)
     .addField("UserID", `${message.author.id}`)
@@ -306,8 +306,8 @@ if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen request {Wh
 
 
 
-client.guilds.find("id","586817026522218507").channels.find("name","suggestions").send(sEmbed);
-message.reply(`<@${message.author.id}> Your suggestion has been sent`);
+client.guilds.find("id","586817026522218507").channels.find("name","requests").send(sEmbed);
+message.reply(`Your request has been sent`);
 console.log(`<@${message.author.id}> has used the suggest command in ${message.channel.guild} channel ${message.channel}`)
   }
           
@@ -331,6 +331,7 @@ if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen bugreport {
 
 
  let reportChannel = client.guilds.find("id", "586817026522218507").channels.find("name","bug-reports").send(bugEmbed);
+  message.reply(`Your bug report has been sent`);
      if(!reportChannel) return message.channel.send(`<@${message.author.id}> Couldn't find the reports channel`);
   
 console.log(`<@${message.author.id}> has used the bug reports command in the server ${message.channel.guild} channel ${message.channel}`)
