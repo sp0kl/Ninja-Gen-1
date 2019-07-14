@@ -51,13 +51,12 @@ client.on("message", async message => {
    if(command === "help") {
   message.delete().catch();	 
    let hEmbed = new Discord.RichEmbed()
-   .setTitle("Ninja Gen Help :page_with_curl:")
+   .setTitle("Ninja Gen Help")
    .setColor("53380")
-   .addField("Ninja Gen Prefix", "My Prefix Is: ``gen``")
    .addField("Generator Categories", "``gen catergories`` Shows all account categories and stock")
    .addField("Invite The Bot", "Generates a invite link")
    .addField("Report A Bug", "``gen bugreport {Reason}`` Sends a message to the support server so the devs know about the bug you reported")
-   .addField("Account/Stock Request", "``gen request {YourRequest} Sends a message to the support server so the devs know what you requested")
+   .addField("Account/Stock Request", "``gen request {YourRequest}`` Sends a message to the support server so the devs know what you requested")
    .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
    message.channel.send(hEmbed)
