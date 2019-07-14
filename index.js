@@ -311,7 +311,6 @@ if(command === "bugreport") {
     const sayMessage = args.join(" ");
     message.delete().catch();
 if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen bugreport {What you want to report}``, Example: ``gen bugreport Netflix accounts not working`` ");
-    let reason = args.join(" ").slice(22);
   
 
   let bugEmbed = new Discord.RichEmbed()
@@ -321,7 +320,7 @@ if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen bugreport {
      .addField("Server Name", message.guild.name)
      .addField("Channel Name", message.channel)
      .addField("Time Of Report", message.createdAt)
-     .addField("Report Reason", reason)
+     .addField("Report Reason", `${sayMessage}`)
      .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
 
