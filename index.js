@@ -310,6 +310,7 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
 if(command === "bugreport") {
     const sayMessage = args.join(" ");
     message.delete().catch();
+   let reason = args.join(" ").slice(22);
 if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen bugreport {What you want to report}``, Example: ``gen bugreport Netflix accounts not working`` ");
 
 
@@ -333,12 +334,14 @@ console.log(`<@${message.author.id}> has used the bug reports command in the ser
   
   if(command === "about") {
    let owner = client.users.get('444609097233465347');
+   let dev = client.users.get('391376464064282627'); 
    message.delete().catch();
    let aEmbed = new Discord.RichEmbed()
    .setTitle("About Ninja Gen")
    .setColor("53380")
    .addField("Version", "Beta v1.00")
-   .addField("Author", `<@${owner.id}>`)
+   .addField("Ownwer/Author", `<@${owner.id}>`)
+   .addField("Coders/Developers", `<@${owner.id} **&** <@${dev.id}>`)
    .addField("Ninja Gen Support", "[Support Server](https://discord.gg/RBSm9zK)")
      .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
