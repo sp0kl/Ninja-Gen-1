@@ -335,11 +335,13 @@ console.log(`<@${message.author.id}> has used the bug reports command in the ser
   if(command === "about") {
    let owner = client.users.get('444609097233465347');
    let dev = client.users.get('391376464064282627'); 
+   let bot = client.users.get('544049582959755264');  
    message.delete().catch();
    let aEmbed = new Discord.RichEmbed()
    .setTitle("About Ninja Gen")
    .setColor("53380")
-   .addField("Version", "Beta v1.00")
+   .addField("Bot Created", bot.createdAT)
+   .addField("Current Version", "**BETA** v1.00")
    .addField("Ownwer/Author", `<@${owner.id}>`)
    .addField("Coders/Developers", `<@${owner.id}> **&** <@${dev.id}>`)
    .addField("Ninja Gen Support", "[Support Server](https://discord.gg/RBSm9zK)")
