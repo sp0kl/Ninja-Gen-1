@@ -113,7 +113,7 @@ client.on("message", async message => {
     .setColor(53380)
     .setTitle("Minecraft Account generated")
     .setDescription(message.author.tag + " Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
-
+     message.react("✅");
     message.channel.send(Membed)
     .then(msg => {
       msg.delete(50000)
@@ -352,7 +352,7 @@ if(command === "serverlist") {
   message.delete().catch();
   var list = client.guilds.array().sort();
   let botembed = new Discord.RichEmbed()
-  .setTitle("Server List")
+  .setTitle("Server's i am in")
   .setDescription(list)
   .setColor("53380")
   message.channel.send(botembed);
