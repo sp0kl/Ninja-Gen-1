@@ -74,6 +74,7 @@ client.on("message", async message => {
    .setTitle("Ninja Gen Help")
    .setColor("53380")
    .setDescription(`<@${message.author.id}>` + " Here is a list of my Generator commands and usage")
+   .addField("Generator Categories", "``gen catergories`` - Shows all account categories and stock")
    .addField("Minecraft Accounts", "``gen minecraft`` - Generates a Minecraft account and sends it to your DMs [**currently out of stock**]")
    .addField("Spotify Accounts", "``gen spotify`` - Generates a Spotify account and sends it to your DMs")
    .addField("Dominos Accounts", "``gen dominos`` - Generates a Dominos account and sends it to your DMs")
