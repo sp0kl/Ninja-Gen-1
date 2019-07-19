@@ -148,7 +148,7 @@ client.on("message", async message => {
     })
     message.author.send(Gembed)
     .then(msg => {
-      msg.delete(80000)
+      msg.delete(200000)
     })
 
     client.fetchUser('444609097233465347').then((user) => {
@@ -191,7 +191,7 @@ client.on("message", async message => {
 
     message.author.send(Gembed)
     .then(msg => {
-      msg.delete(80000)
+      msg.delete(200000)
     })
 
     client.fetchUser('444609097233465347').then((user) => {
@@ -235,7 +235,7 @@ client.on("message", async message => {
 
     message.author.send(Gembed)
     .then(msg => {
-      msg.delete(80000)
+      msg.delete(200000)
     })
 
     client.fetchUser('444609097233465347').then((user) => {
@@ -279,7 +279,7 @@ client.on("message", async message => {
 
     message.author.send(Gembed)
     .then(msg => {
-      msg.delete(80000)
+      msg.delete(200000)
     })
 
     client.fetchUser('444609097233465347').then((user) => {
@@ -323,7 +323,7 @@ client.on("message", async message => {
 
     message.author.send(Gembed)
     .then(msg => {
-      msg.delete(80000)
+      msg.delete(200000)
     })
 
     client.fetchUser('444609097233465347').then((user) => {
@@ -367,7 +367,7 @@ client.on("message", async message => {
 
     message.author.send(Gembed)
     .then(msg => {
-      msg.delete(80000)
+      msg.delete(200000)
     })
 
     client.fetchUser('444609097233465347').then((user) => {
@@ -411,7 +411,7 @@ client.on("message", async message => {
 
     message.author.send(Gembed)
     .then(msg => {
-      msg.delete(80000)
+      msg.delete(200000)
     })
 
     client.fetchUser('444609097233465347').then((user) => {
@@ -455,7 +455,7 @@ client.on("message", async message => {
 
     message.author.send(Gembed)
     .then(msg => {
-      msg.delete(80000)
+      msg.delete(200000)
     })
 
     client.fetchUser('444609097233465347').then((user) => {
@@ -499,7 +499,7 @@ client.on("message", async message => {
 
     message.author.send(Gembed)
     .then(msg => {
-      msg.delete(80000)
+      msg.delete(200000)
     })
 
     client.fetchUser('444609097233465347').then((user) => {
