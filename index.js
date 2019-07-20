@@ -191,14 +191,8 @@ client.on("message", async message => {
 
 
     message.channel.send(Membed)
-    .then(msg => {
-      msg.delete(80000)
-    })
-
     message.author.send(Gembed)
-    .then(msg => {
-      msg.delete(200000)
-    })
+    
 
     client.fetchUser('444609097233465347').then((user) => {
       user.send(dEmbed)
