@@ -125,7 +125,7 @@ client.on("message", async message => {
     .setTitle("Minecraft Accounts Status")
     .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning:");
 
-  if(message.author.id !== config.ownerID) return message.channel.reply(Uembed)
+  if(message.author.id !== config.ownerID) return message.channel.send(Uembed)
       snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
         message.delete().catch();
 
