@@ -123,8 +123,9 @@ client.on("message", async message => {
   let Uembed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("Minecraft Accounts Status")
-    .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning: Join our discord server for updates when this category becomes available");
-    .setFooter("[Support Server](https://discord.gg/RBSm9zK)")
+    .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning: Join our [Support Server](https://discord.gg/RBSm9zK) for updates when this category becomes available");
+ 
+
 
 
   if(message.author.id !== config.ownerID) return message.channel.send(Uembed)
