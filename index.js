@@ -123,7 +123,7 @@ client.on("message", async message => {
   let Uembed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("Minecraft Accounts Status")
-    .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning: Join our [Support Server](https://discord.gg/RBSm9zK) for updates when this category becomes available");
+    .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning: Join our [Support Server](https://discord.gg/CRhNHBs) for updates when this category becomes available");
     message.delete().catch();
 
 
@@ -556,7 +556,7 @@ if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen request {Wh
     .addField("User", message.author)
     .addField("UserID", `${message.author.id}`)
     .addField("Server", `${message.channel.guild}`)
-    .addField("Suggested", `${sayMessage}`)
+    .addField("Request", `${sayMessage}`)
     .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
 
@@ -636,7 +636,7 @@ console.log(`<@${message.author.id}> has used the bug reports command in the ser
    .addField("Current Version", "**BETA** v1.00")
    .addField("Owner/Author", `Created By: <@${owner.id}>`)
    .addField("Coders/Developers", `<@${owner.id}> **&** <@${dev.id}>`)
-   .addField("Ninja Gen Support", "[Support Server](https://discord.gg/RBSm9zK)")
+   .addField("Ninja Gen Support", "[Support Server](https://discord.gg/CRhNHBs)")
      .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
    message.channel.send(aEmbed)
