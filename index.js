@@ -120,7 +120,7 @@ client.on("message", async message => {
   
   if(command === "minecraft") {
 
-  if(message.author.id !== config.ownerID) return message.channel.send(Uembed)
+  if(message.author.id !== config.ownerID) return message.channel.reply(Uembed)
       snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
         message.delete().catch();
 
