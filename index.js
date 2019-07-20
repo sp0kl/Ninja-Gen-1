@@ -120,7 +120,7 @@ client.on("message", async message => {
   
   if(command === "minecraft") {
 
-  if(message.author.id !== config.ownerID) return message.channel.send("You cannot use this command it is **BOTOWNER** only!")
+  if(message.author.id !== config.ownerID) return message.channel.send(`<@${message.author.id}>` + " This category is currently unavailable")
       snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
         message.delete().catch();
 
@@ -162,7 +162,8 @@ client.on("message", async message => {
 
 
 
-  }
+  })
+}
   
   if(command === "spotify") {
     message.delete().catch();
