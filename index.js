@@ -124,6 +124,8 @@ client.on("message", async message => {
     .setColor(53380)
     .setTitle("Minecraft Accounts Status")
     .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning: Join our discord server for updates when this category becomes available");
+    .setFooter("[Support Server](https://discord.gg/RBSm9zK)")
+
 
   if(message.author.id !== config.ownerID) return message.channel.send(Uembed)
       snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
@@ -137,7 +139,6 @@ client.on("message", async message => {
     .setColor(53380)
     .setTitle("User has generated a account")
     .setDescription(`${message.author.tag} has generated a Minecraft account the account info is ${Accounts[result]}`);
-
 
     let Gembed = new Discord.RichEmbed()
     .setColor(53380)
