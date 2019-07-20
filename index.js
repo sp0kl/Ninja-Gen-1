@@ -119,7 +119,11 @@ client.on("message", async message => {
  }
   
   if(command === "minecraft") {
-    message.delete().catch();
+
+  if(message.author.id !== config.ownerID) return message.channel.send("You cannot use this command it is **BOTOWNER** only!")
+      snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
+        message.delete().catch();
+
     let Accounts = ["COMING SOON"];
 
     let result = Math.floor((Math.random() * Accounts.length));
