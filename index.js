@@ -119,57 +119,52 @@ client.on("message", async message => {
  }
   
   if(command === "minecraft") {
-
-  let Uembed = new Discord.RichEmbed()
-    .setColor(53380)
-    .setTitle("Minecraft Accounts Status")
-    .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning: Join our [Support Server](https://discord.gg/CRhNHBs) for updates when this category becomes available");
-    message.delete().catch();
-
-
-
-  if(message.author.id !== config.ownerID) return message.channel.send(Uembed)
-      snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
-        message.delete().catch();
-
-    let Accounts = ["COMING SOON"];
-
-    let result = Math.floor((Math.random() * Accounts.length));
-
-    let dEmbed = new Discord.RichEmbed()
-    .setColor(53380)
-    .setTitle("User has generated a account")
-    .setDescription(`${message.author.tag} has generated a Minecraft account the account info is ${Accounts[result]}`);
-
-    let Gembed = new Discord.RichEmbed()
-    .setColor(53380)
-    .setTitle("Your Minecraft account")
-    .setDescription(Accounts[result]);
-
-
-    let Membed = new Discord.RichEmbed()
-    .setColor(53380)
-    .setTitle("Minecraft Account generated")
-    .setDescription(`<@${message.author.id}>` + " Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
-    
-    message.channel.send(Membed)
-      .then(msg => {
-      msg.delete(80000)
+ 
+    let Uembed = new Discord.RichEmbed()
+      .setColor(53380)
+      .setTitle("Minecraft Accounts Status")
+      .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning: Join our [Support Server](https://discord.gg/CRhNHBs) for updates when this category becomes available");
+      message.delete().catch();
+   
+   
+   
+    if(message.author.id !== config.ownerID) return message.channel.send(Uembed)
+        snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
+          message.delete().catch();
+   
+      let Accounts = ["COMING SOON"];
+   
+      let result = Math.floor((Math.random() * Accounts.length));
+   
+      let dEmbed = new Discord.RichEmbed()
+      .setColor(53380)
+      .setTitle("User has generated a account")
+      .setDescription(`${message.author.tag} has generated a Minecraft account the account info is ${Accounts[result]}`);
+   
+      let Gembed = new Discord.RichEmbed()
+      .setColor(53380)
+      .setTitle("Your Minecraft account")
+      .setDescription(Accounts[result]);
+   
+   
+      let Membed = new Discord.RichEmbed()
+      .setColor(53380)
+      .setTitle("Minecraft Account generated")
+      .setDescription(`<@${message.author.id}>` + " Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+     
+      message.channel.send(Membed)
+      message.author.send(Gembed)
+   
+      client.fetchUser('444609097233465347').then((user) => {
+        user.send(dEmbed)
+        });
+   
+   
+   
+   
     })
-    message.author.send(Gembed)
-    .then(msg => {
-      msg.delete(200000)
-    })
+  }
 
-    client.fetchUser('444609097233465347').then((user) => {
-      user.send(dEmbed)
-      });
-
-
-
-
-  })
-}
   
   if(command === "spotify") {
     message.delete().catch();
