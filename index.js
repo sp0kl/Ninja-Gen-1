@@ -120,6 +120,11 @@ client.on("message", async message => {
   
   if(command === "minecraft") {
 
+  let Uembed = new Discord.RichEmbed()
+    .setColor(53380)
+    .setTitle("Minecraft Accounts Status")
+    .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning:");
+
   if(message.author.id !== config.ownerID) return message.channel.reply(Uembed)
       snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
         message.delete().catch();
@@ -134,17 +139,11 @@ client.on("message", async message => {
     .setDescription(`${message.author.tag} has generated a Minecraft account the account info is ${Accounts[result]}`);
 
 
-
-
     let Gembed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("Your Minecraft account")
     .setDescription(Accounts[result]);
 
-    let Uembed = new Discord.RichEmbed()
-    .setColor(53380)
-    .setTitle("Minecraft Accounts Status")
-    .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning:");
 
     let Membed = new Discord.RichEmbed()
     .setColor(53380)
