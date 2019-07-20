@@ -124,7 +124,7 @@ client.on("message", async message => {
     .setColor(53380)
     .setTitle("Minecraft Accounts Status")
     .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning: Join our [Support Server](https://discord.gg/RBSm9zK) for updates when this category becomes available");
- 
+    message.delete().catch();
 
 
 
