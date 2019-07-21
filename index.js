@@ -49,7 +49,7 @@ client.on("message", async message => {
   message.delete().catch();	 
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Ninja Gen Help")
-   .setColor("53380")
+   .setColor("0xff0000")
    .setDescription(`<@${message.author.id}>` + " My general command usage can be found below")
    .addField("About The Bot", "``gen about`` - Shows you some info about me and my team")
    .addField("Generator Commands", "``gen commands`` - Shows a list of Account Generator commands")
@@ -111,7 +111,7 @@ client.on("message", async message => {
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Ninja Gen Invite")
    .setDescription(`<@${message.author.id}>` + " Interested in inviting me to your server? Use the link below")
-   .setColor("53380")
+   .setColor("0x0ffff")
    .addField("You Can Invite Me Here", "[Ninja Gen Invite Link](https://discordapp.com/api/oauth2/authorize?client_id=544049582959755264&permissions=2146958839&scope=bot)")
     .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
@@ -121,7 +121,7 @@ client.on("message", async message => {
   if(command === "minecraft") {
  
     let Uembed = new Discord.RichEmbed()
-      .setColor(53380)
+      .setColor("0xff0000")
       .setTitle("Minecraft Accounts Status")
       .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning: Join our [Support Server](https://discord.gg/CRhNHBs) for updates when this category becomes available");
       message.delete().catch();
@@ -471,7 +471,7 @@ client.on("message", async message => {
     let serverembed = new Discord.RichEmbed()
     .setAuthor(`${message.guild.name} - Informations`, message.guild.iconURL)
     .setDescription("Server Information")
-    .setColor("53380")
+    .setColor("0x0ffff")
     .setThumbnail(sicon)
     .addField("Server Owner", message.guild.owner, true)
     .addField("Server Name", message.guild.name, true)
@@ -495,7 +495,7 @@ client.on("message", async message => {
       .setDescription(`<@${message.author.id}>` + " Ninja Gen Request help :point_down:")
       .addField("Usage", "``gen request {what you want to request}``")
       .addField("Usage Example", "``gen request remove dead Origin account {account info here}``")
-      .addField("Usage Example 2", "gen request restock Origin accounts");
+      .addField("Usage Example 2", "``gen request restock Origin accounts``");
       message.delete().catch();
 
     const sayMessage = args.join(" ");
@@ -505,7 +505,7 @@ if(!args[0] || args[0 == "help"]) return message.channel.send(Pembed);
 
     let sEmbed = new Discord.RichEmbed()
     .setTitle("Ninja Gen Account/Stock Requests")
-    .setColor("53380")
+    .setColor("0x0ffff")
     .addField("User", message.author)
     .addField("UserID", `${message.author.id}`)
     .addField("Server", `${message.channel.guild}`)
@@ -534,7 +534,7 @@ if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen bugreport {
 
   let bugEmbed = new Discord.RichEmbed()
      .setDescription("Ninja Gen Bug Reports")
-     .setColor("53380")
+     .setColor("0x0ffff")
      .addField("Reported by", `${message.author} with ID ${message.author.id}`)
      .addField("Server Name", message.guild.name)
      .addField("Channel Name", message.channel)
@@ -562,7 +562,7 @@ if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen reminder {W
 
   let devEmbed = new Discord.RichEmbed()
      .setDescription("Ninja Gen Reminders")
-     .setColor("53380")
+     .setColor("0x0ffff")
      .addField("Requested by", `${message.author} with ID ${message.author.id}`)
      .addField("Server Name", message.guild.name)
      .addField("Channel Name", message.channel)
@@ -589,7 +589,7 @@ console.log(`<@${message.author.id}> has used the bug reports command in the ser
    message.delete().catch();
    let aEmbed = new Discord.RichEmbed()
    .setTitle("About Ninja Gen")
-   .setColor("53380")
+   .setColor("0x0ffff")
    .addField("Current Version", "**BETA** v1.00")
    .addField("Owner/Author", `Created By: <@${owner.id}>`)
    .addField("Coders/Developers", `<@${owner.id}> **&** <@${dev.id}>`)
@@ -603,7 +603,7 @@ if(command === "serverlist") {
   message.delete().catch();
   var list = client.guilds.array().sort();
   let botembed = new Discord.RichEmbed()
-  .setTitle("Server's i am in")
+  .setTitle("Ninja Gen Server List")
   .setDescription(list)
   .setColor("0x0ffff")
   message.channel.send(botembed);
