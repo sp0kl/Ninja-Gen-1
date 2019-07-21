@@ -605,7 +605,7 @@ if(command === "serverlist") {
   let botembed = new Discord.RichEmbed()
   .setTitle("Server's i am in")
   .setDescription(list)
-  .setColor("53380")
+  .setColor("0x0ffff")
   message.channel.send(botembed);
 
 }
