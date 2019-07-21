@@ -513,10 +513,14 @@ if(!args[0] || args[0 == "help"]) return message.channel.send(Pembed);
     .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
 
-
+let Pembed2 = new Discord.RichEmbed()
+      .setColor("53380")
+      .setTitle("Ninja Gen Change Requests")
+      .setDescription(`<@${message.author.id}>` + " Your request has been sent :white_check_mark:")
+      message.delete().catch();
 
 let requestChannel = client.guilds.find("id", "586817026522218507").channels.find("name","account-requests").send(sEmbed);
-  message.reply(`Your bug report has been sent`);
+  message.reply(Pembed2);
      if(!requestChannel) return message.channel.send(`<@${message.author.id}> Couldn't find the required channel, please message the devs ASAP as this may be a mistake or error`);
       
 console.log(`<@${message.author.id}> has used the suggest command in ${message.channel.guild} channel ${message.channel}`)
