@@ -492,9 +492,9 @@ client.on("message", async message => {
     let Pembed = new Discord.RichEmbed()
       .setColor(0xff0000)
       .setTitle("Ninja Gen Change Requests")
-      .setDescription(`<@${message.author.id}>` + " Your request has been sent :thumbsup:")
-      .addField("Usage", "gen request {what you want to request}")
-      .addField("Usage Example", "gen request remove dead Origin account {account info here}")
+      .setDescription(`<@${message.author.id}>` + " Ninja Gen Request help :point_down:")
+      .addField("Usage", "``gen request {what you want to request}``")
+      .addField("Usage Example", "``gen request remove dead Origin account {account info here}``")
       .addField("Usage Example 2", "gen request restock Origin accounts");
       message.delete().catch();
 
