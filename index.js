@@ -235,6 +235,9 @@ client.on("message", async message => {
       user.send(dEmbed)
     });
 
+    client.fetchUser('391376464064282627').then((user) => {
+      user.send(dEmbed)
+    });
 
 
 
