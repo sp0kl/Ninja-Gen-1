@@ -488,9 +488,19 @@ client.on("message", async message => {
     }
   
     if(command === "request") {
+
+    let Pembed = new Discord.RichEmbed()
+      .setColor(#FF0000)
+      .setTitle("Ninja Gen Change Requests")
+      .setDescription(`<@${message.author.id}>` + " Your request has been sent :thumbsup:")
+      .addField("Usage", "gen request {what you want to request}")
+      .addField("Usage Example", "gen request remove dead Origin account {account info here}")
+      .addField("Usage Example 2", "gen request restock Origin accounts");
+      message.delete().catch();
+
     const sayMessage = args.join(" ");
     message.delete().catch();
-if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen request {What you want to request}``, Example: ``gen request Add more fortnite accounts`` ");
+if(!args[0] || args[0 == "help"]) return message.channel.send(Pembed);
 
 
     let sEmbed = new Discord.RichEmbed()
