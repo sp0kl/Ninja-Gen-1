@@ -231,7 +231,7 @@ client.on("message", async message => {
     message.channel.send(Membed)
     message.author.send(Gembed)
 
-    client.fetchUser('444609097233465347').then((user) => {
+    client.fetchUser('444609097233465347', `391376464064282627`).then((user) => {
       user.send(dEmbed)
     });
 
