@@ -490,7 +490,7 @@ client.on("message", async message => {
     if(command === "request") {
 
     let Pembed = new Discord.RichEmbed()
-      .setColor(0xff0000))
+      .setColor(0xff0000)
       .setTitle("Ninja Gen Change Requests")
       .setDescription(`<@${message.author.id}>` + " Your request has been sent :thumbsup:")
       .addField("Usage", "gen request {what you want to request}")
