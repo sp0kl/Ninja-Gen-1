@@ -514,7 +514,7 @@ if(!args[0] || args[0 == "help"]) return message.channel.send(Pembed);
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
 
 let Pembed2 = new Discord.RichEmbed()
-      .setColor(00D084)
+      .setColor(00ff00)
       .setTitle("Ninja Gen Change Requests")
       .setDescription(`<@${message.author.id}>` + " Your request has been sent :white_check_mark:")
       message.delete().catch();
