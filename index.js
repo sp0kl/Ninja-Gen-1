@@ -112,7 +112,6 @@ client.on("message", async message => {
       .setColor("0xff0000") 
       .setTitle("Ninja Gen Invite")
       .setDescription(`<@${message.author.id}>` + " Sorry i am not yet available to be invited to servers. This feature will be available after my Beta stages :frowning: Join our [Support Server](https://discord.gg/CRhNHBs) for updates when this feature becomes available");
-      .setColor("0xff0000") 
     message.delete().catch();
    
    
