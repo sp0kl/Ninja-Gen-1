@@ -244,7 +244,19 @@ client.on("message", async message => {
   }
   
    if(command === "netflix") {
-    message.delete().catch();
+
+     let Uembed = new Discord.RichEmbed()
+      .setColor("0xff0000")
+      .setTitle("Netflix Accounts Status")
+      .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning: Join our [Support Server](https://discord.gg/CRhNHBs) for updates when this category becomes available");
+      message.delete().catch();
+   
+   
+   
+    if(message.author.id !== config.ownerID) return message.channel.send(Uembed)
+        snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
+          message.delete().catch();
+     
     let Accounts = ["COMING SOON"];
 
     let result = Math.floor((Math.random() * Accounts.length));
@@ -278,7 +290,8 @@ client.on("message", async message => {
 
 
 
-  }
+  })
+}
   
    if(command === "nordvpn") {
     message.delete().catch();
@@ -355,7 +368,19 @@ client.on("message", async message => {
   }
   
    if(command === "uplay") {
-    message.delete().catch();
+
+     let Uembed = new Discord.RichEmbed()
+      .setColor("0xff0000")
+      .setTitle("UPlay Accounts Status")
+      .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning: Join our [Support Server](https://discord.gg/CRhNHBs) for updates when this category becomes available");
+      message.delete().catch();
+   
+   
+   
+    if(message.author.id !== config.ownerID) return message.channel.send(Uembed)
+        snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
+          message.delete().catch();
+     
     let Accounts = ["COMING SOON"];
 
     let result = Math.floor((Math.random() * Accounts.length));
@@ -389,10 +414,23 @@ client.on("message", async message => {
 
 
 
-  }
+  })
+}    
   
    if(command === "origin") {
-    message.delete().catch();
+
+     let Uembed = new Discord.RichEmbed()
+      .setColor("0xff0000")
+      .setTitle("Origin Accounts Status")
+      .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning: Join our [Support Server](https://discord.gg/CRhNHBs) for updates when this category becomes available");
+      message.delete().catch();
+   
+   
+   
+    if(message.author.id !== config.ownerID) return message.channel.send(Uembed)
+        snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
+          message.delete().catch();
+     
     let Accounts = ["COMING SOON"];
 
     let result = Math.floor((Math.random() * Accounts.length));
@@ -426,10 +464,23 @@ client.on("message", async message => {
 
 
 
-  }
+  })
+}     
   
    if(command === "fortnite") {
-    message.delete().catch();
+
+     let Uembed = new Discord.RichEmbed()
+      .setColor("0xff0000")
+      .setTitle("Fortnite Accounts Status")
+      .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning: Join our [Support Server](https://discord.gg/CRhNHBs) for updates when this category becomes available");
+      message.delete().catch();
+   
+   
+   
+    if(message.author.id !== config.ownerID) return message.channel.send(Uembed)
+        snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
+          message.delete().catch();
+     
     let Accounts = ["COMING SOON"];
 
     let result = Math.floor((Math.random() * Accounts.length));
@@ -463,7 +514,8 @@ client.on("message", async message => {
 
 
 
-  }
+  })
+}
   
    if(command === "serverinfo") {
       message.delete().catch();
