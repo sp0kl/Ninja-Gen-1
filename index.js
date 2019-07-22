@@ -595,9 +595,20 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
   }
           
 if(command === "bugreport") {
+  
+  let Rembed = new Discord.RichEmbed()
+      .setColor(0xff0000)
+      .setTitle("Ninja Gen Bug Reports")
+      .setDescription(`<@${message.author.id}>` + " Ninja Gen Bug Report help :point_down:")
+      .addField("Usage", "``gen bugreport {what you want to report}``")
+      .addField("Usage Example", "``gen bugreport Fortnite accounts not working``")
+      .addField("Usage Example 2", "``gen bugreport bot doesnt send account info``");
+      message.delete().catch();
+
+  
     const sayMessage = args.join(" ");
     message.delete().catch();
-if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen bugreport {What you want to report}``, Example: ``gen bugreport Netflix accounts not working`` ");
+if(!args[0] || args[0 == "help"]) return message.channel.send(Rembed);
   
 
   let bugEmbed = new Discord.RichEmbed()
