@@ -110,7 +110,7 @@ client.on("message", async message => {
 
         let Uembed = new Discord.RichEmbed() 
       .setTitle("Ninja Gen Invite")
-      .setDescription(`<@${message.author.id}>` + " Sorry i am not yet available to be invited to servers. This feature will be available after my Beta stages :frowning: Join our [Support Server](https://discord.gg/CRhNHBs) for updates when this feature becomes available")
+      .setDescription(`<@${message.author.id}>` + " Sorry i am not yet available to be invited to servers. This feature will be available after my Beta stages :frowning:")
       .setColor("0xff0000")
       .addField("Current Verison", "Beta v1.00")
       .addField("Next Version", "Beta v1.01")
