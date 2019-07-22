@@ -109,12 +109,10 @@ client.on("message", async message => {
   if(command === "invite") {
 
         let Uembed = new Discord.RichEmbed()
-      .setTitle("Ninja Gen Invite")
-      .setDescription(`<@${message.author.id}>` + " Sorry i am not yet available to be invited to servers. This feature will be available after my Beta stages :frowning: Join our [Support Server](https://discord.gg/CRhNHBs) for updates when this feature becomes available")
       .setColor("0xff0000") 
-      .addField("Expected Release Date", "August/14/2019")
-      .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
-      .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
+      .setTitle("Ninja Gen Invite")
+      .setDescription(`<@${message.author.id}>` + " Sorry i am not yet available to be invited to servers. This feature will be available after my Beta stages :frowning: Join our [Support Server](https://discord.gg/CRhNHBs) for updates when this feature becomes available");
+      .setColor("0xff0000") 
     message.delete().catch();
    
    
