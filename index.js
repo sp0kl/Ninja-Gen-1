@@ -611,7 +611,7 @@ if(!args[0] || args[0 == "help"]) return message.channel.send(Eembed);
 
 
     let bugEmbed = new Discord.RichEmbed()
-    .setTitle("Ninja Gen Account/Stock Requests")
+    .setTitle("Ninja Gen Bug Reports")
     .setColor("0x0ffff")
     .addField("User", message.author)
     .addField("UserID", `${message.author.id}`)
@@ -622,7 +622,7 @@ if(!args[0] || args[0 == "help"]) return message.channel.send(Eembed);
 
 let Bugembed2 = new Discord.RichEmbed()
       .setColor(0x0ff00)
-      .setTitle("Ninja Gen Change Requests")
+      .setTitle("Ninja Gen Bug Report Sent")
       .setDescription(`<@${message.author.id}>` + " Your bug report has been sent :white_check_mark:")
       message.delete().catch();
 
