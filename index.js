@@ -598,8 +598,8 @@ if(command === "bugreport") {
 
     let Eembed = new Discord.RichEmbed()
       .setColor(0xff0000)
-      .setTitle("Ninja Gen Change Requests")
-      .setDescription(`<@${message.author.id}>` + " Ninja Gen Request help :point_down:")
+      .setTitle("Ninja Gen Bug Reports")
+      .setDescription(`<@${message.author.id}>` + " Ninja Gen Bug Report help :point_down:")
       .addField("Usage", "``gen bugreport {what you want to report}``")
       .addField("Usage Example", "``gen bugreport Fortnite accounts not working``")
       .addField("Usage Example 2", "``gen bugreport Bot not sending info``");
