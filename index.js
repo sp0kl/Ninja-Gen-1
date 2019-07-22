@@ -595,40 +595,42 @@ console.log(`<@${message.author.id}> has used the suggest command in ${message.c
   }
           
 if(command === "bugreport") {
-  
-  let Rembed = new Discord.RichEmbed()
+
+    let Eembed = new Discord.RichEmbed()
       .setColor(0xff0000)
-      .setTitle("Ninja Gen Bug Reports")
-      .setDescription(`<@${message.author.id}>` + " Ninja Gen Bug Report help :point_down:")
+      .setTitle("Ninja Gen Change Requests")
+      .setDescription(`<@${message.author.id}>` + " Ninja Gen Request help :point_down:")
       .addField("Usage", "``gen bugreport {what you want to report}``")
       .addField("Usage Example", "``gen bugreport Fortnite accounts not working``")
-      .addField("Usage Example 2", "``gen bugreport bot doesnt send account info``");
+      .addField("Usage Example 2", "``gen bugreport Bot not sending info``");
       message.delete().catch();
 
-  
     const sayMessage = args.join(" ");
     message.delete().catch();
-if(!args[0] || args[0 == "help"]) return message.channel.send(Rembed);
-  
+if(!args[0] || args[0 == "help"]) return message.channel.send(Eembed);
 
-  let bugEmbed = new Discord.RichEmbed()
-     .setDescription("Ninja Gen Bug Reports")
-     .setColor("0x0ffff")
-     .addField("Reported by", `${message.author} with ID ${message.author.id}`)
-     .addField("Server Name", message.guild.name)
-     .addField("Channel Name", message.channel)
-     .addField("Time Of Report", message.createdAt)
-     .addField("Report Reason", `${sayMessage}`)
-     .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+
+    let bugEmbed = new Discord.RichEmbed()
+    .setTitle("Ninja Gen Account/Stock Requests")
+    .setColor("0x0ffff")
+    .addField("User", message.author)
+    .addField("UserID", `${message.author.id}`)
+    .addField("Server", `${message.channel.guild}`)
+    .addField("Request", `${sayMessage}`)
+    .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
 
+let Bugembed2 = new Discord.RichEmbed()
+      .setColor(0x0ff00)
+      .setTitle("Ninja Gen Change Requests")
+      .setDescription(`<@${message.author.id}>` + " Your bug report has been sent :white_check_mark:")
+      message.delete().catch();
 
-
- let reportChannel = client.guilds.find("id", "586817026522218507").channels.find("name","bug-reports").send(bugEmbed);
-  message.reply(`Your bug report has been sent`);
-     if(!reportChannel) return message.channel.send(`<@${message.author.id}> Couldn't find the reports channel`);
-  
-console.log(`<@${message.author.id}> has used the bug reports command in the server ${message.channel.guild} channel ${message.channel}`)
+let requestChannel = client.guilds.find("id", "586817026522218507").channels.find("name","bug-reports").send(bugEmbed);
+  message.reply(Bugembed2);
+     if(!requestChannel) return message.channel.send(`<@${message.author.id}> Couldn't find the required channel, please message the devs ASAP as this may be a mistake or error`);
+      
+console.log(`<@${message.author.id}> has used the suggest command in ${message.channel.guild} channel ${message.channel}`)
   }
   
   if(command === "reminder") {
