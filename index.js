@@ -107,7 +107,22 @@ client.on("message", async message => {
  }
   
   if(command === "invite") {
-  message.delete().catch();	 
+
+        let Uembed = new Discord.RichEmbed()
+      .setTitle("Ninja Gen Invite")
+      .setDescription(`<@${message.author.id}>` + " Sorry i am not yet available to be invited to servers. This feature will be available after my Beta stages :frowning: Join our [Support Server](https://discord.gg/CRhNHBs) for updates when this feature becomes available")
+      .setColor("0xff0000") 
+      .addField("Expected Release Date", "August/14/2019")
+      .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+      .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
+    message.delete().catch();
+   
+   
+   
+    if(message.author.id !== config.ownerID) return message.channel.send(Uembed)
+        snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
+          message.delete().catch();
+    
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Ninja Gen Invite")
    .setDescription(`<@${message.author.id}>` + " Interested in inviting me to your server? Use the link below")
