@@ -182,15 +182,6 @@ client.on("message", async message => {
       message.channel.send(Membed)
       message.author.send(Gembed)
 
-
-        // Adds the user to the set so that they can't talk for a minute
-talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(message.author.id);
-        }, 60000);
-    }
-   
    let dEmbed = new Discord.RichEmbed()
       .setColor(53380)
       .setTitle("User has generated a account")
@@ -201,6 +192,14 @@ talkedRecently.add(message.author.id);
       client.fetchUser('444609097233465347').then((user) => {
         user.send(dEmbed)
         });
+
+        // Adds the user to the set so that they can't talk for a minute
+talkedRecently.add(message.author.id);
+        setTimeout(() => {
+          // Removes the user from the set after a minute
+          talkedRecently.delete(message.author.id);
+        }, 60000);
+    }
    
    
    
