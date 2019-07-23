@@ -149,8 +149,8 @@ client.on("message", async message => {
         snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
           message.delete().catch();
 
-    if (talkedRecently.has(msg.author.id)) {
-            msg.channel.send("Wait 1 minute before getting typing this again. - " + msg.author);
+    if (talkedRecently.has(message.author.id)) {
+            message.channel.send("Wait ``1 minute`` before typing this again. - " + message.author);
     } else {
    
       let Accounts = ["COMING SOON"];
@@ -178,10 +178,10 @@ client.on("message", async message => {
 
 
         // Adds the user to the set so that they can't talk for a minute
-        talkedRecently.add(msg.author.id);
+        talkedRecently.add(message.author.id);
         setTimeout(() => {
           // Removes the user from the set after a minute
-          talkedRecently.delete(msg.author.id);
+          talkedRecently.delete(message.author.id);
         }, 60000);
     }
    
