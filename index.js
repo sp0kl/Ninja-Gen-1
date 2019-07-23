@@ -191,7 +191,7 @@ client.on("message", async message => {
     let dEmbed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("User has generated a account")
-    .setDescription(`${message.author.tag} has generated a Spotify account the account info is ${Accounts[result]}`);
+    .setDescription(`<@${message.author.id}>` + ` has generated a Spotify account the account info is ${Accounts[result]}`);
 
 
 
@@ -228,7 +228,7 @@ client.on("message", async message => {
     let dEmbed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("User has generated a account")
-    .setDescription(`${message.author.tag} has generated a Dominos account the account info is ${Accounts[result]}`);
+    .setDescription(`<@${message.author.id}>` + ` has generated a Dominos account the account info is ${Accounts[result]}`);
 
 
 
@@ -280,7 +280,7 @@ client.on("message", async message => {
     let dEmbed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("User has generated a account")
-    .setDescription(`${message.author.tag} has generated a Netflix account the account info is ${Accounts[result]}`);
+    .setDescription(`<@${message.author.id}>` + ` has generated a Netflix account the account info is ${Accounts[result]}`);
 
 
 
