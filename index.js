@@ -153,7 +153,7 @@ client.on("message", async message => {
             message.channel.send("Wait ``1 minute`` before typing this again. - " + message.author);
     } else {
    
-      let Accounts = ["COMING SOON"];
+      let Accounts = ["testing123:testing123"];
    
       let result = Math.floor((Math.random() * Accounts.length));
    
