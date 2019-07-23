@@ -178,7 +178,14 @@ client.on("message", async message => {
 
 
         // Adds the user to the set so that they can't talk for a minute
-        talkedRecently.add(message.author.id);
+        
+let Cembed = new Discord.RichEmbed() 
+      .setTitle("Hmm :thinking: To Fast!!")
+      .setDescription(`<@${message.author.id}>` + " Please wait ``1 Minute`` before retyping this command. :shrug:")
+      .setColor("0xff0000")
+    message.delete().catch();
+
+talkedRecently.add(message.author.id);
         setTimeout(() => {
           // Removes the user from the set after a minute
           talkedRecently.delete(message.author.id);
