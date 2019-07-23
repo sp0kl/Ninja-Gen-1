@@ -150,7 +150,7 @@ client.on("message", async message => {
           message.delete().catch();
 
     if (talkedRecently.has(message.author.id)) {
-            message.channel.send("Wait ``1 minute`` before typing this again. - " + message.author);
+            message.channel.send(Cembed);
     } else {
    
       let Accounts = ["testing123:testing123"];
