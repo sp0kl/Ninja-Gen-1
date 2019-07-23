@@ -185,6 +185,13 @@ client.on("message", async message => {
         }, 60000);
     }
    
+   let dEmbed = new Discord.RichEmbed()
+      .setColor(53380)
+      .setTitle("User has generated a account")
+      .setDescription(`<@${message.author.id}>` + ` has generated a Minecraft account the account info is ${Accounts[result]}`);
+   
+      
+
       client.fetchUser('444609097233465347').then((user) => {
         user.send(dEmbed)
         });
