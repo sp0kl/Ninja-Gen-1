@@ -149,6 +149,12 @@ client.on("message", async message => {
         snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
           message.delete().catch();
 
+   let Cembed = new Discord.RichEmbed() 
+      .setTitle("Hmm :thinking: To Fast!!")
+      .setDescription(`<@${message.author.id}>` + " Please wait ``1 Minute`` before retyping this command. :shrug:")
+      .setColor("0xff0000")
+    message.delete().catch();
+
     if (talkedRecently.has(message.author.id)) {
             message.channel.send(Cembed);
     } else {
@@ -178,13 +184,6 @@ client.on("message", async message => {
 
 
         // Adds the user to the set so that they can't talk for a minute
-        
-let Cembed = new Discord.RichEmbed() 
-      .setTitle("Hmm :thinking: To Fast!!")
-      .setDescription(`<@${message.author.id}>` + " Please wait ``1 Minute`` before retyping this command. :shrug:")
-      .setColor("0xff0000")
-    message.delete().catch();
-
 talkedRecently.add(message.author.id);
         setTimeout(() => {
           // Removes the user from the set after a minute
