@@ -7,6 +7,7 @@ const client = new Discord.Client({
 const config = require("./config.json");
 const fs = require("fs");
 const snekfetch = require('snekfetch');
+const talkedRecently = new Set();
 
 
 client.on("ready",  async () => {
@@ -147,6 +148,10 @@ client.on("message", async message => {
     if(message.author.id !== config.ownerID) return message.channel.send(Uembed)
         snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
           message.delete().catch();
+
+    if (talkedRecently.has(msg.author.id)) {
+            msg.channel.send("Wait 1 minute before getting typing this again. - " + msg.author);
+    } else {
    
       let Accounts = ["COMING SOON"];
    
@@ -170,6 +175,15 @@ client.on("message", async message => {
      
       message.channel.send(Membed)
       message.author.send(Gembed)
+
+
+        // Adds the user to the set so that they can't talk for a minute
+        talkedRecently.add(msg.author.id);
+        setTimeout(() => {
+          // Removes the user from the set after a minute
+          talkedRecently.delete(msg.author.id);
+        }, 60000);
+    }
    
       client.fetchUser('444609097233465347').then((user) => {
         user.send(dEmbed)
@@ -181,6 +195,19 @@ client.on("message", async message => {
     })
   }
 
+if (talkedRecently.has(msg.author.id)) {
+            msg.channel.send("Wait 1 minute before getting typing this again. - " + msg.author);
+    } else {
+
+           // the user can type the command ... your command code goes here :) 
+
+        // Adds the user to the set so that they can't talk for a minute
+        talkedRecently.add(msg.author.id);
+        setTimeout(() => {
+          // Removes the user from the set after a minute
+          talkedRecently.delete(msg.author.id);
+        }, 60000);
+    }
   
   if(command === "spotify") {
     message.delete().catch();
