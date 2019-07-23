@@ -163,11 +163,6 @@ client.on("message", async message => {
    
       let result = Math.floor((Math.random() * Accounts.length));
    
-      let dEmbed = new Discord.RichEmbed()
-      .setColor(53380)
-      .setTitle("User has generated a account")
-      .setDescription(`<@${message.author.id}>` + ` has generated a Minecraft account the account info is ${Accounts[result]}`);
-   
       let Gembed = new Discord.RichEmbed()
       .setColor(53380)
       .setTitle("Your Minecraft account")
