@@ -182,7 +182,6 @@ client.on("message", async message => {
       .setTitle("User has generated a account")
       .setDescription(`<@${message.author.id}>` + ` has generated a Minecraft account the account info is ${Accounts[result]}`);
    
-      
 
       client.fetchUser('444609097233465347').then((user) => {
         user.send(dEmbed)
@@ -197,24 +196,9 @@ talkedRecently.add(message.author.id);
     }
    
    
-   
-   
     })
   }
 
-if (talkedRecently.has(msg.author.id)) {
-            msg.channel.send("Wait 1 minute before getting typing this again. - " + msg.author);
-    } else {
-
-           // the user can type the command ... your command code goes here :) 
-
-        // Adds the user to the set so that they can't talk for a minute
-        talkedRecently.add(msg.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(msg.author.id);
-        }, 60000);
-    }
   
   if(command === "spotify") {
     message.delete().catch();
@@ -247,8 +231,6 @@ if (talkedRecently.has(msg.author.id)) {
     client.fetchUser('444609097233465347').then((user) => {
       user.send(dEmbed)
     });
-
-
 
 
   }
