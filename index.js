@@ -238,7 +238,7 @@ talkedRecently.add(message.author.id);
           // Removes the user from the set after a minute
           talkedRecently.delete(message.author.id);
         }, 60000);
-    }
+    })
 
   }
 }
