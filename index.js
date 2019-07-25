@@ -623,7 +623,7 @@ talkedRecently.add(message.author.id);
     }
 
 
-  }
+  })
      
   
    if(command === "fortnite") {
