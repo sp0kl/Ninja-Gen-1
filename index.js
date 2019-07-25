@@ -196,7 +196,7 @@ talkedRecently.add(message.author.id);
     }
    
    
-    })
+    });
   }
 
    if(command === "spotify1") {
@@ -260,23 +260,13 @@ talkedRecently.add(message.author.id);
     }
    
    
-    })
+    });
   }
 
   
   
   if(command === "spotify") {
     message.delete().catch();
-
-let Cembed = new Discord.RichEmbed() 
-      .setTitle("Hmm :thinking: To Fast!!")
-      .setDescription(`<@${message.author.id}>` + " Please wait ``1 Minute`` before retyping this command. :shrug:")
-      .setColor("0xff0000")
-    message.delete().catch();
-
-    if (talkedRecently.has(message.author.id)) {
-            message.channel.send(Cembed);
-    } else {
 
     let Accounts = ["amiamam@hotmail.com:bronzetable", "oliviameloni@hotmail.com:billabong1", "kwgeipel@gmail.com:baseball1", "stoutman777@live.com:7jesus77", "ribeiro_kk@hotmail.com:admini10", "burcudurmusoglu@gmail.com:0121kj21", "skater_alex@gmx.de:hesoyam1494", "pea_maxsimumcannon@hotmail.com:daebak19", "mathias.delannoye@live.be:Delannoye1992", "magnus_landgren@hotmail.com:oasis2", "surfboards411@gmail.com:livingeasy411", "kathleen.travers@yahoo.co.uk:Fl3tch01", "edouard@debutler.fr:doud3364", "nikes90@hotmail.it:fenice", "k3nny455wood@gmail.com:8Maggots", "candybarsugars@yahoo.com:coolcat45", "tcjewell@gmail.com:atom33", "me@drmoradi.com:sarah1guity"];
 
@@ -308,31 +298,13 @@ let Cembed = new Discord.RichEmbed()
       user.send(dEmbed)
       });
     
-    // Adds the user to the set so that they can't talk for a minute
-talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(message.author.id);
-        }, 60000);
-    }
-    
                                                 
                                                 
-    }
-  })
+    });
+  }
   
     if(command === "dominos") {
     message.delete().catch();
-      
-         let Cembed2 = new Discord.RichEmbed() 
-      .setTitle("Hmm :thinking: To Fast!!")
-      .setDescription(`<@${message.author.id}>` + " Please wait ``1 Minute`` before retyping this command. :shrug:")
-      .setColor("0xff0000")
-    message.delete().catch();
-      
-       if (talkedRecently.has(message.author.id)) {
-            message.channel.send(Cembed2);
-    } else {
       
     let Accounts = ["monkeysarsweet@aol.com:monkeys777", "carter4design@gmail.com:free2bme", "naoeli_mar@live.com:Korver26", "ahroblak@gmail.com:Ginevra23", "gui.golden@hotmail.com:1992Guiguigui", "crystalttnguyen@icloud.com:Trang123", "2016tabdur@gmail.com:Mybrothers3", "sydhintz32@gmail.com:Shooter32", "zach.sanchez24@gmail.com:flames0019", "mgamess14@gmail.com:RockyMtn2002", "damarislechuga@icloud.com:Damaris61649", "caleb7299@gmail.com:Caleb7299", "ahroblak@gmail.com:Ginevra23", "Sahajsingh1998@gmail.com:Equinox64", "JonathanNtale@hotmail.com:Microcom1", "pcelatka2@gmail.com:Ovechkin8", "hansenjason88@gmail.com:Roxydog88", "leecharmy08@gmail.com:FutureMarine1", "b.z.harbe@hotmail.com:Aa123aa123", "raquelbaghdjian@yahoo.com:Shantig7", "sydpayne11@gmail.com:Sp30966", "560lister@gmail.com:Hunterjake238", "fromdc2texas@gmail.com:Uiopvc", "lalwanisarah@gmail.com:Sl2010957", "paulomsaroda7@gmail.com:Paulom07", "teemu.hakoniemi@hotmail.fi:Termosh132,"];
 
@@ -368,16 +340,9 @@ talkedRecently.add(message.author.id);
       user.send(dEmbed)
     });
       
-              // Adds the user to the set so that they can't talk for a minute
-talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(message.author.id);
-        }, 60000);
-    }
       
-      
-    }
+    });
+}
   
   
    if(command === "netflix") {
@@ -446,7 +411,7 @@ talkedRecently.add(message.author.id);
 
 
   });
-
+ }
   
    if(command === "nordvpn") {
     message.delete().catch();
@@ -501,7 +466,8 @@ talkedRecently.add(message.author.id);
 
 
 
-   }
+   });
+}
   
   
    if(command === "crunchyroll") {
@@ -556,8 +522,8 @@ talkedRecently.add(message.author.id);
     }
 
 
-    }
-  
+    });
+}  
   
    if(command === "uplay") {
 
@@ -622,8 +588,8 @@ talkedRecently.add(message.author.id);
     }
 
 
-  })
-    
+  });
+}
   
    if(command === "origin") {
 
@@ -688,8 +654,8 @@ talkedRecently.add(message.author.id);
     }
 
 
-  })
-     
+  });
+}     
   
    if(command === "fortnite") {
 
@@ -754,7 +720,8 @@ talkedRecently.add(message.author.id);
     }
 
 
-  })
+  });
+}   
 
   
    if(command === "serverinfo") {
@@ -916,7 +883,7 @@ if(command === "serverlist") {
 }
 
   
-    }
+    });
 
 
 client.login(config.token);
