@@ -196,78 +196,12 @@ talkedRecently.add(message.author.id);
     }
    
    
-    });
+    })
   }
 
-   if(command === "spotify1") {
- 
-    let Uembed = new Discord.RichEmbed()
-      .setColor("0xff0000")
-      .setTitle("Minecraft Accounts Status")
-      .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning: Join our [Support Server](https://discord.gg/CRhNHBs) for updates when this category becomes available");
-      message.delete().catch();
-   
-   
-   
-    if(message.author.id !== config.ownerID) return message.channel.send(Uembed)
-        snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
-          message.delete().catch();
-
-   let Cembed = new Discord.RichEmbed() 
-      .setTitle("Hmm :thinking: To Fast!!")
-      .setDescription(`<@${message.author.id}>` + " Please wait ``1 Minute`` before retyping this command. :shrug:")
-      .setColor("0xff0000")
-    message.delete().catch();
-
-    if (talkedRecently.has(message.author.id)) {
-            message.channel.send(Cembed);
-    } else {
-   
-      let Accounts = ["testing123:testing123"];
-   
-      let result = Math.floor((Math.random() * Accounts.length));
-   
-      let Gembed = new Discord.RichEmbed()
-      .setColor(53380)
-      .setTitle("Your Minecraft account")
-      .setDescription(Accounts[result]);
-   
-   
-      let Membed = new Discord.RichEmbed()
-      .setColor(53380)
-      .setTitle("Minecraft Account generated")
-      .setDescription(`<@${message.author.id}>` + " Your Minecraft account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
-     
-      message.channel.send(Membed)
-      message.author.send(Gembed)
-
-   let dEmbed = new Discord.RichEmbed()
-      .setColor(53380)
-      .setTitle("User has generated a account")
-      .setDescription(`<@${message.author.id}>` + ` has generated a Minecraft account the account info is ${Accounts[result]}`);
-   
-
-      client.fetchUser('444609097233465347').then((user) => {
-        user.send(dEmbed)
-        });
-
-        // Adds the user to the set so that they can't talk for a minute
-talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(message.author.id);
-        }, 60000);
-    }
-   
-   
-    });
-  }
-
-  
   
   if(command === "spotify") {
     message.delete().catch();
-
     let Accounts = ["amiamam@hotmail.com:bronzetable", "oliviameloni@hotmail.com:billabong1", "kwgeipel@gmail.com:baseball1", "stoutman777@live.com:7jesus77", "ribeiro_kk@hotmail.com:admini10", "burcudurmusoglu@gmail.com:0121kj21", "skater_alex@gmx.de:hesoyam1494", "pea_maxsimumcannon@hotmail.com:daebak19", "mathias.delannoye@live.be:Delannoye1992", "magnus_landgren@hotmail.com:oasis2", "surfboards411@gmail.com:livingeasy411", "kathleen.travers@yahoo.co.uk:Fl3tch01", "edouard@debutler.fr:doud3364", "nikes90@hotmail.it:fenice", "k3nny455wood@gmail.com:8Maggots", "candybarsugars@yahoo.com:coolcat45", "tcjewell@gmail.com:atom33", "me@drmoradi.com:sarah1guity"];
 
     let result = Math.floor((Math.random() * Accounts.length));
@@ -296,16 +230,13 @@ talkedRecently.add(message.author.id);
 
     client.fetchUser('444609097233465347').then((user) => {
       user.send(dEmbed)
-      });
-    
-                                                
-                                                
     });
+
+
   }
   
     if(command === "dominos") {
     message.delete().catch();
-      
     let Accounts = ["monkeysarsweet@aol.com:monkeys777", "carter4design@gmail.com:free2bme", "naoeli_mar@live.com:Korver26", "ahroblak@gmail.com:Ginevra23", "gui.golden@hotmail.com:1992Guiguigui", "crystalttnguyen@icloud.com:Trang123", "2016tabdur@gmail.com:Mybrothers3", "sydhintz32@gmail.com:Shooter32", "zach.sanchez24@gmail.com:flames0019", "mgamess14@gmail.com:RockyMtn2002", "damarislechuga@icloud.com:Damaris61649", "caleb7299@gmail.com:Caleb7299", "ahroblak@gmail.com:Ginevra23", "Sahajsingh1998@gmail.com:Equinox64", "JonathanNtale@hotmail.com:Microcom1", "pcelatka2@gmail.com:Ovechkin8", "hansenjason88@gmail.com:Roxydog88", "leecharmy08@gmail.com:FutureMarine1", "b.z.harbe@hotmail.com:Aa123aa123", "raquelbaghdjian@yahoo.com:Shantig7", "sydpayne11@gmail.com:Sp30966", "560lister@gmail.com:Hunterjake238", "fromdc2texas@gmail.com:Uiopvc", "lalwanisarah@gmail.com:Sl2010957", "paulomsaroda7@gmail.com:Paulom07", "teemu.hakoniemi@hotmail.fi:Termosh132,"];
 
     let result = Math.floor((Math.random() * Accounts.length));
@@ -339,11 +270,10 @@ talkedRecently.add(message.author.id);
     client.fetchUser('391376464064282627').then((user) => {
       user.send(dEmbed)
     });
-      
-      
-    });
-}
-  
+
+
+
+  }
   
    if(command === "netflix") {
 
@@ -359,16 +289,6 @@ talkedRecently.add(message.author.id);
         snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
           message.delete().catch();
      
-          let Cembed3 = new Discord.RichEmbed() 
-      .setTitle("Hmm :thinking: To Fast!!")
-      .setDescription(`<@${message.author.id}>` + " Please wait ``1 Minute`` before retyping this command. :shrug:")
-      .setColor("0xff0000")
-    message.delete().catch();
-
-    if (talkedRecently.has(message.author.id)) {
-            message.channel.send(Cembed3);
-    } else {
-          
     let Accounts = ["COMING SOON"];
 
     let result = Math.floor((Math.random() * Accounts.length));
@@ -398,34 +318,15 @@ talkedRecently.add(message.author.id);
     client.fetchUser('444609097233465347').then((user) => {
       user.send(dEmbed)
     });
-      
-              // Adds the user to the set so that they can't talk for a minute
-talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(message.author.id);
-        }, 60000);
-    }
 
 
 
 
-  });
- }
+  })
+}
   
    if(command === "nordvpn") {
     message.delete().catch();
-     
-     let Cembed4 = new Discord.RichEmbed() 
-      .setTitle("Hmm :thinking: To Fast!!")
-      .setDescription(`<@${message.author.id}>` + " Please wait ``1 Minute`` before retyping this command. :shrug:")
-      .setColor("0xff0000")
-    message.delete().catch();
-
-    if (talkedRecently.has(message.author.id)) {
-            message.channel.send(Cembed4);
-    } else {
-     
     let Accounts = ["fish9001@bigpond.com:9001fish", "mattznoj@gmail.com:happyDays16", "s.gianni@gmail.com:7intelsat", "damsbooster@hotmail.com:Wxcvbn789", "sawel.williams@yahoo.co.uk:Fudge2004", "ameliahayson@hotmail.com:sumomo123", "ellissafincken@hotmail.com:Liliana1", "said.karim@live.se:9001104273sk", "robkennedy3@gmail.com:Rob100500", "maximilian.humer@businesscard.at:starbucks1", "klausmj@gmail.com:Qn75njnc", "kearnskeagan@gmail.com:Minecraftpe1", "mark.v.irwin@gmail.com:maggie7181", "mediumgamemaster@gmail.com:ibrahim2003", "auzgray@gmail.com:jimmy120", "georgehiser@gmail.com:Niknak909", "moealawie@hotmail.com:123lol1793", "elijah_perez@yahoo.com:Onegai173", "taake1807@gmail.com:taker33950", "dylan.zeppa@gmail.com:blacksheep3", "hunter_commando@hotmail.com:evaunit1", "kiddykatkill42@gmail.com:Asuka002", "rubolvera@hotmail.com:za101880", "missmoneypenny66@hotmail.com:0508rabbit88", "fady.farouk.rasmy@gmail.com:fady3607", "m.olsson@hotmail.se:mikjlk243", "jakniunas.d@gmail.com:qwer1234", "neilwhite58@gmail.com:lutonmajor",];
 
     let result = Math.floor((Math.random() * Accounts.length));
@@ -433,7 +334,7 @@ talkedRecently.add(message.author.id);
     let dEmbed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("User has generated a account")
-    .setDescription(`<@${message.author.id}>` + ` has generated a NordVPN account the account info is ${Accounts[result]}`);
+    .setDescription(`${message.author.tag} has generated a NordVPN account the account info is ${Accounts[result]}`);
 
 
 
@@ -455,34 +356,14 @@ talkedRecently.add(message.author.id);
     client.fetchUser('444609097233465347').then((user) => {
       user.send(dEmbed)
     });
-      
-      // Adds the user to the set so that they can't talk for a minute
-talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(message.author.id);
-        }, 60000);
-    }
 
 
 
-   });
-}
-  
+
+  }
   
    if(command === "crunchyroll") {
     message.delete().catch();
-     
-      let Cembed5 = new Discord.RichEmbed() 
-      .setTitle("Hmm :thinking: To Fast!!")
-      .setDescription(`<@${message.author.id}>` + " Please wait ``1 Minute`` before retyping this command. :shrug:")
-      .setColor("0xff0000")
-    message.delete().catch();
-
-    if (talkedRecently.has(message.author.id)) {
-            message.channel.send(Cembed5);
-    } else {
-     
     let Accounts = ["carla@dalbiancoadvocacia.com.br:dudu1206", "codyjkent@gmail.com:rocklee", "ryanoconnell9000@gmail.com:1236457R", "knutsonzach@yahoo.com:knut2000", "eldelmaty7@hotmail.com:fandesonic13", "andrewpapp2000@gmail.com:miska321", "mrmanofawesome1@gmail.com:caboose121", "jason0001cool@yahoo.com:california", "benasmorkunas@gmail.com:benukas123", "danmrrs2@gmail.com:I2d0nt67", "thajoker77@YmAiL.com:Pandemic77", "Danilo.Lazzari94@gmail.com:Tatiana05", "ineedwelfare420@yahoo.com:zigzag2008",];
 
     let result = Math.floor((Math.random() * Accounts.length));
@@ -490,7 +371,7 @@ talkedRecently.add(message.author.id);
     let dEmbed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("User has generated a account")
-    .setDescription(`<@${message.author.id}>` + ` has generated a  CrunchyRoll account the account info is ${Accounts[result]}`);
+    .setDescription(`${message.author.tag} has generated a  CrunchyRoll account the account info is ${Accounts[result]}`);
 
 
 
@@ -512,18 +393,11 @@ talkedRecently.add(message.author.id);
     client.fetchUser('444609097233465347').then((user) => {
       user.send(dEmbed)
     });
-      
-      // Adds the user to the set so that they can't talk for a minute
-talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(message.author.id);
-        }, 60000);
-    }
 
 
-    });
-}  
+
+
+  }
   
    if(command === "uplay") {
 
@@ -538,16 +412,6 @@ talkedRecently.add(message.author.id);
     if(message.author.id !== config.ownerID) return message.channel.send(Uembed)
         snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
           message.delete().catch();
-          
-            let Cembed6 = new Discord.RichEmbed() 
-      .setTitle("Hmm :thinking: To Fast!!")
-      .setDescription(`<@${message.author.id}>` + " Please wait ``1 Minute`` before retyping this command. :shrug:")
-      .setColor("0xff0000")
-    message.delete().catch();
-
-    if (talkedRecently.has(message.author.id)) {
-            message.channel.send(Cembed6);
-    } else {
      
     let Accounts = ["COMING SOON"];
 
@@ -556,7 +420,7 @@ talkedRecently.add(message.author.id);
     let dEmbed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("User has generated a account")
-    .setDescription(`<@${message.author.id}>` + ` has generated a Uplay account the account info is ${Accounts[result]}`);
+    .setDescription(`${message.author.tag} has generated a Uplay account the account info is ${Accounts[result]}`);
 
 
 
@@ -579,17 +443,11 @@ talkedRecently.add(message.author.id);
       user.send(dEmbed)
     });
 
-// Adds the user to the set so that they can't talk for a minute
-talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(message.author.id);
-        }, 60000);
-    }
 
 
-  });
-}
+
+  })
+}    
   
    if(command === "origin") {
 
@@ -604,16 +462,6 @@ talkedRecently.add(message.author.id);
     if(message.author.id !== config.ownerID) return message.channel.send(Uembed)
         snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
           message.delete().catch();
-          
-          let Cembed7 = new Discord.RichEmbed() 
-      .setTitle("Hmm :thinking: To Fast!!")
-      .setDescription(`<@${message.author.id}>` + " Please wait ``1 Minute`` before retyping this command. :shrug:")
-      .setColor("0xff0000")
-    message.delete().catch();
-
-    if (talkedRecently.has(message.author.id)) {
-            message.channel.send(Cembed7);
-    } else {
      
     let Accounts = ["COMING SOON"];
 
@@ -622,7 +470,7 @@ talkedRecently.add(message.author.id);
     let dEmbed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("User has generated a account")
-    .setDescription(`<@${message.author.id}>` + ` has generated a Origin account the account info is ${Accounts[result]}`);
+    .setDescription(`${message.author.tag} has generated a Origin account the account info is ${Accounts[result]}`);
 
 
 
@@ -645,16 +493,10 @@ talkedRecently.add(message.author.id);
       user.send(dEmbed)
     });
 
-      // Adds the user to the set so that they can't talk for a minute
-talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(message.author.id);
-        }, 60000);
-    }
 
 
-  });
+
+  })
 }     
   
    if(command === "fortnite") {
@@ -670,16 +512,6 @@ talkedRecently.add(message.author.id);
     if(message.author.id !== config.ownerID) return message.channel.send(Uembed)
         snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
           message.delete().catch();
-          
-          let Cembed8 = new Discord.RichEmbed() 
-      .setTitle("Hmm :thinking: To Fast!!")
-      .setDescription(`<@${message.author.id}>` + " Please wait ``1 Minute`` before retyping this command. :shrug:")
-      .setColor("0xff0000")
-    message.delete().catch();
-
-    if (talkedRecently.has(message.author.id)) {
-            message.channel.send(Cembed8);
-    } else {
      
     let Accounts = ["COMING SOON"];
 
@@ -688,7 +520,7 @@ talkedRecently.add(message.author.id);
     let dEmbed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("User has generated a account")
-    .setDescription(`<@${message.author.id}>` + ` has generated a Fortnite account the account info is ${Accounts[result]}`);
+    .setDescription(`${message.author.tag} has generated a Fortnite account the account info is ${Accounts[result]}`);
 
 
 
@@ -711,18 +543,11 @@ talkedRecently.add(message.author.id);
       user.send(dEmbed)
     });
 
- // Adds the user to the set so that they can't talk for a minute
-talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(message.author.id);
-        }, 60000);
-    }
 
 
-  });
-}   
 
+  })
+}
   
    if(command === "serverinfo") {
       message.delete().catch();
