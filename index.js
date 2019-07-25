@@ -916,7 +916,7 @@ if(command === "serverlist") {
 }
 
   
-    })
+    }
 
 
 client.login(config.token);
