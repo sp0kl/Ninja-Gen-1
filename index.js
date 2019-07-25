@@ -133,17 +133,7 @@ client.on("message", async message => {
    .setThumbnail(`https://i.imgur.com/xerUkNI.png`);
    message.channel.send(hEmbed)
  })
-}
-
- let Cembed = new Discord.RichEmbed() 
-      .setTitle("Hmm :thinking: To Fast!!")
-      .setDescription(`<@${message.author.id}>` + " Please wait ``1 Minute`` before retyping this command. :shrug:")
-      .setColor("0xff0000")
-    message.delete().catch();
-
-    if (talkedRecently.has(message.author.id)) {
-            message.channel.send(Cembed);
-    } else {   
+}    
   
   if(command === "minecraft") {
  
@@ -158,6 +148,16 @@ client.on("message", async message => {
     if(message.author.id !== config.ownerID) return message.channel.send(Uembed)
         snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
           message.delete().catch();
+
+   let Cembed = new Discord.RichEmbed() 
+      .setTitle("Hmm :thinking: To Fast!!")
+      .setDescription(`<@${message.author.id}>` + " Please wait ``1 Minute`` before retyping this command. :shrug:")
+      .setColor("0xff0000")
+    message.delete().catch();
+
+    if (talkedRecently.has(message.author.id)) {
+            message.channel.send(Cembed);
+    } else {
    
       let Accounts = ["testing123:testing123"];
    
@@ -187,16 +187,16 @@ client.on("message", async message => {
         user.send(dEmbed)
         });
 
-// Adds the user to the set so that they can't talk for a minute
+        // Adds the user to the set so that they can't talk for a minute
 talkedRecently.add(message.author.id);
         setTimeout(() => {
           // Removes the user from the set after a minute
           talkedRecently.delete(message.author.id);
         }, 60000);
-    })
-   
-   
     }
+   
+   
+    })
   }
 
   
@@ -232,15 +232,8 @@ talkedRecently.add(message.author.id);
       user.send(dEmbed)
     });
 
-// Adds the user to the set so that they can't talk for a minute
-talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(message.author.id);
-        }, 60000);
-    }
 
-  })
+  }
   
     if(command === "dominos") {
     message.delete().catch();
@@ -278,15 +271,9 @@ talkedRecently.add(message.author.id);
       user.send(dEmbed)
     });
 
-// Adds the user to the set so that they can't talk for a minute
-talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(message.author.id);
-        }, 60000);
-    }
 
-}
+
+  }
   
    if(command === "netflix") {
 
@@ -332,16 +319,10 @@ talkedRecently.add(message.author.id);
       user.send(dEmbed)
     });
 
-// Adds the user to the set so that they can't talk for a minute
-talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(message.author.id);
-        }, 60000);
-    }
 
 
-  }
+
+  })
 }
   
    if(command === "nordvpn") {
@@ -376,17 +357,10 @@ talkedRecently.add(message.author.id);
       user.send(dEmbed)
     });
 
-// Adds the user to the set so that they can't talk for a minute
-talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(message.author.id);
-        }, 60000);
-    }
+
 
 
   }
-}
   
    if(command === "crunchyroll") {
     message.delete().catch();
@@ -420,17 +394,10 @@ talkedRecently.add(message.author.id);
       user.send(dEmbed)
     });
 
-// Adds the user to the set so that they can't talk for a minute
-talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(message.author.id);
-        }, 60000);
-    }
+
 
 
   }
-}
   
    if(command === "uplay") {
 
@@ -476,16 +443,10 @@ talkedRecently.add(message.author.id);
       user.send(dEmbed)
     });
 
-// Adds the user to the set so that they can't talk for a minute
-talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(message.author.id);
-        }, 60000);
-    }
 
 
-  }
+
+  })
 }    
   
    if(command === "origin") {
@@ -532,16 +493,10 @@ talkedRecently.add(message.author.id);
       user.send(dEmbed)
     });
 
-// Adds the user to the set so that they can't talk for a minute
-talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(message.author.id);
-        }, 60000);
-    }
 
 
-  }
+
+  })
 }     
   
    if(command === "fortnite") {
@@ -588,16 +543,10 @@ talkedRecently.add(message.author.id);
       user.send(dEmbed)
     });
 
-// Adds the user to the set so that they can't talk for a minute
-talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(message.author.id);
-        }, 60000);
-    })
 
 
-  }
+
+  })
 }
   
    if(command === "serverinfo") {
