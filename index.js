@@ -240,7 +240,7 @@ talkedRecently.add(message.author.id);
         }, 60000);
     }
 
-  }
+  })
 }
   
     if(command === "dominos") {
