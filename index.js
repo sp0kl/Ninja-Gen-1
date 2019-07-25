@@ -312,8 +312,8 @@ talkedRecently.add(message.author.id);
     }
       
       
-    })
-  }
+    }
+  })
   
    if(command === "netflix") {
 
@@ -380,8 +380,8 @@ talkedRecently.add(message.author.id);
 
 
 
-  })
-}
+  }
+})
   
    if(command === "nordvpn") {
     message.delete().catch();
@@ -436,8 +436,8 @@ talkedRecently.add(message.author.id);
 
 
 
-   })
-  }
+   }
+  })
   
    if(command === "crunchyroll") {
     message.delete().catch();
@@ -491,8 +491,8 @@ talkedRecently.add(message.author.id);
     }
 
 
-    })
-  }
+    }
+  })
   
    if(command === "uplay") {
 
@@ -557,8 +557,8 @@ talkedRecently.add(message.author.id);
     }
 
 
-  })
-}    
+  }
+})    
   
    if(command === "origin") {
 
@@ -623,8 +623,8 @@ talkedRecently.add(message.author.id);
     }
 
 
-  })
-}     
+  }
+})     
   
    if(command === "fortnite") {
 
@@ -689,8 +689,8 @@ talkedRecently.add(message.author.id);
     }
 
 
-  })
-}
+  }
+})
   
    if(command === "serverinfo") {
       message.delete().catch();
