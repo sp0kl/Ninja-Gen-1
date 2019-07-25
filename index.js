@@ -436,7 +436,7 @@ talkedRecently.add(message.author.id);
 
 
 
-   })
+   }
   
   
    if(command === "crunchyroll") {
@@ -557,7 +557,7 @@ talkedRecently.add(message.author.id);
     }
 
 
-  })
+  }
     
   
    if(command === "origin") {
@@ -689,7 +689,7 @@ talkedRecently.add(message.author.id);
     }
 
 
-  })
+  }
 
   
    if(command === "serverinfo") {
