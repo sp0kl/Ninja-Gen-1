@@ -254,7 +254,7 @@ talkedRecently.add(message.author.id);
                                                 
                                                 
     }
-  }
+  })
   
     if(command === "dominos") {
     message.delete().catch();
