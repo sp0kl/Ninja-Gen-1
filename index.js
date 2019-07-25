@@ -187,10 +187,16 @@ client.on("message", async message => {
         user.send(dEmbed)
         });
 
-
-   
-   
+// Adds the user to the set so that they can't talk for a minute
+talkedRecently.add(message.author.id);
+        setTimeout(() => {
+          // Removes the user from the set after a minute
+          talkedRecently.delete(message.author.id);
+        }, 60000);
     })
+   
+   
+    }
   }
 
   
@@ -226,8 +232,16 @@ client.on("message", async message => {
       user.send(dEmbed)
     });
 
+// Adds the user to the set so that they can't talk for a minute
+talkedRecently.add(message.author.id);
+        setTimeout(() => {
+          // Removes the user from the set after a minute
+          talkedRecently.delete(message.author.id);
+        }, 60000);
+    })
 
   }
+}
   
     if(command === "dominos") {
     message.delete().catch();
@@ -265,9 +279,16 @@ client.on("message", async message => {
       user.send(dEmbed)
     });
 
-
+// Adds the user to the set so that they can't talk for a minute
+talkedRecently.add(message.author.id);
+        setTimeout(() => {
+          // Removes the user from the set after a minute
+          talkedRecently.delete(message.author.id);
+        }, 60000);
+    })
 
   }
+}
   
    if(command === "netflix") {
 
@@ -313,10 +334,16 @@ client.on("message", async message => {
       user.send(dEmbed)
     });
 
+// Adds the user to the set so that they can't talk for a minute
+talkedRecently.add(message.author.id);
+        setTimeout(() => {
+          // Removes the user from the set after a minute
+          talkedRecently.delete(message.author.id);
+        }, 60000);
+    })
 
 
-
-  })
+  }
 }
   
    if(command === "nordvpn") {
@@ -351,10 +378,17 @@ client.on("message", async message => {
       user.send(dEmbed)
     });
 
-
+// Adds the user to the set so that they can't talk for a minute
+talkedRecently.add(message.author.id);
+        setTimeout(() => {
+          // Removes the user from the set after a minute
+          talkedRecently.delete(message.author.id);
+        }, 60000);
+    })
 
 
   }
+}
   
    if(command === "crunchyroll") {
     message.delete().catch();
@@ -388,10 +422,17 @@ client.on("message", async message => {
       user.send(dEmbed)
     });
 
-
+// Adds the user to the set so that they can't talk for a minute
+talkedRecently.add(message.author.id);
+        setTimeout(() => {
+          // Removes the user from the set after a minute
+          talkedRecently.delete(message.author.id);
+        }, 60000);
+    })
 
 
   }
+}
   
    if(command === "uplay") {
 
@@ -437,10 +478,16 @@ client.on("message", async message => {
       user.send(dEmbed)
     });
 
+// Adds the user to the set so that they can't talk for a minute
+talkedRecently.add(message.author.id);
+        setTimeout(() => {
+          // Removes the user from the set after a minute
+          talkedRecently.delete(message.author.id);
+        }, 60000);
+    })
 
 
-
-  })
+  }
 }    
   
    if(command === "origin") {
@@ -487,10 +534,16 @@ client.on("message", async message => {
       user.send(dEmbed)
     });
 
+// Adds the user to the set so that they can't talk for a minute
+talkedRecently.add(message.author.id);
+        setTimeout(() => {
+          // Removes the user from the set after a minute
+          talkedRecently.delete(message.author.id);
+        }, 60000);
+    })
 
 
-
-  })
+  }
 }     
   
    if(command === "fortnite") {
