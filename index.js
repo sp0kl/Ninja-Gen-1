@@ -253,7 +253,7 @@ talkedRecently.add(message.author.id);
     
                                                 
                                                 
-    })
+    }
   }
   
     if(command === "dominos") {
