@@ -557,7 +557,7 @@ talkedRecently.add(message.author.id);
     }
 
 
-  }
+  })
     
   
    if(command === "origin") {
