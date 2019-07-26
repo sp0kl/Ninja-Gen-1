@@ -14,7 +14,7 @@ exports.run = async (client, message, args) => {
    
    let  owners =  client.fetchUser('444609097233465347')
    
-    if(message.author.id !== owners) return message.channel.send(Uembed)
+    if(message.author.id !== 444609097233465347) return message.channel.send(Uembed)
         snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
           message.delete().catch();
 
