@@ -35,7 +35,7 @@ let Pembed2 = new Discord.RichEmbed()
       message.delete().catch();
 
 let requestChannel = client.guilds.find("id", "586817026522218507").channels.find("name","account-requests").send(sEmbed);
-  message.reply(Pembed2);
+  message.channel.send(Pembed2);
      if(!requestChannel) return message.channel.send(`<@${message.author.id}> Couldn't find the required channel, please message the devs ASAP as this may be a mistake or error`);
       
 console.log(`<@${message.author.id}> has used the suggest command in ${message.channel.guild} channel ${message.channel}`)
