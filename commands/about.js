@@ -13,7 +13,7 @@ exports.run = async (client, message, args) => {
    .setColor("0x0ffff")
    .addField("Current Version", "**BETA** v1.00")
    .addField("Owner/Author", `Created By: ${owner}`)
-   .addField("Coders/Developers", `${owner})
+   .addField("Coders/Developers", `${owner}`)
    .addField("Ninja Gen Support", "[Support Server](https://discord.gg/CRhNHBs)")
      .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
