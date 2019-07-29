@@ -24,14 +24,11 @@
     "node-gyp": "^4.0.0",
     "node-superfetch": "^0.1.9",
     "os-utils": "0.0.14",
+    "opusscript": "0.0.6",
     "quick-db": "1.0.5",
     "random-puppy": "^1.1.0",
     "superagent": "^5.0.5",
     "urban": "^0.3.2",
-    "discord.js-musicbot-addon": "^12.0.6",
-    "enmap": "^3.0.2",
-    "ffmpeg-binaries": "^4.0.0",
-    "opusscript": "0.0.6",
     "ytdl-core": "^0.24.0"
   }
 }
