@@ -1,12 +1,12 @@
 const Discord = require("discord.js");
 const fs = require("fs");
-const customisation = require('../customisation.json');
+const customisation = require('../config.json');
 const db = require('quick.db');
 
 exports.run = async (bot, message, args, prefix) => {
 
   if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply(`:facepalm: You can't do that BOIII! :facepalm:`);
-  if(!args[0] || args[0 == "help"]) return message.reply(`Usage: [p]prefix <desired prefix here> ([p] is the bot original prefix or the prefix previously set)\n [p]prefix clear (to clear the customised prefix and reset it to /)`);
+  if(!args[0] || args[0 == "help"]) return message.reply(`Usage: [p]prefix <desired prefix here> ([p] is the bot original prefix or the prefix previously set)\n [p]prefix clear (to clear the customised prefix and reset it to ``gen``)`);
 
   //let prefixes = JSON.parse(fs.readFileSync("./prefixes.json", "utf8"));
 
@@ -28,7 +28,7 @@ exports.run = async (bot, message, args, prefix) => {
     .setColor("#ff8200")
     .setTitle("Prefix Changed")
     .setDescription(`Set to ${args[0]}`)
-    .setFooter(`© Cryptonix X Mod Bot by ${customisation.ownername}`);
+    .setFooter(`© Ninja Gen Beta`);
 
     message.channel.send({embed});
   }
