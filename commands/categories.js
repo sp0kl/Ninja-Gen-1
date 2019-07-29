@@ -14,7 +14,7 @@ exports.run = async (client, message, args) => {
    .addField("Uplay", "**0** Accounts available")
    .addField("Origin", "**0** Accounts available")
    .addField("Fortnite", "**0** Accounts available")
-   .addField("NordVPN", "**28** Accounts available")
+   .addField("NordVPN", "**53** Accounts available")
    .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    .setThumbnail(`${message.author.avatarURL}`)
    message.channel.send(hEmbed)
