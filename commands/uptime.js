@@ -12,7 +12,7 @@ exports.run = (client, message) => {
 
    let Uembed = new Discord.RichEmbed() 
       .setTitle(":clock1: Ninja Gen Uptime :clock1:")
-      .setDescription("I have been online for :point_down:")
+      .setDescription("I have been online for")
       .setColor("0xff0000")
       .addField("Hours", "** " + hours + " **Hours")
       .addField("Minutes", "**" + minutes + "** Minutes")
