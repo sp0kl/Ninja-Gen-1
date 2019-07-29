@@ -16,6 +16,7 @@ exports.run = async (client, message, args) => {
    
     if(message.author.id !== 444609097233465347) return message.channel.send(Uembed)
         snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
+            args = args.join(" ");
           message.delete().catch();
 
    let Cembed = new Discord.RichEmbed() 
