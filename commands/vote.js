@@ -8,13 +8,13 @@ const disagree = "❎";
 exports.run = async (bot, message, args) => {
   if(!args || args[0] === 'help') return message.reply("Usage: vote <question>")
   // Number.isInteger(itime)
-  //  if (e) return message.reply('please supply a valid time number in seconds')
+  // if (e) return message.reply('please supply a valid time number in seconds')
   
-  let msg = await message.channel.send(`Question: ${message.content.split(" ").splice(1).join(" ")} \nVote now! (Vote time: 2min)`);
+  let msg = await message.channel.send(`Question: ${message.content.split(" ").splice(1).join(" ")} \nVote now! (Vote time: 15min)`);
   await msg.react(agree);
   await msg.react(disagree);
 
-  const reactions = await msg.awaitReactions(reaction => reaction.emoji.name === agree || reaction.emoji.name === disagree, {time: 120000});
+  const reactions = await msg.awaitReactions(reaction => reaction.emoji.name === agree || reaction.emoji.name === disagree, {time: 900000});
   msg.delete();
 
   var NO_Count = reactions.get(disagree).count;
