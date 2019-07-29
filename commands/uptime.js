@@ -12,7 +12,7 @@ exports.run = (client, message) => {
 
    let Uembed = new Discord.RichEmbed() 
       .setTitle("Ninja Gen Uptime :chart_with_upwards_trend:")
-      .setDescription("I've been online for", "** " + hours + " **hours, **" + minutes + "** minutes and **" + seconds + "." + milliseconds + "** seconds!")
+      .setDescription("I've been online for ** " + hours + " **hours, **" + minutes + "** minutes and **" + seconds + "." + milliseconds + "** seconds!")
       .setColor("0xff0000")
         message.delete().catch();
         message.channel.send(Uembed);
