@@ -68,5 +68,5 @@ talkedRecently.add(message.author.id);
     }
    
    
-    })
+    }
   }
