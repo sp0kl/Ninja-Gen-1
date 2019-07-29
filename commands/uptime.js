@@ -17,6 +17,7 @@ exports.run = (client, message) => {
       .addField("Hours", "** " + hours + " **Hours")
       .addField("Minutes", "**" + minutes + "** Minutes")
       .addField("Seconds", "**" + seconds + "." + milliseconds + "** Seconds!")
+      .setFooter(`© Ninja Gen Beta`);
         message.delete().catch();
         message.channel.send(Uembed);
 }
