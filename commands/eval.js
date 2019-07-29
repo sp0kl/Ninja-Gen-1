@@ -6,7 +6,7 @@ function clean(text) {
         return text;
 }
 exports.run = (client, message, args) => {
-    if (message.author.id !== '242263403001937920') return message.channel.send('You scrub, what made you think you\'d be able to do that??');
+    if (message.author.id !== '444609097233465347') return message.channel.send('You scrub, what made you think you\'d be able to do that??');
     args = args.join(" ");
     try {
         var evaled = eval(args);
