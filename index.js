@@ -57,7 +57,6 @@ fs.readdir("./commands/", (err, files) => {
         guild.leave(guild.id)
       }
     });
-};
 
 Music.start(client, {
   youtubeKey: "AIzaSyDu_YZn7ivq66a3baryXztxK8rFrERAKvA",
