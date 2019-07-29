@@ -1,3 +1,5 @@
+const Discord = require('discord.js');
+
 exports.run = (client, message) => {
     var milliseconds = parseInt((client.uptime % 1000) / 100),
         seconds = parseInt((client.uptime / 1000) % 60),
