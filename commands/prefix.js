@@ -18,7 +18,7 @@ exports.run = async (bot, message, args, prefix) => {
   //});
   if(args[0] === 'clear'){
     db.set(`prefix_${message.guild.id}`, '/')
-        message.channel.send("Success, Cleared customised prefix. Reset to "gen")
+        message.channel.send("Success, Cleared customised prefix. Reset to ``gen``")
         return
     }else{
     db.set(`prefix_${message.guild.id}`, args[0])
