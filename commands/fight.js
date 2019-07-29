@@ -3,7 +3,7 @@ exports.run = (client, message, args) => {
   let user = message.mentions.users.first();
   let reason = args.slice(0).join(' ');
   if (reason.length < 1) return message.reply('You can\'t fight thin air dude, pick someone to fight.');
-  if(message.mentions.users.first().id === "544049582959755264") return message.reply('Kame KAme KAME HAAAAAA. ***It dealt ∞ damage. You got demolished.*** Cryptonix X won');
+  if(message.mentions.users.first().id === "544049582959755264") return message.reply('Kame KAme KAME HAAAAAA. ***It dealt ∞ damage. You got demolished.*** Ninja Gen won');
   if(message.mentions.users.first().id === "595155471611068426") return message.reply('You can\'t fight him you pleblord.:facepalm: He will destroy you:wink:');
       message.channel.send(`<@${message.author.id}> is fighting ${message.mentions.users.first().username} ${fights[Math.floor(Math.random() * fights.length)]}`)
   }
