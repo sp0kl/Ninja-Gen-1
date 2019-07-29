@@ -56,8 +56,8 @@ fs.readdir("./commands/", (err, files) => {
         channel.send("But UNFORTUNATELY, the owner of this server has been blacklisted before so I'm LEAVING! Bye!")
         guild.leave(guild.id)
       }
-    })
-});
+    });
+};
 
 Music.start(client, {
   youtubeKey: "AIzaSyDu_YZn7ivq66a3baryXztxK8rFrERAKvA",
