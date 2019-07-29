@@ -7,8 +7,13 @@ exports.run = (client, message) => {
         hours = (hours < 10) ? "0" + hours : hours;
         minutes = (minutes < 10) ? "0" + minutes : minutes;
         seconds = (seconds < 10) ? "0" + seconds : seconds;
-        message.delete().catch()
-        message.channel.send(":chart_with_upwards_trend: I've been running for** " + hours + " **hours, **" + minutes + "** minutes and **" + seconds + "." + milliseconds + "** seconds!");
+
+   let Uembed = new Discord.RichEmbed() 
+      .setTitle("Ninja Gen Uptime :chart_with_upwards_trend:")
+      .setDescription("I've been online for", "** " + hours + " **hours, **" + minutes + "** minutes and **" + seconds + "." + milliseconds + "** seconds!")
+      .setColor("0xff0000")
+        message.delete().catch();
+        message.channel.send(Uembed);
 }
 
 exports.conf = {
