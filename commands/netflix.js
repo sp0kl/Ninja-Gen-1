@@ -50,4 +50,4 @@ let Uembed = new Discord.RichEmbed()
 
 
 
-  }
+  })
