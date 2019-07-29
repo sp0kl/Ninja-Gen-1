@@ -2,6 +2,7 @@ const fights = require('./fights.json');
 exports.run = (client, message, args) => {
   let user = message.mentions.users.first();
   let reason = args.slice(0).join(' ');
+  message.delete().catch()
   if (reason.length < 1) return message.reply('You can\'t fight thin air dude, pick someone to fight.');
   if(message.mentions.users.first().id === "544049582959755264") return message.reply('Kame KAme KAME HAAAAAA. ***It dealt ∞ damage. You got demolished.*** Ninja Gen won');
   if(message.mentions.users.first().id === "595155471611068426") return message.reply('You can\'t fight him you pleblord.:facepalm: He will destroy you:wink:');
