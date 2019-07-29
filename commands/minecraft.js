@@ -11,11 +11,9 @@ exports.run = async (client, message, args) => {
       .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning: Join our [Support Server](https://discord.gg/CRhNHBs) for updates when this category becomes available");
       message.delete().catch();
    
-   
-   let  owners =  client.fetchUser('444609097233465347')
+  
    
     if(message.author.id !== 444609097233465347) return message.channel.send(Uembed)
-        snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
             args = args.join(" ");
           message.delete().catch();
 
