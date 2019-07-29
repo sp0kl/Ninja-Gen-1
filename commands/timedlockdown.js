@@ -28,6 +28,7 @@ exports.run = (client, message, args) => {
           }).then(message.channel.send('Lockdown lifted. WEEEEEEEEEEEEEEEEEEEEEE, enjoy talking while you still can:wink:')).catch(console.error);
           delete client.lockit[message.channel.id];
         }, ms(time));
+message.delete().catch()
 
       }).catch(error => {
         console.log(error);
