@@ -11,8 +11,8 @@ exports.run = (client, message) => {
         seconds = (seconds < 10) ? "0" + seconds : seconds;
 
    let Uembed = new Discord.RichEmbed() 
-      .setTitle("Ninja Gen Uptime :chart_with_upwards_trend:")
-      .setDescription("I've been online for ** " + hours + " **ours, **" + minutes + "** minutes and **" + seconds + "." + milliseconds + "** seconds!")
+      .setTitle(":clock1: Ninja Gen Uptime :clock1:")
+      .setDescription("I have been online for :point_down:")
       .setColor("0xff0000")
       .addField("Hours", "** " + hours + " **Hours")
       .addField("Minutes", "**" + minutes + "** Minutes")
