@@ -49,6 +49,16 @@ fs.readdir("./commands/", (err, files) => {
   });
 });
 
+ let blacklist = JSON.parse(fs.readFileSync("./blacklist.json", "utf8"));
+    client.guilds.forEach((guild) => {
+      if (!blacklist[guild.ownerID]) return
+      if(blacklist[guild.ownerID].state === true) {
+        channel.send("But UNFORTUNATELY, the owner of this server has been blacklisted before so I'm LEAVING! Bye!")
+        guild.leave(guild.id)
+      }
+    })
+});
+
 Music.start(client, {
   youtubeKey: "AIzaSyDu_YZn7ivq66a3baryXztxK8rFrERAKvA",
   prefix: config.prefix, // Prefix for the commands.
