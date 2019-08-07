@@ -16,7 +16,7 @@ exports.run = (client, message) => {
       .setTitle(":clock1: Ninja Gen Uptime :clock1:")
       .setDescription("I have been online for")
       .setColor("0xff0000")
-      .addField("** " + days + " **Days")
+      .addField("Days", "** " + days"")
       .addField("Hours", "** " + hours + " **Hours")
       .addField("Minutes", "**" + minutes + " **Minutes")
       .addField("Seconds", "**" + seconds + "." + milliseconds + " **Seconds")
