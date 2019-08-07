@@ -5,7 +5,7 @@ exports.run = (client, message) => {
         seconds = parseInt((client.uptime / 1000) % 60),
         minutes = parseInt((client.uptime / (1000 * 60)) % 60),
         hours = parseInt((client.uptime / (1000 * 60 * 60)) % 24),
-        days = parseInt((client.uptime / (60 * 60)) % 24);
+        days = parseInt((client.uptime / (1000 * 60 * 60)) % 24);
 
         hours = (hours < 10) ? "0" + hours : hours;
         minutes = (minutes < 10) ? "0" + minutes : minutes;
@@ -15,10 +15,10 @@ exports.run = (client, message) => {
       .setTitle(":clock1: Ninja Gen Uptime :clock1:")
       .setDescription("I have been online for")
       .setColor("0xff0000")
-      .addField("Days", "** " + days + " **days")
-      .addField("Hours", "** " + hours + " **Hours")
-      .addField("Minutes", "**" + minutes + "** Minutes")
-      .addField("Seconds", "**" + seconds + "." + milliseconds + "** Seconds!")
+      .addField("Days", "** " + days")
+      .addField("Hours", "** " + hours")
+      .addField("Minutes", "**" + minutes")
+      .addField("Seconds", "**" + seconds + "." + milliseconds")
       .setFooter(`© Ninja Gen Beta`);
         message.delete().catch();
         message.channel.send(Uembed);
