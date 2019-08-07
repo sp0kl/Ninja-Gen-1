@@ -15,10 +15,10 @@ exports.run = (client, message) => {
       .setTitle(":clock1: Ninja Gen Uptime :clock1:")
       .setDescription("I have been online for")
       .setColor("0xff0000")
-      .addField("Days", "** " + days")
-      .addField("Hours", "** " + hours")
-      .addField("Minutes", "**" + minutes")
-      .addField("Seconds", "**" + seconds + "." + milliseconds")
+      .addField("Days", "** " + days + " **Days")
+      .addField("Hours", "** " + hours + " **Hours")
+      .addField("Minutes", "**" + minutes + " **Minutes")
+      .addField("Seconds", "**" + seconds + "." + milliseconds + " **Seconds")
       .setFooter(`© Ninja Gen Beta`);
         message.delete().catch();
         message.channel.send(Uembed);
@@ -34,5 +34,5 @@ exports.conf = {
 exports.help = {
   name: 'uptime',
   description: 'Shows how long the bot has been online for.',
-  usage: 'uptime'
+  usage: 'uptime, ut, upt'
 };
