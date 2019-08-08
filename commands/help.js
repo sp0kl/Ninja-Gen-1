@@ -4,7 +4,7 @@ exports.run = async (client, message, args) => {
  
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Ninja Gen Help")
-   .setColor("0xff0000")
+   .setColor("0x0ffff")
    .setDescription(`<@${message.author.id}>` + " My general command usage can be found below")
    .addField("About The Bot", "``gen about`` - Shows you some info about me and my team")
    .addField("Generator Commands", "``gen commands`` - Shows a list of Account Generator commands")
