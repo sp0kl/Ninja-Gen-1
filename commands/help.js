@@ -19,7 +19,10 @@ exports.run = async (client, message, args) => {
    .addField("Fight A User", "``gen fight @Tyler. H#9393`` Uses randomly generated answers to help you win or lose a fight with the mentioned member")
    .addField("Ping The Bot", "``gen ping`` Pings the bot and checks for Response time, Latency and API issues")
    .addField("Java Code Eval", "``gen eval {JavaScript Code Here}`` Evaluates the given code and returns the response")
-   .addField("
+   .addField("Message Vote", "``gen vote {Message Here}`` Posts the message and allows members **15 Minutes** to vote yes or no")
+   .addField("Set Game", "``gen setgame {Game Here}`` Sets the game the bot is Playing Example: ``gen setgame Playing GTA 5``")
+   .addField("Set Status", "``gen setstatus {Status}`` Sets the bots online status Example: ``gen setstatus Idle`` Statuses: ``Idle, Online, DND, Away``")
+   .addField("Bot Uptime", "``gen uptime`` Shows how long the bot has been online since it's last restart")
    .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
    message.channel.send(hEmbed)
