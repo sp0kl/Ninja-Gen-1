@@ -17,7 +17,7 @@ exports.run = async (client, message, args) => {
    .addField("Current Server Info", "``gen serverinfo`` - Shows information for the current server")
    .addField("Timed LockDown", "``gen timedlokcdown {duration}`` Locks the current channel for the set amount of time. **TIME MUST BE IN HOURS, MINUTES OR SECONDS** Example: ``gen timedlockdown 1h``")
    .addField("Fight A User", "``gen fight @Tyler. H#9393`` Uses randomly generated answers to help you win or lose a fight with the mentioned member")
-   .addField("Ping", "``gen ping`` Pings the bot and checks for Response time, Latency and API issues")
+   .addField("Ping The Bot", "``gen ping`` Pings the bot and checks for Response time, Latency and API issues")
    .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
    message.channel.send(hEmbed)
