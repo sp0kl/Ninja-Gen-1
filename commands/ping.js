@@ -5,8 +5,7 @@ exports.run = async (client, message, args) => {
 
   let Pembed2 = new Discord.RichEmbed()
       .setColor(0xff0000)
-      .setTitle("Ninja Gen Ping Check :thumbsup:")
-      .setDescription("The bots ping is " + client.ping + "ms!");
+      .setDescription("Pong :ping_pong: Time Taken Is " + client.ping + "ms!");
       message.delete().catch();
 
 
