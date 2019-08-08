@@ -16,6 +16,11 @@ exports.run = async (client, message, args) => {
    .addField("Uplay Accounts", "``gen uplay`` - Generates a Uplay account and sends it to your DMs [**currently out of stock**]")
    .addField("Origin Accounts", "``gen origin`` - Generates a Origin account and sends it to your DMs [**currently out of stock**]")
    .addField("Fortnite Accounts", "``gen fortnite`` - Generates a Fortnite account and sends it to your DMs [**currently out of stock**]")
+   .addField("Timed LockDown", "``gen timedlockdown {#channel} {amount of time}`` Locks down the specified channel for the amount of time given")
+   
+   .addField("Server List", "``gen serverlist`` Lists all servers that the Gen bot is in")
+   
+   .addField("Server Info", "``gen serverinfo`` Shows information about the current server.")
    .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
    message.channel.send(hEmbed)
