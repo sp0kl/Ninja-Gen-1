@@ -8,9 +8,9 @@ exports.run = (client, message) => {
         days = parseInt((client.uptime / (1000 * 60 * 60 * 60)) % 360);
 
         days = (days < 10) ? "0" + "0" + days : days; 
-        hours = (hours < 10) ? "0" + "0" + hours : hours;
-        minutes = (minutes < 10) ? "0" + "0" + minutes : minutes;
-        seconds = (seconds < 10) ? "0" + "0" + seconds : seconds;
+        hours = (hours < 10) ? "0" + hours : hours;
+        minutes = (minutes < 10) ? "0" + minutes : minutes;
+        seconds = (seconds < 10) ? "0" + seconds : seconds;
 
    let Uembed = new Discord.RichEmbed() 
       .setTitle(":clock1: Ninja Gen Uptime :clock1:")
