@@ -9,7 +9,7 @@ let bot = client.users.get('544049582959755264');
    let fEmbed1 = new Discord.RichEmbed()
    .setTitle("Fight Club :punch:")
    .setColor("0x0ffff")
-   .setDescription(message.reply('Kame KAme KAME HAAAAAA. ***It dealt ∞ damage. You got demolished.*** Ninja Gen won')
+   .setDescription('Kame KAme KAME HAAAAAA. ***It dealt ∞ damage. You got demolished.*** Ninja Gen won')
 
   if (reason.length < 1) return message.reply('You can\'t fight thin air dude, pick someone to fight.');
   if(message.mentions.users.first().id === "544049582959755264") return message.channel.send(fEmbed1);
