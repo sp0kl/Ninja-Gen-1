@@ -31,8 +31,8 @@ let Accounts = ["amiamam@hotmail.com:bronzetable", "oliviameloni@hotmail.com:bil
     let Gembed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("Your Spotify account")
-    .setDescription(Accounts[result]);
-    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+    .setDescription(Accounts[result])
+    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`);
   
 
     let Membed = new Discord.RichEmbed()
