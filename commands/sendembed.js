@@ -6,8 +6,8 @@ const owners = require ("./config.json");
 exports.run = async (client, message, args) => {
 
 let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));    
-    const Message = args.join(" ");
     const Title = args.join(" ");
+    const Message = args.join(" ");
     let sicon = message.guild.iconURL;
     message.delete().catch();
 
