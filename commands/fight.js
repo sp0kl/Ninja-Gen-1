@@ -1,3 +1,4 @@
+const Discord = require('discord.js');
 const fights = require('./fights.json');
 exports.run = (client, message, args) => {
   let user = message.mentions.users.first();
