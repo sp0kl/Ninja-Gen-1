@@ -23,13 +23,17 @@ let Accounts = ["amiamam@hotmail.com:bronzetable", "oliviameloni@hotmail.com:bil
     .setColor(53380)
     .setTitle("User has generated a account")
     .setDescription(`<@${message.author.id}>` + ` has generated a Spotify account the account info is ${Accounts[result]}`);
+    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
 
+  
 
 
     let Gembed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("Your Spotify account")
     .setDescription(Accounts[result]);
+    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+  
 
     let Membed = new Discord.RichEmbed()
     .setColor(53380)
@@ -37,7 +41,7 @@ let Accounts = ["amiamam@hotmail.com:bronzetable", "oliviameloni@hotmail.com:bil
     .setDescription(`<@${message.author.id}>` + " Your Spotify account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
     .addField("Last Restock Date", "July/15/2019")
     .addField("Next Restock Date", "August/15/2019")
-    .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
 
     message.channel.send(Membed)
     message.author.send(Gembed)
