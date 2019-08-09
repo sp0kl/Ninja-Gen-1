@@ -21,7 +21,7 @@ exports.run = (client, message) => {
       .addField("Hours", "** " + hours + " **")
       .addField("Minutes", "**" + minutes + " **")
       .addField("Seconds", "**" + seconds + "." + milliseconds + " **")
-      .setFooter(`Last Restarted`);
+      .setFooter(message.author.Avatar, `Last Restarted`);
         message.delete().catch();
         message.channel.send(Uembed);
 }
