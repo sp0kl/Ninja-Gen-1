@@ -21,7 +21,7 @@ exports.run = (client, message) => {
       .addField("Hours", "** " + hours + " **")
       .addField("Minutes", "**" + minutes + " **")
       .addField("Seconds", "**" + seconds + "." + milliseconds + " **")
-      .setFooter(`Last Uptime Check`);
+      .setFooter(`Last Uptime Check`, message.author.avatarURL);
         message.delete().catch();
         message.channel.send(Uembed);
 }
