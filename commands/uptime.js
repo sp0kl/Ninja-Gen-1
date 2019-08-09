@@ -12,8 +12,8 @@ exports.run = (client, message) => {
         minutes = (minutes < 10) ? "0" + minutes : minutes;
         seconds = (seconds < 10) ? "0" + seconds : seconds;
 
-   let Uembed = new Discord.RichEmbed() 
-      .setTimestamp("5:35 PM ``GMT``")
+   let Uembed = new Discord.RichEmbed()
+      .setTimestamp()
       .setTitle(":clock1: Ninja Gen Uptime :clock1:")
       .setDescription("I have been online for")
       .setColor(53380)
@@ -21,7 +21,7 @@ exports.run = (client, message) => {
       .addField("Hours", "** " + hours + " **")
       .addField("Minutes", "**" + minutes + " **")
       .addField("Seconds", "**" + seconds + "." + milliseconds + " **")
-      .setFooter(`Last Restarted`);
+      .setFooter(`Last Uptime Check`);
         message.delete().catch();
         message.channel.send(Uembed);
 }
