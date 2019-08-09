@@ -37,6 +37,10 @@ exports.run = async (client, message, args) => {
     .setColor(53380)
     .setTitle("NordVPN Account generated")
     .setDescription(`<@${message.author.id}>` + "Your NordVPN account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+    .addField("Last Restock Date", "July/29/2019")
+    .addField("Next Restock Date", "August/29/2019")
+    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+
 
 
     message.channel.send(Membed)
