@@ -35,7 +35,7 @@ let Accounts = ["amiamam@hotmail.com:bronzetable", "oliviameloni@hotmail.com:bil
     .setColor(53380)
     .setTitle("Spotify Account generated")
     .setDescription(`<@${message.author.id}>` + " Your Spotify account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
-    .setFooter("Next Restock Date", "``August 15 2019``")
+    .setFooter(`Next Restock Date:``Aug/15/2019```, `https://i.imgur.com/xerUkNI.png`)
 
     message.channel.send(Membed)
     message.author.send(Gembed)
