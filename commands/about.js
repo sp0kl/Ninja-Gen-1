@@ -15,7 +15,7 @@ exports.run = async (client, message, args) => {
    .addField("Owner/Author", `Created By: ${owner}`)
    .addField("Coders/Developers", `${owner}`)
    .addField("Ninja Gen Support", "[Support Server](https://discord.gg/CRhNHBs)")
-     .setFooter(`[Ninja Gen Beta](https://discord.gg/CRhNHBs)`, `https://i.imgur.com/xerUkNI.png`)
+     .setFooter("[Ninja Gen Beta](https://discord.gg/CRhNHBs)", `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
    message.channel.send(aEmbed)
  }
