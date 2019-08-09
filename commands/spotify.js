@@ -22,8 +22,8 @@ let Accounts = ["amiamam@hotmail.com:bronzetable", "oliviameloni@hotmail.com:bil
     let dEmbed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("User has generated a account")
-    .setDescription(`<@${message.author.id}>` + ` has generated a Spotify account the account info is ${Accounts[result]}`);
-    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+    .setDescription(`<@${message.author.id}>` + ` has generated a Spotify account the account info is ${Accounts[result]}`)
+    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`);
 
   
 
