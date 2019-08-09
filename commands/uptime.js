@@ -14,14 +14,18 @@ exports.run = (client, message) => {
 
    let Uembed = new Discord.RichEmbed()
       .setTimestamp()
-      .setImage(`https://i.imgur.com/xerUkNI.png`)
       .setTitle(":clock1: Ninja Gen Uptime :clock1:")
       .setDescription("I have been online for")
+      .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
       .setColor(53380)
       .addField("Days", "** " + days + " **")
+      .addBlankField()
       .addField("Hours", "** " + hours + " **")
+      .addBlankField()
       .addField("Minutes", "**" + minutes + " **")
+      .addBlankField()
       .addField("Seconds", "**" + seconds + "." + milliseconds + " **")
+      .addBlankField()
       .setFooter(`Last Uptime Check`);
         message.delete().catch();
         message.channel.send(Uembed);
