@@ -14,5 +14,5 @@ exports.run = async (client, message, args) => {
    .setThumbnail(`https://i.imgur.com/xerUkNI.png`);
    message.channel.send(hEmbed)
    message.delete().catch() 
-    })
+    }
 }   
