@@ -13,7 +13,7 @@ exports.run = (client, message) => {
         seconds = (seconds < 10) ? "0" + seconds : seconds;
 
    let Uembed = new Discord.RichEmbed() 
-      .setTimestamp()
+      .setTimestamp("5:35 PM ``GMT``")
       .setTitle(":clock1: Ninja Gen Uptime :clock1:")
       .setDescription("I have been online for")
       .setColor(53380)
@@ -21,7 +21,7 @@ exports.run = (client, message) => {
       .addField("Hours", "** " + hours + " **")
       .addField("Minutes", "**" + minutes + " **")
       .addField("Seconds", "**" + seconds + "." + milliseconds + " **")
-      .setFooter(message.author.Avatar, `Last Restarted`);
+      .setFooter(`Last Restarted`);
         message.delete().catch();
         message.channel.send(Uembed);
 }
