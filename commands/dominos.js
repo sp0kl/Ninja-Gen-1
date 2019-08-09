@@ -36,6 +36,10 @@ let Accounts = ["monkeysarsweet@aol.com:monkeys777", "carter4design@gmail.com:fr
     .setColor(53380)
     .setTitle("Dominos Account generated")
     .setDescription(`<@${message.author.id}>` + "Your Dominos account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
+    .addField("Last Restock Date", "July/15/2019")
+    .addField("Next Restock Date", "August/15/2019")
+    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+
 
 
     message.channel.send(Membed)
