@@ -23,7 +23,7 @@ exports.run = async (client, message, args) => {
    .addField("Set Game", "``gen setgame {Game Here}`` Sets the game the bot is Playing Example: ``gen setgame Playing GTA 5``")
    .addField("Set Status", "``gen setstatus {Status}`` Sets the bots online status Example: ``gen setstatus Idle`` Statuses: ``Idle, Online, DND, Away``")
    .addField("Bot Uptime", "``gen uptime`` Shows how long the bot has been online since it's last restart")
-   .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+   .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
    message.channel.send(hEmbed)
    message.delete().catch();	
