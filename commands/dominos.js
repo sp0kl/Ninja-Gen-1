@@ -30,6 +30,7 @@ exports.run = async (client, message, args) => {
     .setColor(53380)
     .setTitle("Your Dominos account")
     .setDescription(Accounts[result]);
+    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`);
 
     let Membed = new Discord.RichEmbed()
     .setColor(53380)
