@@ -62,4 +62,4 @@ Music.start(client, {
   disableLoop: false        // Disable the loop command.
   });
 
-client.login(config.token);
+client.login(process.env.BOT_TOKEN);
