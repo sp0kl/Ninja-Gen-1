@@ -12,7 +12,8 @@ let bot = client.users.get('544049582959755264');
    .setColor("0x0ffff")
    .setDescription('Kame Kame KAME HAAAAAA.')
    .addField(`Fight Results`, `Ninja Gen dealt ∞ Damage ***YOU GOT DESTROYED***`)
-   .addField(`Winner`, `<@${bot}>`);
+   .addField(`Winner`, `${bot}`)
+   .addField(`Loser`, `<@${message.author.id}>`);
 
   if (reason.length < 1) return message.reply('You can\'t fight thin air dude, pick someone to fight.');
   if(message.mentions.users.first().id === "544049582959755264") return message.channel.send(fEmbed1);
