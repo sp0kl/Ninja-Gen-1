@@ -1,6 +1,6 @@
 {
-    "token": "NjAzODQ0NzE5MzM1NzAyNTMx.XU4eqA.txPE05Hdq9foIGrhQ0pkRkUPeLM",
-    "prefix": "gen",
+    "token": process.env.BOT_TOKEN
+    "prefix": process.env.PREFIX;
     "owners": [
         "444609097233465347"
     ]
