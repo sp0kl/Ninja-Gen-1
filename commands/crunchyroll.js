@@ -22,6 +22,7 @@ exports.run = async (client, message, args) => {
     .setColor(53380)
     .setTitle("User has generated a account")
     .setDescription(`<@${message.author.id}> has generated a  CrunchyRoll account the account info is ${Accounts[result]}`);
+    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`);	    
 
 
 
@@ -30,6 +31,7 @@ exports.run = async (client, message, args) => {
     .setColor(53380)
     .setTitle("Your CrunchyRoll account")
     .setDescription(Accounts[result]);
+    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`);	    
 
     let Membed = new Discord.RichEmbed()
     .setColor(53380)
