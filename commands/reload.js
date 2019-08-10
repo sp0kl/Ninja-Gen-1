@@ -42,7 +42,7 @@ let rEmbed1 = new Discord.RichEmbed()
 
 //This is our command code and args.
 exports.run = (client, message, args) => {
-   if(message.author.id !== config.owners) return message.channel.send(rEmbed2)
+   if(message.author.id !== 444609097233465347 && if(message.author.id !== 391376464064282627) return message.channel.send(rEmbed2)
   if(!args || args.size < 1) return message.reply("Must provide a command name to reload.");
   const commandName = args[0];
   if(!client.commands.has(commandName)) {
