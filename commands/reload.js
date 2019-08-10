@@ -1,4 +1,6 @@
 exports.run = (client, message, args) => {
+   if(message.author.id !== 444609097233465347) return message.channel.send("You cannot use this command it is **BOTOWNER** only!")
+   if(message.author.id !== 444609097233465347) return message.channel.send("You cannot use this command it is **BOTOWNER** only!")
   if(!args || args.size < 1) return message.reply("Must provide a command name to reload.");
   const commandName = args[0];
   if(!client.commands.has(commandName)) {
