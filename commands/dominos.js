@@ -22,6 +22,7 @@ exports.run = async (client, message, args) => {
     .setColor(53380)
     .setTitle("User has generated a account")
     .setDescription(`<@${message.author.id}>` + ` has generated a Dominos account the account info is ${Accounts[result]}`);
+    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`);
 
 
 
@@ -38,7 +39,7 @@ exports.run = async (client, message, args) => {
     .setDescription(`<@${message.author.id}>` + "Your Dominos account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
     .addField("Last Restock Date", "July/30/2019")
     .addField("Next Restock Date", "August/30/2019")
-    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`);
 
 
 
