@@ -31,7 +31,7 @@ exports.run = async (client, message, args) => {
     let Gembed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("Your NordVPN account")
-    .setDescription(Accounts[result]);
+    .setDescription(Accounts[result])
      .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`);	    
 
     let Membed = new Discord.RichEmbed()
