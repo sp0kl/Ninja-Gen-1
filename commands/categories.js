@@ -10,7 +10,7 @@ exports.run = async (client, message, args) => {
    .addField("Spotify", "**19** Accounts available")
    .addField("Dominos", "**20** Accounts available")
    .addField("Netflix", "**0** Accounts available")
-   .addField("CrunchyRoll", "**13** Accounts available")
+   .addField("CrunchyRoll", "**19** Accounts available")
    .addField("Uplay", "**0** Accounts available")
    .addField("Origin", "**0** Accounts available")
    .addField("Fortnite", "**0** Accounts available")
