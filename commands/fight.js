@@ -13,7 +13,7 @@ let nb = client.users.get('595155471611068426');
    .setColor("0x0ffff")
    .setDescription('WHAT!? Hiyah!!!.')
    .addField(`Fight Results`, `${bot} Karate Chopped You and dealy ∞ Damage ***YOU GOT DESTROYED***`)
-   .addField(`Winner`, ``)
+   .addField(`Winner`, `${bot}`)
    .addField(`Loser`, `<@${message.author.id}>`);
   
    message.delete().catch();
@@ -34,7 +34,7 @@ let nb = client.users.get('595155471611068426');
   let fEmbed4 = new Discord.RichEmbed
   .setTitle("Fight Club :punch:")
   .setColor("0x0ffff")
-  .setDescription(`<@${message.author.id}> is fighting <@${message.mentions.users.first().id}> ${fights[Math.floor(Math.random() * fights.length)]}`)
+  .setDescription(`<@${message.author.id}> is fighting <@${message.mentions.users.first().id}> ${fights[Math.floor(Math.random() * fights.length)]}`);
 
   if (reason.length < 1) return message.reply('You can\'t fight thin air dude, pick someone to fight.');
   if(message.mentions.users.first().id === "544049582959755264") return message.channel.send(fEmbed1);
