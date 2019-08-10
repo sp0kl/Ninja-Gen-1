@@ -22,20 +22,36 @@ let rEmbed1 = new Discord.RichEmbed()
      .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
    message.delete().catch();
+   
+   let rEmbed2 = new Discord.RichEmbed()
+   .setTitle("Permission Error :dizzy_face:")
+   .setColor(0xff0000)
+   .setDescription("You can not use this command :shrug: it is ***BOT OWNER*** only")
+     .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
+   message.delete().catch();
+   
+   let rEmbed3 = new Discord.RichEmbed()
+   .setTitle("Reload Successful")
+   .setColor(53380)
+   .setDescription("The command ${commandName} has been reloaded :thumbsup:")
+     .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
+   message.delete().catch();
  
 
 //This is our command code and args.
 exports.run = (client, message, args) => {
-   if(message.author.id !== config.owners) return message.channel.send("You cannot use this command it is **BOTOWNER** only!")
+   if(message.author.id !== config.owners) return message.channel.send(rEmbed2)
   if(!args || args.size < 1) return message.reply("Must provide a command name to reload.");
   const commandName = args[0];
   if(!client.commands.has(commandName)) {
-    return message.channel.send(rEmbed2);
+    return message.channel.send(rEmbed1);
   }
   delete require.cache[require.resolve(`./${commandName}.js`)];
   client.commands.delete(commandName);
   const props = require(`./${commandName}.js`);
   client.commands.set(commandName, props);
-  message.reply(`The command ${commandName} has been reloaded`);
+  message.channel.send(rEmbed3);
  };
 }   
