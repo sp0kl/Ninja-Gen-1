@@ -19,7 +19,7 @@ let bot = client.users.get('544049582959755264');
   if(message.mentions.users.first().id === "544049582959755264") return message.channel.send(fEmbed1);
   if(message.mentions.users.first().id === "595155471611068426") return message.reply('You can\'t fight him you pleblord.:facepalm: He will destroy you:wink:');
   if (user.id === message.author.id) return message.reply(`Self harm is bad :facepalm: go take a time out kid!`)
-      message.channel.send(`<@${message.author.id}> is fighting ${message.mentions.users.first().username} ${fights[Math.floor(Math.random() * fights.length)]}`)
+      message.channel.send(`<@${message.author.id}> is fighting ${message.mentions.users.first().id} ${fights[Math.floor(Math.random() * fights.length)]}`)
   }
 
 
