@@ -19,13 +19,9 @@ exports.run = (client, message) => {
       .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
       .setColor(53380)
       .addField("Days", "** " + days + " **")
-      .addBlankField()
       .addField("Hours", "** " + hours + " **")
-      .addBlankField()
       .addField("Minutes", "**" + minutes + " **")
-      .addBlankField()
       .addField("Seconds", "**" + seconds + "." + milliseconds + " **")
-      .addBlankField()
       .setFooter(`Last Uptime Check`);
         message.delete().catch();
         message.channel.send(Uembed);
