@@ -1,7 +1,6 @@
 {
-     { 
-     "token"  : "",
-     "prefix" : "",
+     "token"  : "", //For self hosting method only for database hosted this is defined via config variables
+     "prefix" : "", //For self hosting method only for database hosted this is defined via config variables
      "owners": [
         "444609097233465347"
     ]
