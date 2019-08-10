@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const snekfetch = require('snekfetch');
 const talkedRecently = new Set();
-const owners = require ("../Data/config.json");
+const owners = require ('../Data/config.json');
 const Accounts = require ('../Accounts/crunchyaccounts.json');
 
 exports.run = async (client, message, args) => {
