@@ -1,4 +1,4 @@
-const customisation = require('../config.json');
+const customization = require ("../Data/config.json");
 function clean(text) {
     if (typeof(text) === "string")
         return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
