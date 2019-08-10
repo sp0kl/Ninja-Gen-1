@@ -11,6 +11,9 @@ const config = require('../Data/config.json');
 const owners = require ('../Data/config.json');
 client.config = config;
 
+//This is used to define and execute our commands.
+exports.run = async (client, message, args) => {
+
 //These are our message embeds, to make the bots command responses look cleaner.
 let rEmbed1 = new Discord.RichEmbed()
    .setTitle("Whoops Something Went Wrong")
