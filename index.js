@@ -6,7 +6,7 @@ const snekfetch = require('snekfetch');
 const talkedRecently = new Set();
 
 const client = new Discord.Client();
-const config = require("./config.json");
+const config = require("../Data/config.json");
 client.config = config;
 
 
