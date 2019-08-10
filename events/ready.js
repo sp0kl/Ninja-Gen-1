@@ -1,3 +1,3 @@
 module.exports = (ready) => {
-  console.log("The bot be ready boi");
+  console.log("Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.");
 };
