@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const fights = require('./fights.json');
+const fights = require('../Data/fights.json');
 exports.run = (client, message, args) => {
   let user = message.mentions.users.first();
   let reason = args.slice(0).join(' ');
