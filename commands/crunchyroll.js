@@ -21,7 +21,7 @@ exports.run = async (client, message, args) => {
     let dEmbed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("User has generated a account")
-    .setDescription(`${message.author.tag} has generated a  CrunchyRoll account the account info is ${Accounts[result]}`);
+    .setDescription(`<@${message.author.id}> has generated a  CrunchyRoll account the account info is ${Accounts[result]}`);
 
 
 
