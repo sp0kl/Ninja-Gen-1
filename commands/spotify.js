@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const snekfetch = require('snekfetch');
 const talkedRecently = new Set();
 const owners = require ("./config.json");
+const Accounts = require ('../Accounts/spotifyaccounts.json');
 
 exports.run = async (client, message, args) => {
 	
@@ -14,8 +15,6 @@ exports.run = async (client, message, args) => {
 	 if (talkedRecently.has(message.author.id)) {
             message.channel.send(Cembed);
     } else {
-
-let Accounts = ["amiamam@hotmail.com:bronzetable", "oliviameloni@hotmail.com:billabong1", "kwgeipel@gmail.com:baseball1", "stoutman777@live.com:7jesus77", "ribeiro_kk@hotmail.com:admini10", "burcudurmusoglu@gmail.com:0121kj21", "skater_alex@gmx.de:hesoyam1494", "pea_maxsimumcannon@hotmail.com:daebak19", "mathias.delannoye@live.be:Delannoye1992", "magnus_landgren@hotmail.com:oasis2", "surfboards411@gmail.com:livingeasy411", "kathleen.travers@yahoo.co.uk:Fl3tch01", "edouard@debutler.fr:doud3364", "nikes90@hotmail.it:fenice", "k3nny455wood@gmail.com:8Maggots", "candybarsugars@yahoo.com:coolcat45", "tcjewell@gmail.com:atom33", "me@drmoradi.com:sarah1guity"];
 
     let result = Math.floor((Math.random() * Accounts.length));
 
