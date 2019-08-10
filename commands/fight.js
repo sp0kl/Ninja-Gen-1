@@ -10,8 +10,8 @@ let bot = client.users.get('544049582959755264');
    let fEmbed1 = new Discord.RichEmbed()
    .setTitle("Fight Club :punch:")
    .setColor("0x0ffff")
-   .setDescription('Kame Kame KAME HAAAAAA.')
-   .addField(`Fight Results`, `Ninja Gen dealt ∞ Damage ***YOU GOT DESTROYED***`)
+   .setDescription('WHAT!? Hiyah!!!.')
+   .addField(`Fight Results`, `${bot} Karate Chopped You and dealy ∞ Damage ***YOU GOT DESTROYED***`)
    .addField(`Winner`, `${bot}`)
    .addField(`Loser`, `<@${message.author.id}>`);
 
