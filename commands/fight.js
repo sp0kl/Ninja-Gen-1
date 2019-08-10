@@ -12,7 +12,7 @@ let nb = client.users.get('595155471611068426');
    .setTitle("Fight Club :punch:")
    .setColor("0x0ffff")
    .setDescription('WHAT!? Hiyah!!!.')
-   .addField(`Fight Results`, `${bot} Karate Chopped You and dealy ∞ Damage ***YOU GOT DESTROYED***`)
+   .addField(`Fight Results`, `${bot} Karate Chopped You and dealt ∞ Damage ***YOU GOT DESTROYED***`)
    .addField(`Winner`, `${bot}`)
    .addField(`Loser`, `<@${message.author.id}>`);
   
