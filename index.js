@@ -4,7 +4,8 @@ const Enmap = require("enmap");
 const fs = require("fs");
 const snekfetch = require('snekfetch');
 const talkedRecently = new Set();
-
+const token = process.env.BOT_TOKEN;
+const prefix = process.env.PREFIX
 const client = new Discord.Client();
 const config = require('./Data/config.json');
 client.config = config;
