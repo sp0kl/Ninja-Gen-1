@@ -37,4 +37,5 @@ exports.run = (client, message, args) => {
   const props = require(`./${commandName}.js`);
   client.commands.set(commandName, props);
   message.reply(`The command ${commandName} has been reloaded`);
-}
+ });
+}   
