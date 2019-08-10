@@ -1,5 +1,5 @@
 const Discord  = require('discord.js');
-const owners = require ("../Data/config.json");
+const customization = require ("../Data/config.json");
 const integer = require('integer')
 
 const agree    = "✅";
