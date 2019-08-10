@@ -55,5 +55,4 @@ let rEmbed1 = new Discord.RichEmbed()
   const props = require(`./${commandName}.js`);
   client.commands.set(commandName, props);
   message.channel.send(rEmbed3);
- });
-}   
+ };
