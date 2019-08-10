@@ -16,8 +16,6 @@ exports.run = async (client, message, args) => {
             message.channel.send(Cembed);
     } else {
 	
-	 let Accounts = ["carla@dalbiancoadvocacia.com.br:dudu1206", "codyjkent@gmail.com:rocklee", "ryanoconnell9000@gmail.com:1236457R", "knutsonzach@yahoo.com:knut2000", "eldelmaty7@hotmail.com:fandesonic13", "andrewpapp2000@gmail.com:miska321", "mrmanofawesome1@gmail.com:caboose121", "jason0001cool@yahoo.com:california", "benasmorkunas@gmail.com:benukas123", "danmrrs2@gmail.com:I2d0nt67", "thajoker77@YmAiL.com:Pandemic77", "Danilo.Lazzari94@gmail.com:Tatiana05", "ineedwelfare420@yahoo.com:zigzag2008",];
-
     let result = Math.floor((Math.random() * Accounts.length));
 
     let dEmbed = new Discord.RichEmbed()
