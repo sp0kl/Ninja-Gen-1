@@ -7,6 +7,8 @@ const talkedRecently = new Set();
 const token = process.env.BOT_TOKEN;
 const client = new Discord.Client();
 const config = require('./Data/config.json');
+const langSet = msg.client.provider.getGuild(msg.guild.id, 'language');
+const lang = require(`./languages/${langSet}.json`);
 client.config = config;
 
 
