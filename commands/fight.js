@@ -25,7 +25,7 @@ let nb = client.users.get('595155471611068426');
    .addField(`Loser`, `<@${message.author.id}>`);
    
    message.delete().catch();
-  let fEmbed3 = new Discord.RichEmbed
+  let fEmbed3 = new Discord.RichEmbed()
   .setTitle("Fight Club :punch:")
   .setColor("0x0ffff")
   .setDescription("Self harm is bad :facepalm: go take a time out kid!")
