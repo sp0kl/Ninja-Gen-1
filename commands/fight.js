@@ -33,7 +33,7 @@ let nb = client.users.get('595155471611068426');
   message.delete().catch();
   let fEmbed4 = new Discord.RichEmbed
   .setTitle("Fight Club :punch:")
-  .setColor("0x0ffff")"
+  .setColor("0x0ffff")
   .setDescription(`<@${message.author.id}> is fighting <@${message.mentions.users.first().id}> ${fights[Math.floor(Math.random() * fights.length)]}`)
 
   if (reason.length < 1) return message.reply('You can\'t fight thin air dude, pick someone to fight.');
