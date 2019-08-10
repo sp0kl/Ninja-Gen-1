@@ -23,6 +23,7 @@ exports.run = async (client, message, args) => {
     .setColor(53380)
     .setTitle("User has generated a account")
     .setDescription(`<@${message.author.id}>` + ` has generated a NordVPN account the account info is ${Accounts[result]}`);
+     .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`);
 
 
 
@@ -31,13 +32,14 @@ exports.run = async (client, message, args) => {
     .setColor(53380)
     .setTitle("Your NordVPN account")
     .setDescription(Accounts[result]);
+     .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`);	    
 
     let Membed = new Discord.RichEmbed()
     .setColor(53380)
     .setTitle("NordVPN Account generated")
     .setDescription(`<@${message.author.id}>` + "Your NordVPN account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
-    .addField("Last Restock Date", "July/29/2019")
-    .addField("Next Restock Date", "August/29/2019")
+    .addField("Last Restock Date", "August/10/2019")
+    .addField("Next Restock Date", "September/10/2019")
     .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
 
 
