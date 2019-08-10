@@ -38,11 +38,13 @@ let rEmbed1 = new Discord.RichEmbed()
      .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
    message.delete().catch();
- 
+   
+//Here we define the bot owner/s and seperate them from other members
+  let owner = client.users.get('544049582959755264'); //Tyler. H (Bot Owner)
+  let owner2 = client.users.get('391376464064282627'); //Cpt.Calcium (Bot Developer)
 
-//This is our command code and args.
-exports.run = (client, message, args) => {
-   if(message.author.id !== 444609097233465347) return message.channel.send(rEmbed2)
+//This is our command code and executed arguments   
+   if(message.author.id !== owner) return message.channel.send(rEmbed2)
   if(!args || args.size < 1) return message.reply("Must provide a command name to reload.");
   const commandName = args[0];
   if(!client.commands.has(commandName)) {
