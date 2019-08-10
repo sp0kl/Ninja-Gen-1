@@ -12,36 +12,13 @@ const owners = require ('../Data/config.json');
 client.config = config;
 
 //These are our message embeds, to make the bots command responses look cleaner.
- let rEmbed1 = new Discord.RichEmbed()
-   .setTitle("About Ninja Gen")
-   .setColor("0x0ffff")
-   .addField("Current Version", "**BETA** v1.00")
-   .addField("Owner/Author", `Created By: ${owner}`)
-   .addField("Coders/Developers", `${owner}`)
-   .addField("Ninja Gen Support", "[Support Server](https://discord.gg/CRhNHBs)")
-     .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
-    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
-   message.channel.send(aEmbed)
- 
- 
- let rEmbed2 = new Discord.RichEmbed()
+let rEmbed1 = new Discord.RichEmbed()
    .setTitle("Whoops Something Went Wrong")
    .setColor(0xff0000)
    .setDescription(":thinking: Sorry but that command does not exist, If you need help please use ``gen help`` to see a list of commands :shrug:")
      .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
- 
- 
- let rEmbed3 = new Discord.RichEmbed()
-   .setTitle("About Ninja Gen")
-   .setColor("0x0ffff")
-   .addField("Current Version", "**BETA** v1.00")
-   .addField("Owner/Author", `Created By: ${owner}`)
-   .addField("Coders/Developers", `${owner}`)
-   .addField("Ninja Gen Support", "[Support Server](https://discord.gg/CRhNHBs)")
-     .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
-    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
-   message.channel.send(aEmbed)
+   message.delete().catch();
  
 
 //This is our command code and args.
