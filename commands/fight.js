@@ -31,7 +31,7 @@ let nb = client.users.get('595155471611068426');
   .setDescription("Self harm is bad :facepalm: go take a time out kid!")
   
   message.delete().catch();
-  let fEmbed4 = new Discord.RichEmbed
+  let fEmbed4 = new Discord.RichEmbed()
   .setTitle("Fight Club :punch:")
   .setColor("0x0ffff")
   .setDescription(`<@${message.author.id}> is fighting <@${message.mentions.users.first().id}> ${fights[Math.floor(Math.random() * fights.length)]}`);
