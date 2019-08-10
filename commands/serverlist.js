@@ -10,6 +10,7 @@ exports.run = async (client, message, args) => {
   .setTitle("Ninja Gen Server List")
   .setDescription(list)
   .setColor("0x0ffff")
+  .setFooter(`Total Count: ${client.guilds.size} Servers`);
   message.channel.send(botembed);
 
 }
