@@ -52,7 +52,7 @@ fs.readdir("./commands/", (err, files) => {
 
 Music.start(client, {
   youtubeKey: "AIzaSyDu_YZn7ivq66a3baryXztxK8rFrERAKvA",
-  prefix: config.prefix, // Prefix for the commands.
+  prefix: process.env.PREFIX, // Prefix for the commands.
   global: true,            // Non-server-specific queues.
   maxQueueSize: 60,        // Maximum queue size of 25.
   clearInvoker: true,      // If permissions applicable, allow the bot to delete the messages that invoke it.
