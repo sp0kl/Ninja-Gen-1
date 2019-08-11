@@ -24,7 +24,13 @@ message.delete().catch();
    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
 
-
+message.delete().catch()
+let tlEmbed3 = new Discord.RichEmbed()
+.setTitle("LockDown Successful :ballot_box_with_check:")
+.setColor("0x0ffff")
+.setDescription(`Damn! <@${message.author.id}> Just locked the channel down for ${ms(ms(time), { long:true })}`);
+.setFooter`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+.setThumbnail(`https://i.imgur.com/xerUkNI.png`)
 
   if (!client.lockit) client.lockit = [];
   let time = args.join(' ');
@@ -46,7 +52,7 @@ message.delete().catch();
     message.channel.overwritePermissions(message.guild.id, {
       SEND_MESSAGES: false
     }).then(() => {
-      message.channel.send(`Damnn, **${message.author.username}** just locked the channel down for ${ms(ms(time), { long:true })}`).then(() => {
+      message.channel.send(tlEmbed3).then(() => {
 
         client.lockit[message.channel.id] = setTimeout(() => {
           message.channel.overwritePermissions(message.guild.id, {
