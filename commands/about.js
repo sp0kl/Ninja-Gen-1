@@ -32,4 +32,4 @@ message.delete().catch();
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`) //This is the embed Thumbnail (Usually the bots Picture)
    message.channel.send(aEmbed) //This executes the embed and tells the bot to send it
   }; 
-} //This is the end of our command :(
+}) //This is the end of our command :(
