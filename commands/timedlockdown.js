@@ -1,3 +1,6 @@
+const Discord = require('discord.js');
+const snekfetch = require('snekfetch');
+const owners = require ('../Data/config.json');
 const ms = require('ms');
 exports.run = (client, message, args) => {
 
