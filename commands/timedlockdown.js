@@ -4,7 +4,18 @@ exports.run = (client, message, args) => {
   let time = args.join(' ');
   let validUnlocks = ['release', 'unlock'];
   if (!message.member.hasPermission("MANAGE_CHANNELS")) return msg.reply("❌**Error:** You don't have the permission to do that!");
-  if (!time) return message.reply('You must set a duration for the lockdown in either hours, minutes or seconds');
+  if (!time) return message.channel.send(tlEmbed);
+
+message.delete().catch();
+   let tlEmbed = new Discord.RichEmbed()
+   .setTitle("About Ninja Gen")
+   .setColor("0x0ffff")
+   .setDescription("You must set a duration for the lockdown in either ``Minutes`` ``Seconds`` or ``Hours``")
+   .addField("LockDown Help", "``gen lockdown {time}`` Example: ``gen lockdown 1h``")
+   .addField("How To Unlock", "``gen release`` OR ``gen unlock``")
+   .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+   .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
+ }
 
   if (validUnlocks.includes(time)) {
     message.channel.overwritePermissions(message.guild.id, {
