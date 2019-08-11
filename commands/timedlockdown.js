@@ -1,10 +1,5 @@
 const ms = require('ms');
 exports.run = (client, message, args) => {
-  if (!client.lockit) client.lockit = [];
-  let time = args.join(' ');
-  let validUnlocks = ['release', 'unlock'];
-  if (!message.member.hasPermission("MANAGE_CHANNELS")) return msg.reply("❌**Error:** You don't have the permission to do that!");
-  if (!time) return message.channel.send(tlEmbed);
 
 message.delete().catch();
    let tlEmbed = new Discord.RichEmbed()
@@ -15,6 +10,13 @@ message.delete().catch();
    .addField("How To Unlock", "``gen release`` OR ``gen unlock``")
    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
+
+
+  if (!client.lockit) client.lockit = [];
+  let time = args.join(' ');
+  let validUnlocks = ['release', 'unlock'];
+  if (!message.member.hasPermission("MANAGE_CHANNELS")) return msg.reply("❌**Error:** You don't have the permission to do that!");
+  if (!time) return message.channel.send(tlEmbed);
 
   if (validUnlocks.includes(time)) {
     message.channel.overwritePermissions(message.guild.id, {
