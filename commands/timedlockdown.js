@@ -1,10 +1,16 @@
-const Discord = require('discord.js');
-const snekfetch = require('snekfetch');
-const owners = require ('../Data/config.json');
+//Everything below this line is the required node modules
+//Without these the bot will not respond properly and probably throw errors
+const Discord = require('discord.js'); //Defines "Discord" Example: "Discord.RichEmbed"
+const snekfetch = require('snekfetch'); //Used To Lock Commands To Owner Only
+const owners = require ('../Data/config.json'); //Tells the bot where to read the Config file from
+const Regex = require('regex');
+const Reg = require('regex');
 const ms = require('ms');
-exports.run = (client, message, args) => {
 
-message.delete().catch();
+//Everything below this line is your command code, arguements and embeds!
+exports.run = (client, message, args) => { //Tells the bot to execute and respond to these functions.
+
+message.delete().catch(); //Auto deletes messages that execute commands
    let tlEmbed = new Discord.RichEmbed()
    .setTitle("Timed Lockdown Help")
    .setColor("0x0ffff")
@@ -24,19 +30,19 @@ message.delete().catch();
    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
 
+  if (!client.lockit) client.lockit = [];
+  let time = args.join(' ');
+  let validUnlocks = ['release', 'unlock'];
+  if (!message.member.hasPermission("MANAGE_CHANNELS")) return meassage.channel.send(tlEmbed2);
+  if (!time) return message.channel.send(tlEmbed);
+   
 message.delete().catch()
-let time = args.join(' ');
 let tlEmbed3 = new Discord.RichEmbed()
 .setTitle("LockDown Successful :ballot_box_with_check:")
 .setColor("0x0ffff")
 .setDescription(`Damn! <@${message.author.id}> Just locked the channel down for ${ms(ms(time), { long:true })}`)
 .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
 .setThumbnail(`https://i.imgur.com/xerUkNI.png`);
-
-  if (!client.lockit) client.lockit = [];
-  let validUnlocks = ['release', 'unlock'];
-  if (!message.member.hasPermission("MANAGE_CHANNELS")) return meassage.channel.send(tlEmbed2);
-  if (!time) return message.channel.send(tlEmbed);
 
   if (validUnlocks.includes(time)) {
     message.channel.overwritePermissions(message.guild.id, {
