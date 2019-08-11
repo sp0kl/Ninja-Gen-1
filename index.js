@@ -38,6 +38,12 @@ fs.readdir("./events/", (err, files) => {
 
 client.commands = new Enmap();
 
+client.on('message', message => {
+  const prefixMention = new RegExp(`^<@!?${client.user.id}> `);
+    const prefix = message.content.match(prefixMention) ? message.content.match(prefixMention)[0] : '!';
+
+});
+
 fs.readdir("./commands/", (err, files) => {
   if (err) return console.error(err);
   files.forEach(file => {
