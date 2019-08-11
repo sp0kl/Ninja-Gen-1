@@ -27,4 +27,5 @@ client.on('message', message => {
      .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
    message.channel.send(aEmbed)
- }
+ });
+}
