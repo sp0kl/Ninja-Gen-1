@@ -18,8 +18,7 @@ exports.run = async (client, message, args) => {
   const prefixMention = new RegExp(`^<@!?${client.user.id}> `);
     const prefix = message.content.match(prefixMention) ? message.content.match(prefixMention)[0] : '!';
       
-//This is the message embed (What the bot sends in discord) When the command is executed
-if (command === 'about') {      
+//This is the message embed (What the bot sends in discord) When the command is executed    
 message.delete().catch();
    let aEmbed = new Discord.RichEmbed()
    .setTitle("About Ninja Gen") //This is the embed title
@@ -31,4 +30,5 @@ message.delete().catch();
      .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`) //This is the embeds footer
     .setThumbnail(`https://i.imgur.com/xerUkNI.png`) //This is the embed Thumbnail (Usually the bots Picture)
    message.channel.send(aEmbed) //This executes the embed and tells the bot to send it
-  };  //This is the end of our command :(
+  });
+}   //This is the end of our command :(
