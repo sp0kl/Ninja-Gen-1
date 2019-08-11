@@ -15,12 +15,8 @@ exports.run = async (client, message, args) => {
    let bot = client.users.get('544049582959755264'); //Ninja Gen#1378 
    
    client.on('message', message => {
-    const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
-    if (!prefixRegex.test(message.content)) return;
-
-    const [, matchedPrefix] = message.content.match(prefixRegex);
-    const args = message.content.slice(matchedPrefix.length).trim().split(/ +/);
-    const command = args.shift();
+  const prefixMention = new RegExp(`^<@!?${client.user.id}> `);
+    const prefix = message.content.match(prefixMention) ? message.content.match(prefixMention)[0] : '!';
       
 //This is the message embed (What the bot sends in discord) When the command is executed
 if (command === 'about') {      
