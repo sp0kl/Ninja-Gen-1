@@ -28,9 +28,9 @@ message.delete().catch()
 let tlEmbed3 = new Discord.RichEmbed()
 .setTitle("LockDown Successful :ballot_box_with_check:")
 .setColor("0x0ffff")
-.setDescription(`Damn! <@${message.author.id}> Just locked the channel down for ${ms(ms(time), { long:true })}`);
+.setDescription(`Damn! <@${message.author.id}> Just locked the channel down for ${ms(ms(time), { long:true })}`)
 .setFooter`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
-.setThumbnail(`https://i.imgur.com/xerUkNI.png`)
+.setThumbnail(`https://i.imgur.com/xerUkNI.png`);
 
   if (!client.lockit) client.lockit = [];
   let time = args.join(' ');
