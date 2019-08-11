@@ -15,7 +15,6 @@ message.delete().catch();
    .addField("How To Unlock", "``gen release`` OR ``gen unlock``")
    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
- }
 
   if (validUnlocks.includes(time)) {
     message.channel.overwritePermissions(message.guild.id, {
