@@ -23,6 +23,7 @@ exports.run = async (client, message, args) => {
     const command = args.shift();
       
 //This is the message embed (What the bot sends in discord) When the command is executed
+if (command === 'about') {      
 message.delete().catch();
    let aEmbed = new Discord.RichEmbed()
    .setTitle("About Ninja Gen") //This is the embed title
