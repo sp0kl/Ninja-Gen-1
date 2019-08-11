@@ -13,11 +13,7 @@ exports.run = async (client, message, args) => {
    let owner = client.users.get('444609097233465347'); //Tyler. H#9393
    let dev = client.users.get('391376464064282627'); //Cpt.Calcium#7586
    let bot = client.users.get('544049582959755264'); //Ninja Gen#1378 
-   
-   client.on('message', message => {
-  const prefixMention = new RegExp(`^<@!?${client.user.id}> `);
-    const prefix = message.content.match(prefixMention) ? message.content.match(prefixMention)[0] : '!';
-      
+
 //This is the message embed (What the bot sends in discord) When the command is executed    
 message.delete().catch();
    let aEmbed = new Discord.RichEmbed()
