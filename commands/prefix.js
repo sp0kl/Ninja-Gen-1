@@ -1,5 +1,7 @@
-const Discord = require("discord.js");
-
+//Required Node Modules go here!
+const Discord = require('discord.js');
+const snekfetch = require('snekfetch');
+const serverSettings = require ('../Data/config.json');
 exports.run = async (client, message, args) => {
 
 	//Allows a user to set a prefix for the server.
