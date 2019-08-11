@@ -25,6 +25,7 @@ message.delete().catch();
    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
 
 message.delete().catch()
+let time = args.join(' ');
 let tlEmbed3 = new Discord.RichEmbed()
 .setTitle("LockDown Successful :ballot_box_with_check:")
 .setColor("0x0ffff")
@@ -33,7 +34,6 @@ let tlEmbed3 = new Discord.RichEmbed()
 .setThumbnail(`https://i.imgur.com/xerUkNI.png`);
 
   if (!client.lockit) client.lockit = [];
-  let time = args.join(' ');
   let validUnlocks = ['release', 'unlock'];
   if (!message.member.hasPermission("MANAGE_CHANNELS")) return meassage.channel.send(tlEmbed2);
   if (!time) return message.channel.send(tlEmbed);
