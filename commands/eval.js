@@ -1,3 +1,4 @@
+const Discord = require("discord.js");
 const customization = require ('../Data/config.json');
 function clean(text) {
     if (typeof(text) === "string")
