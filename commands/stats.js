@@ -5,6 +5,7 @@ require("moment-duration-format");
 
 exports.run = (client, message, args, level) => { // eslint-disable-line no-unused-vars
 const duration = moment.duration(client.uptime).format(" D [days], H [hrs], m [mins], s [secs]");
+const commit = require (https://github.com/GrimDesignsFiveM/Ninja-Gen/commit/)  
   let hEmbed = new Discord.RichEmbed()
    .setTitle("Ninja Gen Staistics")
    .setColor("0x0ffff")
@@ -14,8 +15,8 @@ const duration = moment.duration(client.uptime).format(" D [days], H [hrs], m [m
    .addField("Total Users", `${client.users.size.toLocaleString()}`)
    .addField("Total Servers", `${client.guilds.size.toLocaleString()}`)
    .addField("Total Channels", `${client.channels.size.toLocaleString()}`)
-   .addField("Current Discord.js Version", `v${version}`)
-   .addField("Current Node Version", `${process.version}`, {code: "asciidoc"});`)
+   .addField("Current Commit Version", `v${version}`)
+   .addField("Current Bot Version", `v${commit}`"
    .setFooter("© Ninja Gen Beta", "https://i.imgur.com/xerUkNI.png");
    message.channel.send(hEmbed)
    message.delete().catch();	
