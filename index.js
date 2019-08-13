@@ -45,10 +45,6 @@ client.on('message', message => {
 
 });
 
-if (command.guildOnly && message.channel.type !== 'text') {
-	return message.reply('I can\'t execute that command inside DMs!');
-}
-
 fs.readdir("./commands/", (err, files) => {
   if (err) return console.error(err);
   files.forEach(file => {
