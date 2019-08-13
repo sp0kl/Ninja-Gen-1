@@ -14,8 +14,6 @@ let Uembed = new Discord.RichEmbed()
       .addField("Lockdown Release Date", "**TO BE ANNOUNCED JOIN MY SUPPORT SERVER FOR INFO***")
       message.delete().catch();
    
-   
-   
      if (message.author.id !== '444609097233465347') return message.channel.send(Uembed);
 		  
 	let Cembed = new Discord.RichEmbed() 
@@ -71,5 +69,5 @@ talkedRecently.add(message.author.id);
     }
    
    
-    })
+    }
   }
