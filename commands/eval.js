@@ -15,7 +15,7 @@ exports.run = (client, message, args) => {
     .addField("Permission Level Required", "***BOT OWNER***")
     .setFooter("© Ninja Bot v1.00")
         
-    if (message.author.id !== '444609097233465347') return message.channel.send('You scrub, what made you think you\'d be able to do that??');
+    if (message.author.id !== '444609097233465347') return message.channel.send(embed);
     args = args.join(" ");
     try {
         var evaled = eval(args);
