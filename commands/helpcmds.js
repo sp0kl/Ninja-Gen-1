@@ -23,6 +23,7 @@ exports.run = async (client, message, args) => {
    .addField("Current Server Info", "``gen serverinfo`` - Shows information for the current server")
    .addField("Ping The Bot", "``gen ping`` Pings the bot and checks for Response time, Latency and API issues")
    .addField("Message Vote", "``gen vote {Message Here}`` Posts the message and allows members **15 Minutes** to vote yes or no")
+   .addField("Bot Stats", "``gen stats`` Shows you a list of my current Stats 
    .addField("Bot Uptime", "``gen uptime`` Shows how long the bot has been online since it's last restart")
    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
