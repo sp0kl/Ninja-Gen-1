@@ -7,17 +7,18 @@ exports.run = async (client, message, args) => {
 
 let Uembed = new Discord.RichEmbed()
       .setColor("0xff0000")
-      .setTitle("Fortnite Accounts Status")
-      .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning: Join our [Support Server](https://discord.gg/CRhNHBs) for updates when this category becomes available");
+      .setTitle("Fortnite Command Lockdown")
+      .setDescription(`<@${message.author.id}>` + " Uh-Oh this command is on Lockdown, Find out why below")
+      .addField("Lockdown Reason", "***Empty Account Category*** Fortnite accounts are ***Coming Soon***")
+      .addField("Lockdown Initiated", "By: ***Bot Owner***")
+      .addField("Lockdown Release Date", "**TO BE ANNOUNCED JOIN MY SUPPORT SERVER FOR INFO***")
       message.delete().catch();
    
    
    
-    if(message.author.id !== owners) return message.channel.send(Uembed)
-        snekfetch.get(`http://ip-api.com/json/${args}`).then (r => {
-          message.delete().catch();
+     if (message.author.id !== '444609097233465347') return message.channel.send(Uembed);
 		  
-		   let Cembed = new Discord.RichEmbed() 
+	let Cembed = new Discord.RichEmbed() 
       .setTitle("Hmm :thinking: To Fast!!")
       .setDescription(`<@${message.author.id}>` + " Please wait ``1 Minute`` before retyping this command. :shrug:")
       .setColor("0xff0000")
