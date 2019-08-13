@@ -24,7 +24,7 @@ exports.run = async (client, message, args) => {
    .addField("Help Commands", "``gen helpcmds`` Shows a list of my available help commands")
    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    message.channel.send(hEmbed)
- }
+
 
 exports.conf = {
   enabled: true,
