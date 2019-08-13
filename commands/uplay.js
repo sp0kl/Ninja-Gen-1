@@ -8,9 +8,9 @@ exports.run = async (client, message, args) => {
 let bot = client.users.get('544049582959755264'); //Ninja Gen#1378 
 let Uembed = new Discord.RichEmbed()
       .setColor("0xff0000")
-      .setTitle("Fortnite Command Lockdown")
+      .setTitle("Uplay Command Lockdown")
       .setDescription(`<@${message.author.id}>` + " Uh-Oh this command is on Lockdown, Find out why below")
-      .addField("Lockdown Reason", "Empty Account Category Fortnite accounts are ***Coming Soon***")
+      .addField("Lockdown Reason", "Empty Account Category Uplay accounts are ***Coming Soon***")
       .addField("Lockdown Initiated By", `${bot} Owner/Developer`)
       .addField("Lockdown Release Date", "**To Be Announced**, Join my [support server](https://discord.gg/JQqCfcU) for more info")
       message.delete().catch();
@@ -66,7 +66,7 @@ talkedRecently.add(message.author.id);
           // Removes the user from the set after a minute
           talkedRecently.delete(message.author.id);
         }, 60000);
-    })
+    }
    
    
     }
