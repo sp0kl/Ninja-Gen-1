@@ -5,7 +5,7 @@ const client = new Discord.Client({
   fetchAllMembers : true
 });
  
-const config = require("../data/config.json");
+const config = require("../Data/config.json");
 const fs = require("fs");
 const snekfetch = require('snekfetch');
 
