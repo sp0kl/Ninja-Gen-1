@@ -19,7 +19,7 @@ exports.run = async (client, message, args) => {
    .setDescription(`<@${message.author.id}>` + " My general command usage can be found below")
    .addField("Report A Bug", "``gen bugreport {Reason}`` - Sends a message to the support server so the devs know about the bug you reported")
    .addField("Account/Stock Request", "``gen request {YourRequest}`` - Sends a message to the support server so the devs know what you requested")
-   .addField("Support Server", "[Join Here](https://discord.gg/JQqCfcU)
+   .addField("Support Server", "[Join Here](https://discord.gg/JQqCfcU)")
    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
    message.channel.send(hEmbed)
