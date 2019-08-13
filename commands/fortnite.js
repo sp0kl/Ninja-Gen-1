@@ -10,7 +10,7 @@ let Uembed = new Discord.RichEmbed()
       .setTitle("Fortnite Command Lockdown")
       .setDescription(`<@${message.author.id}>` + " Uh-Oh this command is on Lockdown, Find out why below")
       .addField("Lockdown Reason", "Empty Account Category Fortnite accounts are ***Coming Soon***")
-      .addField("Lockdown Initiated By", `${bot} Owner/Developer")
+      .addField("Lockdown Initiated By", `${bot} Owner/Developer`)
       .addField("Lockdown Release Date", "**To Be Announced**, Join my [support server](https://discord.gg/JQqCfcU) for more info")
       message.delete().catch();
    
