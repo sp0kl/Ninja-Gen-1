@@ -10,7 +10,7 @@ exports.run = (client, message, args) => {
     	let embed = new Discord.RichEmbed()
     .setColor("#ff9900")
     .setTitle("Permissions Error")
-    .setDescription("You scrub, what made you think you\'d be able to do that?? :face_palm:')
+    .setDescription("You scrub, what made you think you'd be able to do that?? :face_palm:")
 	.addField("Your Permission Level", "***BOT USER***")
     .addField("Permission Level Required", "***BOT OWNER***")
     .setFooter("© Ninja Bot v1.00")
