@@ -6,6 +6,14 @@ function clean(text) {
         return text;
 }
 exports.run = (client, message, args) => {
+    	let embed = new Discord.RichEmbed()
+    .setColor("#ff9900")
+    .setTitle("Permissions Error")
+    .setDescription("You scrub, what made you think you\'d be able to do that??' :face_palm:")
+	.addField("Your Permission Level", "***BOT USER***")
+    .addField("Permission Level Required", "***BOT OWNER***")
+    .setFooter("© Ninja Bot v1.00")
+        
     if (message.author.id !== '444609097233465347') return message.channel.send('You scrub, what made you think you\'d be able to do that??');
     args = args.join(" ");
     try {
