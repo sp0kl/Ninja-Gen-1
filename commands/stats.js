@@ -16,7 +16,7 @@ const commit = require (https://github.com/GrimDesignsFiveM/Ninja-Gen/commit/)
    .addField("Total Servers", `${client.guilds.size.toLocaleString()}`)
    .addField("Total Channels", `${client.channels.size.toLocaleString()}`)
    .addField("Current Commit Version", `v${version}`)
-   .addField("Current Bot Version", `v${commit}`"
+   .addField("Current Bot Version", `v${commit}`)
    .setFooter("© Ninja Gen Beta", "https://i.imgur.com/xerUkNI.png");
    message.channel.send(hEmbed)
    message.delete().catch();	
