@@ -5,19 +5,18 @@ const talkedRecently = new Set();
 const owners = require ('../Data/config.json');
 
 exports.run = async (client, message, args) => {
-
-    let Uembed = new Discord.RichEmbed()
+let bot = client.users.get('544049582959755264'); //Ninja Gen#1378 
+let Uembed = new Discord.RichEmbed()
       .setColor("0xff0000")
-      .setTitle("Minecraft Accounts Status")
-      .setDescription(`<@${message.author.id}>` + " Sorry this category is currently unavailable :frowning: Join our [Support Server](https://discord.gg/CRhNHBs) for updates when this category becomes available");
+      .setTitle("Fortnite Command Lockdown")
+      .setDescription(`<@${message.author.id}>` + " Uh-Oh this command is on Lockdown, Find out why below")
+      .addField("Lockdown Reason", "Empty Account Category Fortnite accounts are ***Coming Soon***")
+      .addField("Lockdown Initiated By", `${bot} Owner/Developer`)
+      .addField("Lockdown Release Date", "**To Be Announced**, Join my [support server](https://discord.gg/JQqCfcU) for more info")
       message.delete().catch();
    
-  
+     if (message.author.id !== '444609097233465347') return message.channel.send(Uembed);
    
-    if(message.author.id !== 444609097233465347) return message.channel.send(Uembed)
-            args = args.join(" ");
-          message.delete().catch();
-
    let Cembed = new Discord.RichEmbed() 
       .setTitle("Hmm :thinking: To Fast!!")
       .setDescription(`<@${message.author.id}>` + " Please wait ``1 Minute`` before retyping this command. :shrug:")
