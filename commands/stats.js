@@ -1,3 +1,4 @@
+const Discord = require("discord.js");
 const { version } = require("discord.js");
 const moment = require("moment");
 require("moment-duration-format");
@@ -14,7 +15,7 @@ const duration = moment.duration(client.uptime).format(" D [days], H [hrs], m [m
    .addField("Total Servers", `${client.guilds.size.toLocaleString()}`)
    .addField("Total Channels", `${client.channels.size.toLocaleString()}`)
    .addField("Current Discord.js Version", `v${version}`)
-   .addField("Current Node Version", `${process.version}`, {code: "asciidoc"});`);
+   .addField("Current Node Version", `${process.version}`, {code: "asciidoc"});`)
    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
    message.channel.send(hEmbed)
    message.delete().catch();	
