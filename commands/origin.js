@@ -9,7 +9,7 @@ let Uembed = new Discord.RichEmbed()
       .setColor("0xff0000")
       .setTitle("Origin Command Lockdown")
       .setDescription(`<@${message.author.id}>` + " Uh-Oh this command is on Lockdown, Find out why below")
-      .addField("Lockdown Reason", "Empty Account Category Fortnite accounts are ***Coming Soon***")
+      .addField("Lockdown Reason", "Empty Account Category Origin accounts are ***Coming Soon***")
       .addField("Lockdown Initiated By", `${bot} Owner/Developer`)
       .addField("Lockdown Release Date", "**To Be Announced**, Join my [support server](https://discord.gg/JQqCfcU) for more info")
       message.delete().catch();
