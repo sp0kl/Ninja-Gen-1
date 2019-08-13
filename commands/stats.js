@@ -5,7 +5,7 @@ require("moment-duration-format");
 
 exports.run = (client, message, args, level) => { // eslint-disable-line no-unused-vars
 const duration = moment.duration(client.uptime).format(" D [days], H [hrs], m [mins], s [secs]");
-  let commit = ('https://github.com/GrimDesignsFiveM/Ninja-Gen/commit/')  
+  let commit = ('ef95ec9')  
   let hEmbed = new Discord.RichEmbed()
    .setTitle("Ninja Gen Staistics")
    .setColor("0x0ffff")
