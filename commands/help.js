@@ -18,7 +18,7 @@ exports.run = async (client, message, args) => {
    .setTitle("Ninja Gen Help")
    .setDescription(`<@${message.author.id}>` + "Below is a list of all my available Command Modules")
    .setColor("#0x3dfbff")
-   .addField("Bow Owner Only", "``gen ownercmds`` Shows a list of commands only my Developer can use")
+   .addField("Bot Owner Only", "``gen ownercmds`` Shows a list of commands only my Developer can use")
    .addField("Account Generator Commands", "``gen gencmds`` Shows a list of my generator commands")
    .addField("Support Commands", "``gen support`` Shows a list of my available support commands")
    .addField("Help Commands", "``gen helpcmds`` Shows a list of my available help commands")
