@@ -4,7 +4,7 @@ const fs = require("fs");
 const owners = require ('../Data/config.json');
 
 exports.run = async (client, message, args) => {
-
+if (message.author.id !== '444609097233465347') return message.channel.send('You scrub, what made you think you\'d be able to do that??');
 let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));   
     const Message = args.join(" ");
     let sicon = message.guild.iconURL;
