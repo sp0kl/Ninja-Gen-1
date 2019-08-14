@@ -8,6 +8,12 @@ const config = require('../Data/config.json');
 
 //This tells the bot to execute these async functions
 exports.run = async (client, message, args) => {
+ 
+//This defines functions for certain args and executions   
+   let user = message.mentions.users.first();
+  let muser = message.guild.member(message.mentions.users.first());
+    if (!muser) muser = message.member;
+    if(!user) user = message.author;
 
 //These lines are used to define The "Owners", "Devs" and the "Bot" Itself
 //Helps when wanting to @Mention in embeds or messages.	
