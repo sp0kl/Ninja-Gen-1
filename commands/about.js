@@ -32,7 +32,7 @@ message.delete().catch();
    .addField("Author Tag", `${config.ownerName}`, true)
    .addField("Author ID", `${config.ownerID}`, true)
    .addField("Code Library", "[discord.js](https://discord.js.org/#/)", true)
-   .addField('Current Status', `${client.ueer.presence.status.toUpperCase()}`, true)
+   .addField('Current Status', `${client.user.presence.status.toUpperCase()}`, true)
    .addField('Current Game', `${client.user.presence.game === null ? "No Game" : client.user.presence.game.name}`, true)
    .addField('Bot Creation Date', `${moment(user.createdAt).toString().substr(0, 15)}\n(${moment(user.createdAt).fromNow()})`, true)        
    .addField("Current Version", "[Version 1.00](https://github.com/GrimDesignsFiveM/Ninja-Gen/releases", true)
