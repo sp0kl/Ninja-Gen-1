@@ -4,7 +4,7 @@ const snekfetch = require('snekfetch');
 const Regex = require('regex');
 const Reg = require('regex');
 const owners = require('../Data/config.json');
-const config = require('../Data/config.json`);
+const config = require('../Data/config.json');
 
 //This tells the bot to execute these async functions
 exports.run = async (client, message, args) => {
