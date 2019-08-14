@@ -30,7 +30,6 @@ message.delete().catch();
    .setColor("#0x3dfbff")
    .addField("Bot Author", `${owner}`, true)
    .addField("Author Tag", `${config.ownerName}`, true)
-   .addField("Author ID", `${config.ownerID}`, true)
    .addField("Code Library", "[discord.js](https://discord.js.org/#/)", true)
    .addField('Current Status', `${client.user.presence.status.toUpperCase()}`, true)
    .addField('Current Game', `${client.user.presence.game === null ? "No Game" : client.user.presence.game.name}`, true)
