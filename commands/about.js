@@ -17,13 +17,17 @@ exports.run = async (client, message, args) => {
 //This is the message embed (What the bot sends in discord) When the command is executed    
 message.delete().catch();
    let aEmbed = new Discord.RichEmbed()
-   .setTitle("About Ninja Gen") //This is the embed title
-   .setColor("0x0ffff") //The color of the embed (Currently: Light Blue)
-   .addField("Current Version", "**BETA** v1.00") //The bots current version
-   .addField("Owner/Author", `Created By: ${owner}`) //Bot Owner is defined here as a @Mention
-   .addField("Coders/Developers", `${owner}`) //Bot Owner is defined here as a @Mention
-   .addField("Ninja Gen Support", "[Support Server](https://discord.gg/CRhNHBs)") //Embed (add) Field with server link
-     .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`) //This is the embeds footer
-    .setThumbnail(`https://i.imgur.com/xerUkNI.png`) //This is the embed Thumbnail (Usually the bots Picture)
-   message.channel.send(aEmbed) //This executes the embed and tells the bot to send it
+   .setTitle("About Ninja Gen")
+   .setThumbnail("https://cdn.discordapp.com/avatars/595155471611068426/b6ffdf628b989aa8c55c446ff623042f.png?size=2048?size=1024")
+   .setColor("#0x3dfbff")
+   .addField("Bot Author", `${owner}, ${config.ownerName}`, true)
+   .addField("Author ID", `${config.ownerID}`, true)
+   .addField("Code Library", "[discord.js](https://discord.js.org/#/)", true)
+   .addField('Current Status', `${muser.presence.status.toUpperCase()}`, true)
+   .addField('Current Game', `${muser.presence.game === null ? "No Game" : muser.presence.game.name}`, true)
+   .addField('Bot Creation Date', `${moment(user.createdAt).toString().substr(0, 15)}\n(${moment(user.createdAt).fromNow()})`, true)        
+   .addField("Current Version", "[Version 1.00-Patch-1](https://github.com/GrimDesignsFiveM/NinjaBot2.0/releases/tag/v1.00)", true)
+   .addField("Ninja Bot Support", "[Support Server](https://discord.gg/yFmtAUM)", true)
+   .setFooter(`© Ninja Bot v1.00`, `https://cdn.discordapp.com/avatars/595155471611068426/b6ffdf628b989aa8c55c446ff623042f.png?size=2048?size=1024`);
+   message.channel.send(aEmbed)
 }   //This is the end of our command :(
