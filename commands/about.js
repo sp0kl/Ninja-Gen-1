@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const snekfetch = require('snekfetch');
 const Regex = require('regex');
 const Reg = require('regex');
-const moment = require('moment");
+const moment = require('moment');
 const owners = require('../Data/config.json');
 const config = require('../Data/config.json');
 
