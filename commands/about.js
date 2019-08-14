@@ -19,7 +19,7 @@ exports.run = async (client, message, args) => {
 message.delete().catch();
    let aEmbed = new Discord.RichEmbed()
    .setTitle("About Ninja Gen")
-   .setThumbnail("https://cdn.discordapp.com/avatars/595155471611068426/b6ffdf628b989aa8c55c446ff623042f.png?size=2048?size=1024")
+   .setThumbnail("https/cdn.discordapp.com/icons/586817026522218507/4989fdcf2a268203b54df369e1cabe55.jpg")
    .setColor("#0x3dfbff")
    .addField("Bot Author", `${owner}, ${config.ownerName}`, true)
    .addField("Author ID", `${config.ownerID}`, true)
