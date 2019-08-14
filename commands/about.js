@@ -26,8 +26,8 @@ message.delete().catch();
    .addField('Current Status', `${muser.presence.status.toUpperCase()}`, true)
    .addField('Current Game', `${muser.presence.game === null ? "No Game" : muser.presence.game.name}`, true)
    .addField('Bot Creation Date', `${moment(user.createdAt).toString().substr(0, 15)}\n(${moment(user.createdAt).fromNow()})`, true)        
-   .addField("Current Version", "[Version 1.00-Patch-1](https://github.com/GrimDesignsFiveM/NinjaBot2.0/releases/tag/v1.00)", true)
-   .addField("Ninja Bot Support", "[Support Server](https://discord.gg/yFmtAUM)", true)
+   .addField("Current Version", "[Version 1.00](https://github.com/GrimDesignsFiveM/Ninja-Gen/releases", true)
+   .addField("Ninja Gen Support", "[Support Server](https://discord.gg/yFmtAUM)", true)
    .setFooter(`© Ninja Bot v1.00`, `https://cdn.discordapp.com/avatars/595155471611068426/b6ffdf628b989aa8c55c446ff623042f.png?size=2048?size=1024`);
    message.channel.send(aEmbed)
 }   //This is the end of our command :(
