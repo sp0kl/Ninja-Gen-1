@@ -26,7 +26,7 @@ exports.run = async (client, message, args) => {
 message.delete().catch();
    let aEmbed = new Discord.RichEmbed()
    .setTitle("About Ninja Gen")
-   .setThumbnail("https://cdn.discordapp.com/avatars/544049582959755264/91c669a444b56e0d7b61958916d74ff4.png?size=2048?size=1024")
+   .setThumbnail("https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=10244")
    .setColor("#0x3dfbff")
    .addField("Bot Author", `${owner}`, true)
    .addField("Author Tag", `${config.ownerName}`, true)
@@ -36,6 +36,6 @@ message.delete().catch();
    .addField('Bot Creation Date', `${moment(client.user.createdAt).toString().substr(0, 15)}\n(${moment(client.user.createdAt).fromNow()})`, true)        
    .addField("Current Version", "[Beta Release](https://github.com/GrimDesignsFiveM/Ninja-Gen/releases)", true)
    .addField("Ninja Gen Support", "[Support Server](https://discord.gg/yFmtAUM)", true)
-   .setFooter(`© Ninja Gen Beta`, `https://cdn.discordapp.com/avatars/544049582959755264/91c669a444b56e0d7b61958916d74ff4.png?size=2048?size=1024`);
+   .setFooter(`© Ninja Gen Beta`, `https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`);
    message.channel.send(aEmbed)
 }   //This is the end of our command :(
