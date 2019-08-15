@@ -22,7 +22,7 @@ exports.run = async (client, message, args) => {
    .addField("Account Generator Commands", "``gen gencmds`` Shows a list of my generator commands")
    .addField("Support Commands", "``gen support`` Shows a list of my available support commands")
    .addField("Help Commands", "``gen helpcmds`` Shows a list of my available help commands")
-   .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+   .setFooter(`© Ninja Gen Beta`, `https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`)
    message.channel.send(hEmbed)
 }
 
