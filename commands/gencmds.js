@@ -27,8 +27,8 @@ exports.run = async (client, message, args) => {
    .addField("Uplay Accounts", "``gen uplay`` - Generates a Uplay account and sends it to your DMs [**currently out of stock**]")
    .addField("Origin Accounts", "``gen origin`` - Generates a Origin account and sends it to your DMs [**currently out of stock**]")
    .addField("Fortnite Accounts", "``gen fortnite`` - Generates a Fortnite account and sends it to your DMs [**currently out of stock**]")
-   .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
-   .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
+   .setFooter(`Ninja Gen Beta`, `https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`)
+   .setThumbnail(`https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`)
    message.channel.send(hEmbed)
    message.delete().catch();
  };
