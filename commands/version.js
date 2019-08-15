@@ -1,4 +1,4 @@
-const versionCheck = require("../utils/versionCheck");
+const versionCheck = require("../Data/versionCheck");
 const { version } = require("../package");
 
 module.exports = function(message) {
