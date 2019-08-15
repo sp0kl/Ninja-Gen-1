@@ -5,4 +5,27 @@
         "444609097233465347",
         "391376464064282627"
     ]
+
+"commands": {
+    "about": {
+      "executors": [],
+      "requiredPermissions": [],
+      "enabled": true
+    },
+    "help": {
+      "executors": [],
+      "requiredPermissions": [],
+      "enabled": true
+    },
+    "ownercmds": {
+      "executors": [],
+      "requiredPermissions": [],
+      "enabled": true
+    },
+    "gencmds": {
+      "executors": [],
+      "requiredPermissions": [],
+      "enabled": true
+    }
+  }
 }
