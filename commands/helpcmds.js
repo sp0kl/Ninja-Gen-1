@@ -25,8 +25,8 @@ exports.run = async (client, message, args) => {
    .addField("Message Vote", "``gen vote {Message Here}`` Posts the message and allows members **15 Minutes** to vote yes or no")
    .addField("Bot Stats", "``gen stats`` Shows you a list of my current Stats")
    .addField("Bot Uptime", "``gen uptime`` Shows how long the bot has been online since it's last restart")
-   .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
-   .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
+   .setFooter(`© Ninja Gen Beta`, `https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`)
+   .setThumbnail(`https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`)
    message.channel.send(hEmbed)
    message.delete().catch();	
  };
