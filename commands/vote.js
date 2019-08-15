@@ -35,7 +35,7 @@ exports.run = async (bot, message, args) => {
                                           "----------------------------------------", true)
 
             .setColor("0x#FF0000")
-            .setFooter(`© Ninja Gen Beta`);
+            .setFooter(`© Ninja Gen Beta`, `https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`);
   await message.channel.send({embed: sumsum});
 
 }
