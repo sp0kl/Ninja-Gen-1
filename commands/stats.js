@@ -17,7 +17,7 @@ const duration = moment.duration(client.uptime).format(" D [days], H [hrs], m [m
    .addField("Total Channels", `${client.channels.size.toLocaleString()}`)
    .addField("Current Discord.js Version", `v${version}`)
    .addField("Current Commit Version", `${commit}`)
-   .setFooter("© Ninja Gen Beta", "https://i.imgur.com/xerUkNI.png");
+   .setFooter("© Ninja Gen Beta", "https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024");
    message.channel.send(hEmbed)
    message.delete().catch();	
  };
