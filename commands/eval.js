@@ -13,7 +13,7 @@ exports.run = (client, message, args) => {
     .setDescription("You scrub, what made you think you'd be able to do that?? :face_palm:")
 	.addField("Your Permission Level", "***BOT USER***")
     .addField("Permission Level Required", "***BOT OWNER***")
-    .setFooter("© Ninja Bot v1.00")
+    .setFooter(`© Ninja Gen Beta`, `https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`)
         
     if (message.author.id !== '444609097233465347') return message.channel.send(embed);
     args = args.join(" ");
