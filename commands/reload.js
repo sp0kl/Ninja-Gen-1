@@ -19,24 +19,24 @@ let rEmbed1 = new Discord.RichEmbed()
    .setTitle("Whoops Something Went Wrong")
    .setColor(0xff0000)
    .setDescription(":thinking: Sorry but that command does not exist, If you need help please use ``gen help`` to see a list of commands :shrug:")
-     .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
-    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
+     .setFooter(`© Ninja Gen Beta`, `https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`)
+    .setThumbnail(`https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`)
    message.delete().catch();
    
    let rEmbed2 = new Discord.RichEmbed()
    .setTitle("Permission Error :dizzy_face:")
    .setColor(0xff0000)
    .setDescription("You can not use this command :shrug: it is ***BOT OWNER*** only")
-     .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
-    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
+     .setFooter(`© Ninja Gen Beta`, `https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`)
+    .setThumbnail(`https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`)
    message.delete().catch();
    
    let rEmbed3 = new Discord.RichEmbed()
    .setTitle("Reload Successful")
    .setColor(53380)
    .setDescription("The command ${commandName} has been reloaded :thumbsup:")
-     .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
-    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
+     .setFooter(`© Ninja Gen Beta`, `https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`)
+    .setThumbnail(`https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`)
    message.delete().catch();
    
 //Here we define the bot owner/s and seperate them from other members
