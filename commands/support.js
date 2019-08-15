@@ -20,8 +20,8 @@ exports.run = async (client, message, args) => {
    .addField("Report A Bug", "``gen bugreport {Reason}`` - Sends a message to the support server so the devs know about the bug you reported")
    .addField("Account/Stock Request", "``gen request {YourRequest}`` - Sends a message to the support server so the devs know what you requested")
    .addField("Support Server", "[Join Here](https://discord.gg/JQqCfcU)")
-   .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
-   .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
+   .setFooter(`© Ninja Gen Beta`, `https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`)
+   .setThumbnail(`https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`)
    message.channel.send(hEmbed)
    message.delete().catch();	
  };
