@@ -16,8 +16,8 @@ if(!args[0] || args[0 == "help"]) return message.reply("Usage: ``gen reminder {W
      .addField("Channel Name", message.channel)
      .addField("Time Of Report", message.createdAt)
      .addField("Reminder Message", `${sayMessage}`)
-     .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
-    .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
+     .setFooter(`Ninja Gen Beta`, `https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`)
+    .setThumbnail(`https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`)
 
 
 
