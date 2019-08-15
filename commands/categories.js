@@ -16,7 +16,7 @@ exports.run = async (client, message, args) => {
    .addField("Fortnite", "***0*** Accounts available")
    .addField("NordVPN", "***380*** Accounts available")
    .addField("Hulu", "***52*** Accounts Available")
-   .setFooter(`Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
+   .setFooter(`Ninja Gen Beta`, `https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`)
    .setThumbnail(`${message.author.avatarURL}`)
    message.channel.send(hEmbed)
    message.delete().catch();
