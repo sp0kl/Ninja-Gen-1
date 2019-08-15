@@ -5,9 +5,6 @@ module.exports = (client, message) => {
 
     client.message = message;
 
-    // Check if command is enabled
-    if (command.enabled === false) return message.reply("⛔ | This command has been disabled.");
-
     const args = message.content.slice(client.config.prefix.length).trim().split(/ +/g);
     //console.log(args);
     const command = args.shift().toLowerCase();
