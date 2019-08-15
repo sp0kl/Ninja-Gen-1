@@ -19,8 +19,8 @@ let hEmbed = new Discord.RichEmbed()
    .setDescription(`<@${message.author.id}>` + " My general command usage for this module can be found below ***PLEASE NOTE: These commands are BOT OWNER only***")
    .addField("Developer Reminder", "``gen reminder`` - Sends a reminder to the support server **DEVELOPERS & BOT OWNER ONLY**")
    .addField("Java Code Eval", "``gen eval {JavaScript Code Here}`` Evaluates the given code and returns the response")
-   .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`)
-   .setThumbnail(`https://i.imgur.com/xerUkNI.png`)
+   .setFooter(`© Ninja Gen Beta`, `https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`)
+   .setThumbnail(`https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`)
    message.channel.send(hEmbed)
    message.delete().catch();	
  };
