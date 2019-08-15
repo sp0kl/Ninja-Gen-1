@@ -22,7 +22,7 @@ exports.run = async (client, message, args) => {
     .setColor(53380)
     .setTitle("User has generated a account")
     .setDescription(`<@${message.author.id}>` + ` has generated a Dominos account the account info is ${Accounts[result]}`)
-    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`);
+    .setFooter(`© Ninja Gen Beta`, `https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`);
 
 
 
@@ -31,7 +31,7 @@ exports.run = async (client, message, args) => {
     .setColor(53380)
     .setTitle("Your Dominos account")
     .setDescription(Accounts[result])
-    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`);
+    .setFooter(`© Ninja Gen Beta`, `https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`);
 
     let Membed = new Discord.RichEmbed()
     .setColor(53380)
@@ -39,7 +39,7 @@ exports.run = async (client, message, args) => {
     .setDescription(`<@${message.author.id}>` + "Your Dominos account has been sent to your dms, Please check them if the account is a duplicate or doesn't work use the command again until it does")
     .addField("Last Restock Date", "July/30/2019")
     .addField("Next Restock Date", "August/30/2019")
-    .setFooter(`© Ninja Gen Beta`, `https://i.imgur.com/xerUkNI.png`);
+    .setFooter(`© Ninja Gen Beta`, `https://cdn.discordapp.com/avatars/544049582959755264/b5f7f7b81321f647ff62c991871bae43.png?size=2048?size=1024`);
 
 
 
